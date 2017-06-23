@@ -1,0 +1,1279 @@
+/**
+ * Copyright (c) 2015 Paira Shopify Framework, ThemeTidy.com
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * This file can only use Paira Shopify Framework, So if you want this file then buy this Paira Shopify Framework From here ThemeTidy.com.
+ * Author -> ThemeTidy.com
+ * Email -> admin@themetidy.com
+ * Version -> 1.0
+ */
+
+/* ===========================================================
+    2. Screen Min Width 992px And Max Width 1199px
+============================================================ */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav>li>a {
+        padding: 15px 18px;
+    }
+    .paira-sticky .paira-s.header-top .user-option ul li:hover .fa {
+        color: #000 !important;
+    }
+    .paira-camera-slider h1 {
+        font-size: 80px;
+    }
+    .paira-camera-slider h2{
+        font-size: 60px;
+    }
+    .paira-camera-slider h3{
+        font-size: 50px;
+    }
+    .home-page .margin-top-60 {
+        margin-top: 25px !important;
+    }
+    .header-bottom .fa-angle-down{
+        display: none;
+    }
+    .countdown li {
+        margin: 0 -6px;
+    }
+    .banner-big h4 {
+        font-size: 35px;
+    }
+    .banner-big h5 {
+        font-size: 20px;
+    }
+    .countdown {
+        height: 49px;
+    }
+    .banner-price span {
+        font-size: 20px;
+    }
+    .banner-big .banner-big-con {
+        padding-top: 18%;
+    }
+    .banner-big {
+        margin-top: -17%;
+        margin-bottom: -79px;
+    }
+    .home-page .font-size-50 {
+        font-size: 37px !important;
+    }
+    .home-page  .fa-5x {
+        font-size: 4em;
+    }
+    .home-page  .brand {
+        height: 102px;
+    }
+    .category .product {
+        padding: 0 10px;
+    }
+    .background-or, .background-or1 {
+        height: 155px;
+    }
+    .padding-top-45 {
+        padding-top: 15px !important;
+    }
+    .category{
+        margin-bottom: 30px !important;
+    }
+    .mega-menu .navbar-search .dropdown-menu {
+        left: -204px;
+        right: -42px;
+    }
+    .blog-content .recent-posts ul li {
+        font-size: 12px;
+    }
+    .blog-post-comments li .comments-content {
+        margin: 0 0 0 16%;
+    }
+    .page-category .background-or, .page-category .category-content1 .background-or1 ,  .page-category .col-md-8 , .page-category .category-content1 .col-md-8  {
+        height: 203px;
+    }
+    .page-category .last-category-content1{
+        margin-bottom: 10px !important;
+    }
+    .page-category .padding-top-45 {
+        padding-top: 42px !important;
+    }
+    .page-category .category .product .product-hover {
+        top: 43%;
+    }
+    .collection-page .font-size-100 {
+        font-size: 70px !important;
+    }
+    .collection-page .font-size-80 {
+        font-size: 50px !important;
+    }
+    .collection-page .font-size-60 {
+        font-size: 45px !important;
+    }
+    .collection-page .banner-big .banner-big-con {
+        padding-top: 19%;
+    }
+    .collection-page .margin-top-60- {
+        margin-top: -14% !important;
+    }
+    .collection-page .product:hover .product-hover {
+        top: 18%;
+        height: 70%;
+    }
+    .collection-page .countdown li{
+        margin: 0 -2px;
+    }
+    .collection-page .margin-top-40 {
+        margin-top: -30px !important;
+    }
+    .filter-product-list {
+        width: 35%;
+    }
+    .option_switch .select_options span {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+/* ===========================================================
+    3. Scren Min Width 768px And Max Width 1199px
+============================================================ */
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-bottom .col-sm-4 {
+        width: 20.333333%;
+    }
+    .mega-menu .navbar-nav>li>a {
+        font-size: 10px;
+    }
+    .nav>li>a {
+        padding: 15px 15px;
+    }
+    .header-bottom .fa-angle-down{
+        display: none;
+    }
+    .mega-menu .navbar-search .dropdown-menu {
+        left: -24px;
+        right: -24px;
+    }
+    .paira-sticky .cart-menu-body span{
+        display: none;
+    }
+    .paira-sticky .header-top .user-option ul li:hover .fa {
+        color: #000 !important;
+    }
+    .paira-camera-slider h1 {
+        font-size: 70px;
+    }
+    .paira-camera-slider h2{
+        font-size: 50px;
+    }
+    .paira-camera-slider h3{
+        font-size: 40px;
+    }
+    .paira-camera-slider .slider-con1 ,.paira-camera-slider .slider-con {
+        padding-top: 56px;
+    }
+    .related-product-btn button {
+        margin-left: -9px;
+        margin-right: -9px;
+        margin-top: -28%;
+    }
+    .home-page .product-rating .fa {
+        font-size: 20px;
+    }
+    .page-header hr{
+        text-align: center;
+    }
+    .home-page  .fa-2x {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .category-content1 .product-hover{
+        top: 115%;
+    }
+    .hover-add-cart span{
+        display: none;
+    }
+    .home-page .padding-bottom-40 {
+        padding-bottom: 15px !important;
+    }
+    .home-page .margin-top-60 {
+        margin-top: 20px !important;
+    }
+    .countdown li{
+        margin: 0 -16px;
+        padding: 5px 0 0 28px;
+    }
+    .countdown .digit {
+        font-size: 14px;
+    }
+    .countdown li:first-child{
+        padding-left: 9px;
+    }
+    .countdown {
+        height: 49px;
+    }
+    .banner-big h4 {
+        font-size: 25px;
+    }
+    .banner-big h5 {
+        font-size: 16px;
+    }
+    .banner-price span {
+        font-size: 20px;
+    }
+    .banner-big .countdown{
+        display: none;
+    }
+    .banner-big .banner-big-con {
+        padding-top: 29%;
+    }
+    .banner-big {
+        margin-top: -27%;
+        margin-bottom: -16%;
+    }
+    .home-page .font-size-50 {
+        font-size: 18px !important;
+        font-weight: bolder;
+    }
+    .home-page  .fa-5x {
+        font-size: 3em;
+    }
+    .home-page  .brand {
+        height: 81px;
+    }
+    .category .product {
+        padding: 0 10px;
+    }
+    .background-or, .background-or1 {
+        height: 155px;
+    }
+    .category-content1 {
+        height: auto;
+    }
+    .padding-top-45 {
+        padding-top: 15px !important;
+    }
+    .category{
+        margin-bottom: 75px !important;
+    }
+    .mega-menu .navbar-search .dropdown-menu {
+        left: -204px;
+        right: -42px;
+    }
+    .background-or:before {
+        position: absolute;
+        top: -1px;
+        right: 50%;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid #fff;
+        content: " ";
+    }
+    .background-or:after{
+        display: none;
+    }
+    .category-content .col-md-8 {
+        border: 1px solid #6f6f6f;
+        border-bottom: none;
+    }
+    .category-content1 .col-md-8 {
+        border: 1px solid #6f6f6f;
+        border-top: none;
+    }
+    .category-content1 .background-or1:before {
+        display: none;
+    }
+    .category-content1 .background-or1:after{
+        position: absolute;
+        bottom: -1px;
+        right: 50%;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #fff;
+        content: " ";
+    }
+    footer .page-header {
+        font-size: 14px;
+    }
+    .footer-list-style li a {
+        padding: 4px 0;
+        font-size: 12px;
+    }
+    .instagram img {
+        width: 35px;
+        height: 50px;
+    }
+    .blog-content .product{
+        margin-top: 0;
+    }
+    .blog-content .recent-posts ul li {
+        font-size: 9px;
+    }
+    .blog-content .blog-back-or ul li{
+        font-size: 12px;
+    }
+    .blog-post-comments li .comments-content {
+        margin: 0 0 0 20%;
+    }
+    .recent-posts{
+         margin-top: 50% !important;
+    }
+    .blog-single-content .contact-form button{
+        margin-bottom: 50px;
+    }
+    .cart-shipping-calculate .btn-default{
+        font-size: 12px;
+    }
+    .page-category .category-content1 .col-md-8 , .page-category .category-content .col-md-8{
+        padding: 0;
+        margin: 0 0 1px 0;
+    }
+    .collection-page .font-size-100 {
+        font-size: 55px !important;
+    }
+    .collection-page .font-size-80 {
+        font-size: 40px !important;
+    }
+    .collection-page .font-size-60 {
+        font-size: 35px !important;
+    }
+    .collection-page .margin-top-60- {
+        margin-top: -23% !important;
+    }
+    .collection-page .product:hover .product-hover {
+        top: 18%;
+        height: 70%;
+    }
+    .collection-page .collection-content .small-product .countdown li{
+        margin: 0 -2px;
+    }
+    .product-filter-container label{
+        font-size: 12px;
+    }
+    .collection-page .collection-content .top-seller .countdown {
+        height: 49px;
+        margin-top: 40px !important;
+    }
+    .collection-page .margin-top-40 {
+        margin-top: -42px !important;
+    }
+    .filter-product-list {
+        width: 48%;
+    }
+    .compare-content .table>tbody>tr>td img {
+        width: 110px;
+    }
+    .compare-content  .table>thead>tr>th {
+        font-size: 14px;
+    }
+    .compare-content  .table>tbody>tr>td a strong , .compare-content  .table>tbody>tr>td h5{
+        font-size: 14px !important;
+    }
+    .compare-content  .table>tbody>tr>td h4 .btn-success .fa-2x {
+        font-size: 1em;
+    }
+    .contact-content ul{
+        font-size: 12px !important;
+    }
+    .lookbook-page .padding-left-30 {
+        padding-left: 0 !important;
+        font-size: 25px;
+    }
+    .lookbook-page a{
+        font-size: 12px !important;
+    }
+    .single-product-details label {
+        width: 88px;
+        text-transform: uppercase;
+        font-size: 11px;
+    }
+    .option_switch .select_options span {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .product-page .top-seller .countdown{
+        margin-top: 35px !important;
+    }
+    .product-page .top-seller .product:hover .product-hover {
+        top: 21%;
+        height: 67%;
+    }
+    .welcome-newsletter-content .modal-dialog {
+        width: 736px;
+    }
+    .modal-dialog {
+        width: 715px;
+    }
+    .modal-dialog .quantity button {
+        font-size: 25px;
+    }
+    .modal-dialog .option_switch .select_options span {
+        padding-left: 1px;
+        padding-right: 1px;
+        font-size: 11px;
+    }
+    .modal-dialog .option_switch .select_options {
+        min-width: 27px;
+        min-height: 27px;
+    }
+}
+/* ===========================================================
+    4. Screen Max Width 767px
+============================================================ */
+@media only screen and (max-width:767px) {
+    .mega-menu .dropdown-menu {
+        width: auto;
+        float: none;
+        position: static;
+    }
+
+    .mega-menu ul.nav li.dropdown:hover > ul.dropdown-menu {
+        display: none;
+    }
+
+    .mega-menu .angle-down {
+        margin: -10px 0 0 0;
+        padding: 9px 16px;
+        float: right;
+        color: #000;
+        font-size: 22px;
+    }
+
+    .mega-menu .navbar-collapse.in {
+        overflow-x: hidden;
+    }
+
+    .mega-menu ul.nav li.dropdown > ul.dropdown-menu.active {
+        display: block;
+    }
+
+    .header-top .currencies-btn ul.list-inline {
+        min-height: 53px;
+        max-height: 21px;
+        margin-top: 0;
+    }
+
+    .header-top .currencies {
+        padding: 15px 12px 0 0;
+    }
+
+    .paira-sticky .header-bottom, .paira-sticky .header-top .cart-menu-body {
+        position: inherit;
+    }
+
+    .user-option span {
+        display: none;
+    }
+    .mega-menu .dropdown-submenu:hover>.dropdown-menu{
+        display: none;
+    }
+    .mega-menu .dropdown-submenu>.dropdown-menu.active-on{
+        display: block;
+        border: 0;
+    }
+    .navbar-nav .open .dropdown-menu {
+        position: absolute;
+        float: left;
+        width: auto;
+        margin-top: 0;
+        background-color: #fff;
+        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    }
+
+    .mega-menu.navbar-default .navbar-nav > li > a:hover {
+        background: none;
+        border-bottom: none;
+        color: #E19475;
+    }
+
+    .mega-menu.navbar-default .navbar-nav > li > a:hover .fa-angle-down {
+        background: none;
+        border-bottom: none;
+        color: #E19475;
+    }
+
+    .dropdown-menu {
+        box-shadow: none;
+    }
+
+    .mega-menu .dropdown-submenu .fa-angle-right {
+        right: 41px;
+    }
+
+    .mega-img {
+        display: none;
+    }
+
+    .mega-img1 {
+        display: none;
+    }
+
+    .mega-menu .mega-menu-content {
+        padding: 20px 30px;
+    }
+
+    .panel-body .mega-menu-in > li {
+        padding: 3px 6px 3px 25px;
+        float: left;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #E19475;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: #E19475;
+    }
+
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: #000;
+    }
+
+    .navbar-collapse {
+        border-top: none;
+    }
+
+    .paira-camera-slider h1 {
+        font-size: 60px;
+    }
+
+    .paira-camera-slider h2 {
+        font-size: 40px;
+    }
+
+    .paira-camera-slider h3 {
+        font-size: 35px;
+    }
+
+    .paira-camera-slider .slider-con1, .paira-camera-slider .slider-con {
+        padding-top: 40px;
+    }
+
+    .paira-camera-slider .slider-con {
+        margin-right: -100px;
+    }
+
+    .paira-camera-slider a {
+        padding: 12px 35px;
+    }
+
+    .home-page .product-rating .fa {
+        font-size: 20px;
+    }
+
+    .page-header hr {
+        text-align: center;
+    }
+
+    .home-page .fa-2x {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .hover-add-cart span {
+        display: none;
+    }
+
+    .home-page .padding-bottom-40 {
+        padding-bottom: 15px !important;
+    }
+
+    .home-page .margin-top-60 {
+        margin-top: 20px !important;
+    }
+
+    .countdown li {
+        margin: 0 -21px;
+        padding: 5px 0 0 39px;
+    }
+
+    .countdown .digit {
+        font-size: 14px;
+    }
+
+    .countdown li:first-child {
+        padding-left: 9px;
+    }
+
+    .countdown {
+        height: 49px;
+    }
+
+    .banner-big h4 {
+        font-size: 25px;
+    }
+
+    .banner-big h5 {
+        font-size: 16px;
+    }
+
+    .banner-price span {
+        font-size: 20px;
+    }
+
+    .banner-big .countdown {
+        display: none;
+    }
+
+    .banner-big .banner-big-con {
+        padding-top: 34%;
+    }
+
+    .banner-big {
+        margin-top: -35%;
+        margin-bottom: -22%;
+    }
+
+    .related-product-btn button {
+        margin-left: 3px;
+        margin-right: 3px;
+        margin-top: -28%;
+    }
+
+    .home-page .font-size-50 {
+        font-size: 18px !important;
+        font-weight: bolder;
+    }
+
+    .home-page .fa-5x {
+        font-size: 3em;
+    }
+
+    .home-page .brand {
+        height: 81px;
+    }
+
+    .brand ul li {
+        padding: 25px 22px 14px 40px;
+    }
+
+    .category .product {
+        padding: 0 10px;
+    }
+
+    .background-or, .background-or1 {
+        height: 155px;
+    }
+
+    .category-content1 {
+        height: auto;
+    }
+
+    .padding-top-45 {
+        padding-top: 15px !important;
+    }
+
+    .category {
+        margin-bottom: 75px !important;
+    }
+
+    .mega-menu .navbar-search .dropdown-menu {
+        padding: 0 29px;
+        border: none;
+    }
+
+    .background-or:before {
+        position: absolute;
+        top: -1px;
+        right: 50%;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid #fff;
+        content: " ";
+    }
+
+    .background-or:after {
+        display: none;
+    }
+
+    .category-content .col-md-8 {
+        border: 1px solid #6f6f6f;
+        border-bottom: none;
+        padding: 0;
+    }
+
+    .category-content1 .col-md-8 {
+        border: 1px solid #6f6f6f;
+        border-top: none;
+        padding: 0;
+    }
+
+    .category-content1 .background-or1:before {
+        display: none;
+    }
+
+    .category-content1 .background-or1:after {
+        position: absolute;
+        bottom: -1px;
+        right: 50%;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #fff;
+        content: " ";
+    }
+
+    .footer-top .btn-default {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .paira-sticky .search-drop-bar {
+        display: block;
+    }
+
+    a.boxclose {
+        margin-top: -60px;
+    }
+
+    .box .navbar-form .fa-search {
+        display: none;
+    }
+
+    .box .navbar-form {
+        border: none;
+    }
+
+    .page-header1 {
+        margin-top: 10%;
+    }
+
+    .banner-big-con .btn-success {
+        padding: 4px 60px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .blog-content .blog-back-or ul li {
+        font-size: 12px;
+    }
+
+    .recent-posts .col-sm-4 {
+        margin-top: 20px;
+    }
+
+    .blog-content .blog-back-or ul li {
+        font-size: 10px;
+    }
+
+    .blog-post-comments li .comments-content {
+        margin: 0 0 0 23%;
+    }
+
+    .category-content1 .product-hover {
+        top: -115%;
+    }
+
+    .collection-page .font-size-100 {
+        font-size: 50px !important;
+    }
+
+    .collection-page .font-size-80 {
+        font-size: 35px !important;
+    }
+
+    .collection-page .font-size-60 {
+        font-size: 30px !important;
+    }
+
+    .collection-page .margin-top-60- {
+        margin-top: -27% !important;
+    }
+
+    .collection-page .product:hover .product-hover {
+        top: 18%;
+        height: 70%;
+    }
+
+    .collection-page .collection-content .small-product .countdown li {
+        margin: 0 -2px;
+    }
+
+    .product-filter-container label {
+        font-size: 9px;
+    }
+
+    .collection-page .collection-content .top-seller .countdown {
+        height: 49px;
+        margin-top: 40px !important;
+    }
+    .product-page .top-seller .countdown {
+        margin-top: 14px !important;
+    }
+    .collection-page .collection-content .top-seller .product-rating .fa , .product-page .top-seller .product-rating .fa {
+        font-size: 18px;
+    }
+    .collection-page .margin-top-40 , .product-page .top-seller .margin-top-40  {
+        margin-top: -42px !important;
+    }
+    .collection-page .collection-content .top-seller .fa-2x , .product-page .top-seller .fa-2x  {
+        font-size: 1em;
+    }
+    .collection-page .collection-content .top-seller .disabled-cart , .product-page .top-seller .disabled-cart  {
+        display: none;
+    }
+    .filter-product-list {
+        width: 53%;
+    }
+    .compare-content .table>tbody>tr>td img {
+        width: 110px;
+    }
+    .compare-content  .table>thead>tr>th {
+        font-size: 14px;
+    }
+    .compare-content  .table>tbody>tr>td a strong , .compare-content  .table>tbody>tr>td h5{
+        font-size: 14px !important;
+    }
+    .compare-content  .table>tbody>tr>td h4 .btn-success .fa-2x {
+        font-size: 1em;
+    }
+    .contact-content .col-xs-4 ul , .contact-content .col-xs-4 ul li p ,.contact-content .col-xs-4 p{
+        font-size: 12px !important;
+    }
+    .contact-content .col-xs-4{
+        width: 100%;
+        margin-bottom: 30px !important;
+    }
+    .lookbook-page .padding-left-30 {
+        padding-left: 0 !important;
+        font-size: 16px;
+    }
+    .lookbook-page a{
+        font-size: 10px !important;
+    }
+    .special-rating .fa{
+        padding-top: 23px !important;
+    }
+    .welcome-newsletter-content .modal-dialog {
+        width: 578px;
+    }
+    .welcome-newsletter .page-header {
+        margin: 10px 0 19px 167px;
+    }
+    .welcome-newsletter img {
+        left: 14%;
+    }
+    .welcome-newsletter form input {
+        width: 400px;
+    }
+    .welcome-newsletter p {
+        padding: 30px 16px 0 16px;
+    }
+}
+/* ===========================================================
+    5. Screen Max Width 480px
+============================================================ */
+@media only screen and (max-width:480px) {
+    .cart-menu-body ul.dropdown-menu {
+        min-width: 324px;
+    }
+    .header-top .currencies {
+        padding: 13px 7px 0 6px;
+    }
+    .panel-body .mega-menu-in > li {
+        padding: 3px 72px 3px 0px;
+        float: left;
+    }
+    .navbar-toggle{
+        margin-top: -45px;
+    }
+    .paira-camera-slider h1 {
+        font-size: 30px;
+    }
+    .paira-camera-slider h2{
+        font-size: 25px;
+    }
+    .paira-camera-slider h3{
+        font-size: 25px;
+    }
+    .paira-camera-slider .slider-con1 ,.paira-camera-slider .slider-con {
+        padding-top: 25px;
+    }
+    .paira-camera-slider .slider-con{
+        margin-right: -100px;
+    }
+    .paira-camera-slider .slider-con1{
+        margin-left: -100px;
+    }
+    .paira-camera-slider a {
+        padding: 10px 25px;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .related-product-btn button {
+        margin-left: 3px;
+        margin-right: 3px;
+        margin-top: -39%;
+    }
+    .banner-big h4 {
+        font-size: 10px;
+    }
+    .banner-big h5 {
+        font-size: 10px;
+    }
+    .banner-price span {
+        display: none;
+    }
+    .banner-big-con .btn-success {
+        padding: 4px 48px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .banner-big .banner-big-con {
+         padding-top: 66%;
+     }
+    .banner-big {
+        margin-top: -66%;
+        margin-bottom: -45%;
+    }
+    .related-product h4{
+        margin-top: -49px;
+    }
+    .recent-product .col-xs-6 , .category .col-xs-6  {
+        width: 100%;
+    }
+    .home-page .fa-5x {
+        font-size: 2em;
+    }
+    .brand ul li {
+        padding: 25px 9px 14px 7px;
+        border-right: 2px solid #676767;
+    }
+    .home-page .brand {
+        height: 75px;
+    }
+    .background-or{
+        margin-bottom: 20px;
+    }
+    .category-content1:first-child{
+        margin-top: 15px;
+    }
+    .collection-page .font-size-100 {
+        font-size: 20px !important;
+    }
+    .collection-page .font-size-80 {
+        font-size: 20px !important;
+    }
+    .collection-page .margin-top-60- {
+        margin-top: -52% !important;
+    }
+    .collection-page .margin-top-40 {
+        margin-top: -6px !important;
+    }
+    .collection-page .product-filter-container label span{
+        display: none;
+    }
+    .product-filter-container select {
+        width: 66px;
+    }
+    .collection-page .font-size-60 {
+        font-size: 20px !important;
+        margin-top: -5px;
+    }
+    .page-404 .font-size-50 {
+        font-size: 36px !important;
+        vertical-align: bottom;
+    }
+    .filter-product-list {
+        width: 88%;
+    }
+    .col-xs-6{
+        width: 100%;
+    }
+    .pro-1{
+        margin-top: -5px !important;
+    }
+    .blog-post-comments li .comments-content {
+        margin: 0 0 0 38%;
+    }
+    .comments-content h5{
+        margin-top: -5px;
+    }
+    .comments-content p{
+        font-size: 12px;
+    }
+    .cart-item-list li input {
+        width: 80px;
+    }
+    .compare-content .table>tbody>tr>td img {
+        width: 110px;
+    }
+    .compare-content  .table>thead>tr>th {
+        font-size: 10px;
+    }
+    .compare-content  .table>tbody>tr>td a strong , .compare-content  .table>tbody>tr>td h5{
+        font-size: 10px !important;
+    }
+    .compare-content  .table>tbody>tr>td h4 .btn-success .fa-2x {
+        font-size: 1em;
+    }
+    .compare-content  .table>tbody>tr>td .money{
+        font-size: 10px;
+    }
+    .compare-content  .table>tbody>tr>td h4{
+        margin-top: 0 !important;
+    }
+    .compare-content  .table>tbody>tr>td strong{
+        font-size: 10px !important;
+    }
+    .content-login .container {
+        width: 373px;
+    }
+    .reset-page .page-header h1{
+        font-size: 25px;
+    }
+    .wishlist-page .fa-2x {
+        font-size: 1em;
+    }
+    .lookbook-page .col-xs-3{
+        width: 100%;
+        padding: 0 50px;
+    }
+    .lookbook-page .padding-left-30 {
+        padding-left: 0 !important;
+        font-size: 52px;
+    }
+    .lookbook-page a {
+        font-size: 20px !important;
+    }
+    .paira-special-product{
+        margin: 30px 0;
+    }
+    .option_switch .select_options span {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .single-product-details label {
+        width: 105px;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .footer-bottom ul li {
+        margin-bottom: 10px;
+    }
+    .welcome-newsletter-content .modal-dialog {
+        width: 370px;
+    }
+    .welcome-newsletter .page-header {
+        margin: 10px 0 19px 92px;
+        font-size: 25px;
+    }
+    .welcome-newsletter img {
+        left: 14%;
+        top: 40px;
+    }
+    .welcome-newsletter form input {
+        width: 193px;
+    }
+    .welcome-newsletter p {
+        padding: 30px 0 0 0;
+    }
+    .welcome-newsletter img {
+        height: 45px;
+    }
+    .welcome-newsletter-content .modal-body {
+        height: 320px;
+    }
+    .modal-dialog .option_switch .select_options {
+        min-width: 30px;
+        min-height: 30px;
+    }
+    .modal-dialog .option_switch .select_options span {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+/* ===========================================================
+    6. Screen Max Width 320px
+============================================================ */
+@media only screen and (max-width:320px) {
+    .usd-fl{
+        font-size: 9px;
+    }
+    .header-top a {
+        font-size: 9px;
+    }
+    .header-top .fa-angle-down{
+        font-size: 12px;
+    }
+    .banner-big .banner-big-con {
+        padding-top: 88%;
+    }
+    .banner-big-con .btn-success {
+        padding: 4px 30px;
+        font-size: 8px;
+        font-weight: bold;
+    }
+    .banner-big {
+        margin-top: -91%;
+        margin-bottom: -65%;
+    }
+    .recent-product .page-header h1{
+        font-size: 25px;
+    }
+    .camera_pag_ul{
+        display: none;
+    }
+    .countdown{
+        display: none;
+    }
+    .footer-bottom ul li {
+        margin-bottom: 10px;
+    }
+    .top-seller .page-header{
+        margin-top: 84%;
+    }
+    .camera_prev , .camera_next{
+        display: none;
+    }
+    .paira-camera-slider .slider-con1 {
+        margin-left: -87px;
+    }
+    .filter-product-list {
+        width: 83%;
+    }
+    .collection-content .btn-success {
+        padding: 9px 16px;
+    }
+    .home-page .fa-5x {
+        font-size: 1em;
+    }
+    .home-page .font-size-50 {
+        font-size: 13px !important;
+        font-weight: bolder;
+    }
+    .home-page .brand {
+        height: 68px;
+        margin-top: -9%;
+        margin-bottom: 16% !important;
+    }
+    .category-content1 .product-hover {
+        top: -122%;
+    }
+    .page-404 .font-size-50 {
+        font-size: 25px !important;
+        vertical-align: bottom;
+    }
+    .blog-content .recent-posts ul li {
+        font-size: 9px;
+    }
+    .blog-post-comments li .comments-content {
+        margin: 0 0 0 47%;
+    }
+    .comments-content p {
+        font-size: 10px;
+    }
+    .cart-item-list li input {
+        width: 44px;
+    }
+    .collection-page .font-size-80 {
+        font-size: 15px !important;
+    }
+    .collection-page .font-size-60 {
+        font-size: 14px !important;
+        margin-top: -5px;
+    }
+    .collection-page .margin-top-60- {
+        margin-top: -68% !important;
+    }
+    .collection-page .margin-top-40 {
+        margin-top: 6px !important;
+    }
+    .product-filter-button .fa {
+        font-size: 12px;
+    }
+    .product-filter-container select {
+        width: 45px;
+        font-size: 8px;
+        font-weight: bolder;
+    }
+    .small-list .margin-clear {
+        margin: 2px 0 0 -16px !important;
+        font-size: 9px;
+    }
+    .small-product {
+        margin-bottom: -79% !important;
+    }
+    .compare-content .table>tbody>tr>td img {
+        width: 62px;
+    }
+    .compare-content  .table>thead>tr>th {
+        font-size: 7px;
+    }
+    .content-login .container {
+        width: 316px;
+    }
+    .content-login a{
+        font-size: 10px;
+    }
+    .content-login .margin-bottom-75 {
+        margin-bottom: 35px !important;
+    }
+    .wishlist-page .compare-content .table>tbody>tr>td .money {
+        font-size: 7px;
+    }
+    .lookbook-page .padding-left-30 {
+        padding-left: 0 !important;
+        font-size: 37px;
+    }
+    .option_switch .select_options span {
+        padding-left: 2px;
+        padding-right: 2px;
+        font-size: 8px;
+        font-weight: bold;
+    }
+    .option_switch .list-inline>li{
+        padding-right: 0;
+    }
+    .option_switch .select_options {
+        min-width: 28px;
+        min-height: 28px;
+    }
+    .product-page .top-seller{
+        margin-top: -80%;
+    }
+    .product-page .list-inline li img{
+        margin-bottom: 10px;
+    }
+    .welcome-newsletter-content .modal-dialog {
+        width: 258px;
+    }
+    .welcome-newsletter img {
+        height: 35px;
+    }
+    .welcome-newsletter .page-header {
+        margin: 10px 0 19px 92px;
+        font-size: 20px;
+    }
+    .welcome-newsletter form input {
+        width: 215px;
+        margin-bottom: 10px;
+        margin-top: 9px;
+    }
+    .welcome-newsletter-content .modal-body {
+        height: 350px;
+    }
+    .welcome-newsletter p {
+        padding: 30px 0 0 0;
+        font-size: 11px;
+    }
+    .model-social ul li{
+        margin-bottom: 10px;
+    }
+    .modal-dialog h2 {
+      font-size: 20px;
+    }
+    .product_quantity_text {
+        width: 15%;
+    }
+    .single-product-details p{
+        font-size: 11px;
+    }
+    .modal-body .option_switch .select_options {
+        min-width: 18px;
+        min-height: 18px;
+    }
+}
+/* ===========================================================
+    7. Screen Max Width 240px
+============================================================ */
+@media only screen and (max-width:240px) {
+
+}
