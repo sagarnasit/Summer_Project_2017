@@ -15,3 +15,6 @@
     <link href="assets/css/paira-responsive.css" rel="stylesheet">
     <!--=================== Font Awesome ===================-->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>

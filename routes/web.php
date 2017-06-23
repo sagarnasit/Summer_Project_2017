@@ -14,3 +14,24 @@
 Route::get('/', function () {
     return view('Boot.index');
 });
+
+//Login
+Route::get('/login',function (){
+      return view('Boot.login');
+});
+
+//Register
+Route::get('/register',function(){
+      return view('Boot.register');
+});
+
+//Static Page
+Route::get('/contact',function(){return view('Boot.contact');});
+Route::get('/about',function(){return view('Boot.about');});
+
+//Cart
+Route::get('/cart',function() {
+      return view('Boot.cart');
+});
+
+//Reset Password

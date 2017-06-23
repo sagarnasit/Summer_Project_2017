@@ -17,21 +17,4 @@
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 <!--=================== Paira Framework Main Javascript ===================-->
 <script src="assets/js/paira.js"></script>
-<script type="text/javascript">
-    $(function() {
-        $('#paira-countdown').countDown({
-            targetDate: {
-                'week':5,
-                'day': 10,
-                'month': 10,
-                'year': 2016,
-                'hour': 10,
-                'min': 10,
-                'sec': 10,
-                'utc': true
-            },
-            omitWeeks: true,
-            onComplete: function() {$('#paira-countdown').hide();}
-        });
-    });
-</script>
+
