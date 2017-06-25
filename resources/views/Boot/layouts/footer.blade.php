@@ -23,7 +23,7 @@
             <div class="container">
                   <div class="row">
                         <!--=================== Footer Middle Column 1 ===================-->
-                        <div class="col-lg-3 col-md-3 col-sm-3 paira-animation"  data-paira-animation="fadeInLeft" data-paira-animation-delay="0.2s">
+                        <div class="col-lg-3 col-md-3 col-sm-3 animated fadeInLeft"  data-paira-animation="fadeInLeft" data-paira-animation-delay="0.2s">
                               <h4 class="page-header">Information</h4>
                               <ul class="list-unstyled footer-list-style">
                                     <li><a href="#">Frequently Asked Questions</a></li>
@@ -36,7 +36,7 @@
                               </ul>
                         </div>
                         <!--=================== Footer Middle Column 2 ===================-->
-                        <div class="col-lg-3 col-md-3 col-sm-3 paira-animation"  data-paira-animation="fadeInDown" data-paira-animation-delay="0.5s">
+                        <div class="col-lg-3 col-md-3 col-sm-3 animated fadeInLeft"  data-paira-animation="fadeInDown" data-paira-animation-delay="0.5s">
                               <h4 class="page-header page-header1">ORDERS & RETURNS</h4>
                               <ul class="list-unstyled footer-list-style">
                                     <li><a href="#">Shipping Policy</a></li>
@@ -48,7 +48,7 @@
                               </ul>
                         </div>
                         <!--=================== Footer Middle Column 3 ===================-->
-                        <div class="col-lg-3 col-md-3 col-sm-3 paira-animation"  data-paira-animation="fadeInDown" data-paira-animation-delay="0.8s">
+                        <div class="col-lg-3 col-md-3 col-sm-3 animated fadeInRight"  data-paira-animation="fadeInDown" data-paira-animation-delay="0.8s">
                               <h4 class="page-header page-header1">Instagram Gallery</h4>
                               <div class="instagram">
                                     <ul class="list-inline margin-bottom-20">
@@ -61,7 +61,7 @@
                               <a href="#" target="_blank" class="btn btn-default btn-block margin-top-20 font-color-black font-bold text-uppercase">View Gallery</a>
                         </div>
                         <!--=================== Footer Middle Column 4 ===================-->
-                        <div class="col-lg-3 col-md-3 col-sm-3 btn-find paira-animation"  data-paira-animation="fadeInRight" data-paira-animation-delay="1.2s">
+                        <div class="col-lg-3 col-md-3 col-sm-3 btn-find animated fadeInRight"  data-paira-animation="fadeInRight" data-paira-animation-delay="1.2s">
                               <h4 class="page-header">Shop local store</h4>
                               <button type="submit" class="btn btn-default color-scheme-3 font-size-20 font-bold font-size-16"><i class="fa fa-map-marker margin-right-10"></i>Find a store</button>
                         </div>
@@ -69,7 +69,7 @@
             </div>
       </section>
       <!--=================== Footer Bottom Section ===================-->
-      <section class="footer-bottom">
+      <section class="footer-bottom animated fadeInUp">
             <div class="container">
                   <div class="row">
                         <div class="col-md-12 text-center">

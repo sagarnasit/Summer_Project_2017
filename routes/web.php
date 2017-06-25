@@ -35,3 +35,20 @@ Route::get('/cart',function() {
 });
 
 //Reset Password
+
+
+Route::get('/postman',function (){
+
+      $token=JWTAuth::getToken();
+
+      $user=JWTAuth::toUser($token);
+
+      return $user;
+})->middleware('jwt.auth');
+
+Route::post('/authenticate',[
+      'uses'=>'AuthController@authenticate'
+]);
+Route::post('/reg',[
+      'uses'=>'AuthController@register'
+]);
