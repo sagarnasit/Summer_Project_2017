@@ -98,3 +98,6 @@
       </section>
       @include('Boot.layouts.nav')
 </header>
+<div class="">
+       <hr class="myHr">
+</div>

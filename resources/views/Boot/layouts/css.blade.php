@@ -15,6 +15,25 @@
     <link href="assets/css/paira-responsive.css" rel="stylesheet">
     <!--=================== Font Awesome ===================-->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        hr.myHr {
+            height: 30px;
+            border-style: solid;
+            border-color: #8c8b8b;
+            border-width: 1px 0 0 0;
+            border-radius: 20px;
+        }
+        hr.myHr:before {
+            display: block;
+            content: "";
+            height: 30px;
+            margin-top: -31px;
+            border-style: solid;
+            border-color: #8c8b8b;
+            border-width: 0 0 1px 0;
+            border-radius: 20px;
+        }
 
+    </style>
     <script src="assets/js/html5shiv.min.js"></script>
     <script src="assets/js/respond.min.js"></script>
