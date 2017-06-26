@@ -34,7 +34,37 @@ Route::get('/cart',function() {
       return view('Boot.cart');
 });
 
-//Reset Password
+//Admin Routes
+Route::get('/vendor',function(){
+	return view('Vendor.index');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Route::get('/postman',function (){
