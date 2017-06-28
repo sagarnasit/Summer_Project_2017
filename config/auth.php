@@ -45,6 +45,11 @@ return [
             'driver' => 'token',
             'provider' => 'users',
         ],
+        //Our new custom driver.
+        'web_seller' => [
+            'driver' => 'session',
+            'provider' => 'sellers',
+        ],
     ],
 
     /*
@@ -68,6 +73,11 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+        ],
+        //Seller user provider
+        'sellers' => [
+            'driver' => 'eloquent',  //We are using eloquent model
+            'model' => App\Seller::class,
         ],
 
         // 'users' => [
@@ -97,6 +107,11 @@ return [
             'table' => 'password_resets',
             'expire' => 60,
         ],
+          'sellers' => [
+                'provider' => 'sellers',
+                'table' => 'seller_password_resets',
+                'expire' => 60,
+          ],
     ],
 
 ];
