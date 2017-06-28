@@ -18,7 +18,7 @@ class AuthenticateSeller
         public function handle($request,Closure $next){
 
             if(!Auth::guard('web_seller')->check()){
-                return redirect('/seller_login');
+                  return redirect()->route('seller.login');
             }
               return $next($request);
         }

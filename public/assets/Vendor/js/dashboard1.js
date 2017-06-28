@@ -29,7 +29,7 @@
   ],
          axisY: {
              labelInterpolationFnc: function (value) {
-                 return (value / 1) + 'k';
+                 return (value /1) + 'k';
              }
          },
          showArea: true
@@ -37,7 +37,7 @@
      // counter
      $(".counter").counterUp({
          delay: 100,
-         time: 1200
+         time: 12000
      });
 
      var sparklineLogin = function () {

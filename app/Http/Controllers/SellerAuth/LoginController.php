@@ -12,7 +12,7 @@ class LoginController extends Controller
 {
       use AuthenticatesUsers;
 
-      protected $redirectTo = '/seller_home';
+      protected $redirectTo = '/seller/login';
 
       //Custom guard for seller
       protected function guard()
@@ -25,5 +25,15 @@ class LoginController extends Controller
             return view('seller.auth.login');
       }
 
+      public function logout(Request $request)
+      {
+            $this->guard('web_seller')->logout();
+
+            $request->session()->flush();
+
+            $request->session()->regenerate();
+
+            return redirect()->route('seller.home');
+      }
 
 }

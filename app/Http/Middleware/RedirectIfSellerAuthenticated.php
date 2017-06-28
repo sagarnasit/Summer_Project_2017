@@ -24,7 +24,7 @@ class RedirectIfSellerAuthenticated
             }
 
             if (Auth::guard('web_seller')->check()) {
-                  return redirect('/seller_home');
+                  return redirect()->route('seller.home');
             }
             return $next($request);
       }

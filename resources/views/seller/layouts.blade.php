@@ -53,8 +53,8 @@
 
                             <!--Seller Login and registration Links -->
 
-                            <li><a href="{{ url('/seller_login') }}">Seller Login</a></li>
-                            <li><a href="{{ url('/seller_register') }}">Seller Registration</a></li>
+                            <li><a href="{{ route('seller.login') }}">Seller Login</a></li>
+                            <li><a href="{{ route('seller.register') }}">Seller Registration</a></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -69,7 +69,7 @@
                                             Logout
                                         </a>
 
-                                        <form id="logout-form" action="{{ url('/seller_logout') }}" method="POST" style="display: none;">
+                                        <form id="logout-form" action="{{ route('seller.logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
@@ -85,6 +85,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/Boot//js/app.js"></script>
+    <script src="assets/Boot/js/app.js"></script>
 </body>
 </html>

@@ -56,25 +56,25 @@ Route::prefix('seller')->group(function () {
       Route::group(['middleware' => 'seller_auth'], function(){
 
             Route::post('logout', 'SellerAuth\LoginController@logout')->name('seller.logout');
-//Seller Home Route
             Route::get('dashboard', function(){
                   return view('Vendor.index');
             })->name('seller.home');
-//Product Route
-            Route::get('/addproduct','Seller\ProductController@index');
+
+//Seller Home Route
 
 
       });
 });
+Route::get('dashboard', function(){
+      return view('Vendor.index');
+})->name('seller.home');
 
 
 
 
 
 
-Route::group(['middleware' => 'seller_auth'], function() {
 
-});
 
 
 
