@@ -72,12 +72,6 @@ Route::prefix('seller')->group(function () {
 
 
 
-Route::group(['middleware' => 'seller_auth'], function() {
-
-});
-
-
-
 
 
 
@@ -107,3 +101,7 @@ Route::post('/authenticate',[
 Route::post('/reg',[
       'uses'=>'AuthController@register'
 ]);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
