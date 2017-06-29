@@ -19,10 +19,26 @@
                         <form accept-charset="UTF-8" action="#" class="contact-form" method="post">
                             <div class="col-md-12">
                                 {{ csrf_field() }}
-                                <label><i class="fa fa-envelope"></i></label>
-                                <input type="email" class="form-control margin-bottom-40" name="email" placeholder="you@example.com">
-                                <label><i class="fa fa-lock"></i></label>
-                                <input type="password" class="form-control margin-bottom-40" name="password" placeholder="********">
+                                <div class="form-group margin-bottom-40">
+
+                                    <label><i class="fa fa-envelope"></i></label>
+                                    <input type="email" class="form-control {{ $errors->has('email') ? 'alert alert-danger' : '' }}" name="email" placeholder="you@example.com">
+                                    @if ($errors->has('email'))
+                                        <span class="help-block">
+                                        {{--<strong class="{{ $errors->has('email') ? ' text-danger' : '' }}">{{ $errors->first('email') }}</strong>--}}
+                                    </span>
+                                    @endif
+                                </div>
+                                <div class="form-group margin-bottom-40">
+
+                                    <label><i class="fa fa-lock"></i></label>
+                                    <input type="password" class="form-control {{ $errors->has('email') ? 'alert alert-danger' : '' }}" name="password" placeholder="Password">
+                                    @if ($errors->has('email'))
+                                        <span class="help-block">
+                                       <strong class="{{ $errors->has('email') ? ' text-danger' : '' }}">{{ $errors->first('email') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
                             </div>
                             <button  class="btn btn-default text-uppercase font-bold pull-left margin-left-15 margin-bottom-75 btn-lg">login</button>
                             <a href="reset-password" class="text-uppercase pull-right margin-bottom-75 reset-bt margin-right-15 margin-top-20 font-bold font-color-orange fg-pass">Forget Password<i class="fa fa-long-arrow-right margin-left-10"></i></a>
