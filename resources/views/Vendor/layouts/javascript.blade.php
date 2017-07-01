@@ -19,3 +19,4 @@
 <script src="/assets/Vendor/js/custom.min.js"></script>
 
 <script src="/assets/Vendor/plugins/bower_components/toast-master/js/jquery.toast.js"></script>
+

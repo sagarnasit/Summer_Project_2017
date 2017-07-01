@@ -50,6 +50,7 @@
         <!-- ============================================================== -->
 
         @include('Vendor.layouts.javascript')
+        @yield('javascript')
     </body>
 
 

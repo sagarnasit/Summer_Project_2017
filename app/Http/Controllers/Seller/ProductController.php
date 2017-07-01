@@ -11,7 +11,10 @@ class ProductController extends Controller
             return view('Vendor.productForm');
       }
 
-      public function store(){
+      public function store(Request $request){
 
+
+             $ar = $request->input('name');
+                  return $ar[1];
       }
 }

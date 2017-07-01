@@ -17,12 +17,12 @@ Route::get('/', function () {
 
 //Login
 Route::get('/login',function (){
-      return view('Boot.login');
+      return view('Boot.auth.login');
 });
 
 //Register
 Route::get('/register',function(){
-      return view('Boot.register');
+      return view('Boot.auth.register');
 });
 
 //Static Page
@@ -64,16 +64,73 @@ Route::prefix('seller')->group(function () {
             Route::get('/addproduct','Seller\ProductController@index');
 
 
+
       });
 });
 
 
+Route::post('/addproduct','Seller\ProductController@store');
+
+//Ajax Color Request
+Route::get('/getAjaxColor', function () {
+      if (Request::ajax()) {
+            return
+            "<div class='row' id='colordiv'>
+                 <div class=\"form-group row\" align=\"left\">
+                       <div class=\"col-md-4\">
+                        <label  class=\"col-sm-2 control-label\">Color</label>
+                        <div class=\"col-sm-10\">
+                              <select class=\"form-control\">
+                              
+                              </select>
+                             
+                            </div>
+                       </div>
+                        <div class='row'>
+                              <div class='form-group'>
+                                    <button class='btn btn-default' type='button' id='buttonsize'>Add Size</button>
+                              </div>
+                        </div>
+                        <div class='col-md-offset-1 col-md-11'>
+                              <div id='addsize'>
+                                           
+                              </div>      
+                       
+                        </div>
+                 </div>
+                  
+            </div>";
+      }
 
 
+});
 
 
+Route::get('/getAjaxSize', function () {
+      if (Request::ajax()) {
+            return"
+            <div class='row form-inline'>
+            
+                  jnn
+                  <div class='form-group'>
+                        <select class='form-control' name='size'></select>
+                  </div>
+                                    <div class=\"form-group\">
+                      <label class=\"sr-only\" for=\"exampleInputEmail3\">Email address</label>
+                      <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail3\" placeholder=\"Email\">
+                    </div>
+                    <div class=\"form-group\">
+                      <label class=\"sr-only\" for=\"exampleInputPassword3\">Password</label>
+                      <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword3\" placeholder=\"Password\">
+                    </div>
+                   
+            </div>
+           
+            
+            ";
 
-
+      }
+});
 
 
 

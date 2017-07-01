@@ -31,7 +31,7 @@ class RegisterController extends Controller
 
       public function showRegistrationForm()
       {
-            return view('Boot.register');
+            return view('Boot.auth.register');
       }
 
       public function __construct()
