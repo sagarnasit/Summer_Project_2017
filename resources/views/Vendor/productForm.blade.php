@@ -5,9 +5,10 @@
 @stop
 @section('body')
       <div class="white-box" align="center">
-            <h3>Add New Product</h3>
+            <h2>Add New Product</h2>
+            <hr>
             <div class="row">
-                  <form method="post" class="form-horizontal" action="/addproduct" >
+                  <form method="post" class="form-horizontal" action="/seller/addproduct" >
                         {{ csrf_field() }}
                         <div class="col-md-offset-3 col-md-6 col-md-offset-3">
                               <div class="form-group">
@@ -23,11 +24,9 @@
                                     </div>
                               </div>
 
-                              <div id="addcolor" class="row">
-
-                              </div>
-                              <div align="left" class="form-group">
-                                    <button type="button" id="colorbutton" class="btn btn-default">Add Color</button>
+                              
+                              <div align="center" class="form-group">
+                                    <button type="submit" id="colorbutton" class="btn btn-success">Add Product</button>
                               </div>
 
 
@@ -40,22 +39,10 @@
 
 @section('javascript')
      <script type="text/javascript">
-           $(document).ready(function(){
-              $('#colorbutton').click(function(){
-                $.get('/getAjaxColor',function(data){
-                  //  console.log(data);
-                   $('#addcolor').append(data);
-                });
-              });
-
-              //Size
-               $('#buttonsize').click(function(){
-
-                         alert('hi');
-//                       $('#addsize').append(data);
-
-               });
-
-           });
+          $(selector for your message).slideDown(function() {
+    setTimeout(function() {
+        $(selector for your message).slideUp();
+    }, 5000);
+});
      </script>
 @stop

@@ -14,8 +14,8 @@ class CreateProductMastersTable extends Migration
     public function up()
     {
         Schema::create('product_masters', function (Blueprint $table) {
-            $table->increments('pro_id');
-            $table->string('pro_name');
+            $table->increments('product_id');
+            $table->string('product_name');
             $table->text('description');
             $table->timestamps();
         });

@@ -17,7 +17,7 @@ use Auth;
 class RegisterController extends Controller
 {
 
-      protected $redirectPath = 'seller_home';
+      protected $redirectPath = '/seller/dashboard';
 
       //shows registration form to seller
       public function showRegistrationForm()

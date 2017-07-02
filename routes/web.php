@@ -1,15 +1,6 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+
 
 Route::get('/', function () {
     return view('Boot.index');
@@ -62,16 +53,22 @@ Route::prefix('seller')->group(function () {
             })->name('seller.home');
 //Product Route
             Route::get('/addproduct','Seller\ProductController@index');
-
+            Route::post('/addproduct','Seller\ProductController@store');
 
 
       });
 });
 
 
-Route::post('/addproduct','Seller\ProductController@store');
 
-//Ajax Color Request
+
+
+
+
+
+
+
+/*//Ajax Color Request
 Route::get('/getAjaxColor', function () {
       if (Request::ajax()) {
             return
@@ -88,7 +85,7 @@ Route::get('/getAjaxColor', function () {
                        </div>
                         <div class='row'>
                               <div class='form-group'>
-                                    <button class='btn btn-default' type='button' id='buttonsize'>Add Size</button>
+                                    <button class='btn btn-default' type='button' id='123' onclick=\"addSize()\">Add Size</button>
                               </div>
                         </div>
                         <div class='col-md-offset-1 col-md-11'>
@@ -99,7 +96,9 @@ Route::get('/getAjaxColor', function () {
                         </div>
                  </div>
                   
-            </div>";
+            </div>
+           
+            ";
       }
 
 
@@ -111,19 +110,23 @@ Route::get('/getAjaxSize', function () {
             return"
             <div class='row form-inline'>
             
-                  jnn
-                  <div class='form-group'>
-                        <select class='form-control' name='size'></select>
+                  
+                   <div class=\"form-group\">
+                        <label for=\"email\">Size</label>
+                        <select name='size' class='form-control'>
                   </div>
-                                    <div class=\"form-group\">
-                      <label class=\"sr-only\" for=\"exampleInputEmail3\">Email address</label>
-                      <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail3\" placeholder=\"Email\">
-                    </div>
-                    <div class=\"form-group\">
-                      <label class=\"sr-only\" for=\"exampleInputPassword3\">Password</label>
-                      <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword3\" placeholder=\"Password\">
-                    </div>
-                   
+                  <div class=\"form-group\">
+   
+                      <input type=\"text\" name='mrp' class=\"form-control\"  placeholder='MRP'/>
+                  </div>
+                  <div class=\"form-group\">
+   
+                      <input type=\"text\" name='pricr' class=\"form-control\"  placeholder='Price'/>
+                  </div>
+                  <div class=\"form-group\">
+   
+                      <input type=\"text\" name='qty' class=\"form-control\"  placeholder='Quantity'/>
+                  </div>
             </div>
            
             
@@ -131,34 +134,4 @@ Route::get('/getAjaxSize', function () {
 
       }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-Route::get('/postman',function (){
-
-      $token=JWTAuth::getToken();
-
-      $user=JWTAuth::toUser($token);
-
-      return $user;
-})->middleware('jwt.auth');
-
-Route::post('/authenticate',[
-      'uses'=>'AuthController@authenticate'
-]);
-Route::post('/reg',[
-      'uses'=>'AuthController@register'
-]);
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+*/
