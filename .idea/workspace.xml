@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef87c9e0-c0c0-472b-9842-af837225855b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/migrations/2017_06_30_151352_create_product_colors_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/migrations/2017_06_30_151417_create_product_sizes_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/views/Vendor/productForm.blade.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Seller/ProductController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Seller/ProductController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/SellerAuth/RegisterController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/SellerAuth/RegisterController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ProductMaster.php" afterPath="$PROJECT_DIR$/app/ProductMaster.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_06_27_155811_create_sellers_password_reset_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_06_27_155811_create_sellers_password_reset_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_06_30_151127_create_product_masters_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_06_30_151127_create_product_masters_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_06_30_151451_create_product_images_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_06_30_151451_create_product_images_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Vendor/productForm.blade.php" afterPath="$PROJECT_DIR$/resources/views/Vendor/productForm.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/seller/auth/register.blade.php" afterPath="$PROJECT_DIR$/resources/views/seller/auth/register.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Vendor/layouts/css.blade.php" afterPath="$PROJECT_DIR$/resources/views/Vendor/layouts/css.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Vendor/layouts/javascript.blade.php" afterPath="$PROJECT_DIR$/resources/views/Vendor/layouts/javascript.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Vendor/layouts/sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/Vendor/layouts/sidebar.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,34 +31,13 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="711">
-              <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="1152">
+              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding>
-                <marker date="1499015731180" expanded="true" signature="499:1952" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="512:1952" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="1571:1952" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="1615:1952" ph="..." />
-                <marker date="1499015731180" expanded="false" signature="2053:4289" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="2207:3288" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="2270:2315" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="2270:3250" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="2318:2436" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="2318:2675" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="2447:2645" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="2509:2580" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="2717:2971" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="2772:2872" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="2772:2875" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="2772:2940" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="3035:3075" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="3035:3226" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="3084:3165" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="3463:4234" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="3541:3690" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="3665:3684" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="3735:3862" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="3907:4038" ph="..." />
-                <marker date="1499015731180" expanded="true" signature="4083:4215" ph="..." />
+                <marker date="1499075577637" expanded="true" signature="499:2194" ph="..." />
+                <marker date="1499075577637" expanded="true" signature="512:2193" ph="..." />
+                <marker date="1499075577637" expanded="true" signature="1571:2190" ph="..." />
+                <marker date="1499075577637" expanded="true" signature="1615:2189" ph="..." />
               </folding>
             </state>
           </provider>
@@ -68,30 +50,6 @@
               <caret line="48" column="7" lean-forward="false" selection-start-line="45" selection-start-column="6" selection-end-line="48" selection-end-column="7" />
               <folding>
                 <element signature="e#34#48#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="404.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Boot/404.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="productForm.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Vendor/productForm.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-              <folding>
-                <marker date="1499019122636" expanded="true" signature="1440:1485" ph="..." />
-                <marker date="1499019122636" expanded="true" signature="1440:1518" ph="..." />
-                <marker date="1499019122636" expanded="true" signature="1644:1815" ph="..." />
               </folding>
             </state>
           </provider>
@@ -129,14 +87,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017_06_27_155811_create_sellers_password_reset_table.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2017_06_27_155811_create_sellers_password_reset_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2017_06_27_155811_create_sellers_password_reset_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="e#6#44#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productskuform.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/Vendor/product/productskuform.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productForm.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/Vendor/product/productForm.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -234,6 +212,8 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/Vendor/productForm.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_06_27_155811_create_sellers_password_reset_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/Vendor/product/productskuform.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/Vendor/product/productForm.blade.php" />
       </list>
     </option>
   </component>
@@ -331,6 +311,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Summer_Project_2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Summer_Project_2017" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Vendor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -559,12 +565,13 @@
       <workItem from="1498920273804" duration="80000" />
       <workItem from="1498927311662" duration="6958000" />
       <workItem from="1498991045520" duration="3717000" />
-      <workItem from="1498999517171" duration="3938000" />
+      <workItem from="1498999517171" duration="4261000" />
+      <workItem from="1499062969247" duration="1984000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80780000" />
+    <option name="totallyTimeSpent" value="83087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1922" height="1041" extended-state="6" />
@@ -574,13 +581,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.051612902" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -621,21 +628,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14760">
-          <caret line="831" column="13" lean-forward="false" selection-start-line="831" selection-start-column="13" selection-end-line="831" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Notifications/SellerResetPasswordNotification.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/Vendor/css/animate.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -877,26 +869,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2017_06_30_151352_create_product_colors_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2017_06_30_151417_create_product_sizes_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_06_30_151352_create_product_colors_table.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_06_30_151417_create_product_sizes_table.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/Vendor/layouts/javascript.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,7 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="27" column="91" lean-forward="false" selection-start-line="27" selection-start-column="91" selection-end-line="27" selection-end-column="91" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,7 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="27" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -952,34 +928,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="1152">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
-            <marker date="1499015731180" expanded="true" signature="499:1952" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="512:1952" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="1571:1952" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="1615:1952" ph="..." />
-            <marker date="1499015731180" expanded="false" signature="2053:4289" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="2207:3288" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="2270:2315" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="2270:3250" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="2318:2436" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="2318:2675" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="2447:2645" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="2509:2580" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="2717:2971" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="2772:2872" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="2772:2875" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="2772:2940" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="3035:3075" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="3035:3226" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="3084:3165" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="3463:4234" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="3541:3690" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="3665:3684" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="3735:3862" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="3907:4038" ph="..." />
-            <marker date="1499015731180" expanded="true" signature="4083:4215" ph="..." />
+            <marker date="1499075577637" expanded="true" signature="499:2194" ph="..." />
+            <marker date="1499075577637" expanded="true" signature="512:2193" ph="..." />
+            <marker date="1499075577637" expanded="true" signature="1571:2190" ph="..." />
+            <marker date="1499075577637" expanded="true" signature="1615:2189" ph="..." />
           </folding>
         </state>
       </provider>
@@ -987,12 +942,8 @@
     <entry file="file://$PROJECT_DIR$/resources/views/Vendor/productForm.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
-          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding>
-            <marker date="1499019122636" expanded="true" signature="1440:1485" ph="..." />
-            <marker date="1499019122636" expanded="true" signature="1440:1518" ph="..." />
-            <marker date="1499019122636" expanded="true" signature="1644:1815" ph="..." />
-          </folding>
+          <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,10 +976,26 @@
     <entry file="file://$PROJECT_DIR$/database/migrations/2017_06_27_155811_create_sellers_password_reset_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="e#6#44#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Vendor/product/productForm.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Vendor/product/productskuform.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

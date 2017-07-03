@@ -19,4 +19,12 @@
 <script src="/assets/Vendor/js/custom.min.js"></script>
 
 <script src="/assets/Vendor/plugins/bower_components/toast-master/js/jquery.toast.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.1.1/js/iziToast.min.js" type="text/javascript"></script>
+<script>
+	function msg(){
+	 	$('#msg').addClass('animated fadeOutRight');
+	}
+	setInterval(msg, 3500);
 
+</script>
+     

@@ -13,7 +13,8 @@ use App\ProductMaster;
 class ProductController extends Controller
 {
 	    public function index(){
-	            return view('Vendor.productForm');
+
+	            return view('Vendor.product.productForm');
 	    }
 
       	public function store(Request $request){
@@ -22,8 +23,9 @@ class ProductController extends Controller
       		$product->product_name = $request['name'];
       		$product->description=$request['description'];
       		$product->save();
-      		$request->session()->flash('status', 'Added successfuly!');
-      		return view('Vendor.productForm');
+      		
+      		flash('<b>Product Inserted...!</b>');
+      		return view('Vendor.product.productForm');
 
       	}
 }

@@ -54,7 +54,9 @@ Route::prefix('seller')->group(function () {
 //Product Route
             Route::get('/addproduct','Seller\ProductController@index');
             Route::post('/addproduct','Seller\ProductController@store');
-
+//ProductSKu 
+            Route::get('/addSKU','Seller\ProductSKUController@index');
+            Route::post('/addSKU','Seller\ProductSKUController@store');
 
       });
 });

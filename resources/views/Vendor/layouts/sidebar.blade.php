@@ -14,6 +14,10 @@
                                                                                       aria-hidden="true"></i>Add Product</a>
                   </li>
                   <li>
+                        <a href="/seller/addSKU" class="waves-effect"><i class="fa fa-cube fa-fw"
+                                                                                      aria-hidden="true"></i>Add Product SKU</a>
+                  </li>
+                  <li>
                         <a href="profile.html" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Profile</a>
                   </li>
                   <li>

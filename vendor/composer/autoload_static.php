@@ -16,6 +16,7 @@ class ComposerStaticInit88889e83252f3c3e0cc5bb48960d3952
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        'e23faeee409e941dc9b4c80386209c39' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -275,6 +276,13 @@ class ComposerStaticInit88889e83252f3c3e0cc5bb48960d3952
                 0 => __DIR__ . '/..' . '/mockery/mockery/library',
             ),
         ),
+        'L' => 
+        array (
+            'Laracasts\\Flash' => 
+            array (
+                0 => __DIR__ . '/..' . '/laracasts/flash/src',
+            ),
+        ),
         'J' => 
         array (
             'JakubOnderka\\PhpConsoleHighlighter' => 
@@ -311,6 +319,7 @@ class ComposerStaticInit88889e83252f3c3e0cc5bb48960d3952
         'App\\Http\\Controllers\\SellerAuth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/SellerAuth/RegisterController.php',
         'App\\Http\\Controllers\\SellerAuth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/SellerAuth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Seller\\ProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/Seller/ProductController.php',
+        'App\\Http\\Controllers\\Seller\\ProductSKUController' => __DIR__ . '/../..' . '/app/Http/Controllers/Seller/ProductSKUController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\AuthenticateSeller' => __DIR__ . '/../..' . '/app/Http/Middleware/AuthenticateSeller.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -319,10 +328,9 @@ class ComposerStaticInit88889e83252f3c3e0cc5bb48960d3952
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Notifications\\SellerResetPasswordNotification' => __DIR__ . '/../..' . '/app/Notifications/SellerResetPasswordNotification.php',
-        'App\\ProductColor' => __DIR__ . '/../..' . '/app/ProductColor.php',
+        'App\\ProductDetail' => __DIR__ . '/../..' . '/app/ProductDetail.php',
         'App\\ProductImage' => __DIR__ . '/../..' . '/app/ProductImage.php',
         'App\\ProductMaster' => __DIR__ . '/../..' . '/app/ProductMaster.php',
-        'App\\ProductSize' => __DIR__ . '/../..' . '/app/ProductSize.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -336,11 +344,11 @@ class ComposerStaticInit88889e83252f3c3e0cc5bb48960d3952
         'Carbon\\Exceptions\\InvalidDateException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
         'CreateColorMastersTable' => __DIR__ . '/../..' . '/database/migrations/2017_06_30_151253_create_color_masters_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
-        'CreateProductColorsTable' => __DIR__ . '/../..' . '/database/migrations/2017_06_30_151352_create_product_colors_table.php',
+        'CreateProductDetailsTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_03_111850_create_product_details_table.php',
         'CreateProductImagesTable' => __DIR__ . '/../..' . '/database/migrations/2017_06_30_151451_create_product_images_table.php',
         'CreateProductMastersTable' => __DIR__ . '/../..' . '/database/migrations/2017_06_30_151127_create_product_masters_table.php',
-        'CreateProductSizesTable' => __DIR__ . '/../..' . '/database/migrations/2017_06_30_151417_create_product_sizes_table.php',
         'CreateSellerTable' => __DIR__ . '/../..' . '/database/migrations/2017_06_26_195646_create_seller_table.php',
+        'CreateSellersPasswordResetTable' => __DIR__ . '/../..' . '/database/migrations/2017_06_27_155811_create_sellers_password_reset_table.php',
         'CreateSizeMastersTable' => __DIR__ . '/../..' . '/database/migrations/2017_06_30_151310_create_size_masters_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
@@ -1568,6 +1576,13 @@ class ComposerStaticInit88889e83252f3c3e0cc5bb48960d3952
         'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/ConsoleColor.php',
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/JakubOnderka/PhpConsoleHighlighter/Highlighter.php',
+        'Laracasts\\Flash\\Flash' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/Flash.php',
+        'Laracasts\\Flash\\FlashNotifier' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/FlashNotifier.php',
+        'Laracasts\\Flash\\FlashServiceProvider' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/FlashServiceProvider.php',
+        'Laracasts\\Flash\\LaravelSessionStore' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/LaravelSessionStore.php',
+        'Laracasts\\Flash\\Message' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/Message.php',
+        'Laracasts\\Flash\\OverlayMessage' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/OverlayMessage.php',
+        'Laracasts\\Flash\\SessionStore' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/SessionStore.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
         'Laravel\\Tinker\\TinkerServiceProvider' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerServiceProvider.php',
