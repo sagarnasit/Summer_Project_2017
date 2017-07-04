@@ -9,7 +9,7 @@ use App\ProductMaster;
 use App\ColorMaster;
 use App\SizeMaster;
 use App\ProductDetail;
-
+use App\Exceptions\CustomeDuplicateException;
 
 class ProductSKUController extends Controller
 {
@@ -28,10 +28,24 @@ class ProductSKUController extends Controller
 
 
 
-    public function Store(ProductSKURequest $request){
+    public function store(ProductSKURequest $request){
     	
     	//insert query
         try {
+
+            $pid=$request['productid'];
+            $cid=$request['colorid'];
+            $sid=$request['sizeid'];
+
+            $found=ProductDetail::where('product_id',$pid)
+                ->where('color_id',$cid)
+                ->where('size_id',$sid)
+                ->get();
+            
+            if(!empty($found))
+                throw new CustomeDuplicateException('MyObject is not an array');
+                
+
             $pc = new ProductDetail();
             $pc->product_id= $request['productid'];
             $pc->color_id= $request['colorid'];
@@ -45,34 +59,25 @@ class ProductSKUController extends Controller
 
             //flash message
             flash('<b>SKU Added...!</b>');
-        } catch (Exception $e) {
-            $errorCode = $e->errorInfo[1];
-            if($errorCode == 1062){
-               return "hi";
-            } 
-            
+            //flash message
+            flash('<b>SKU Added...!</b>');
+
+            //get Product detail
+            $products = ProductMaster::select(['product_id','product_name'])->get();
+            $colors=ColorMaster::all();
+            $sizes=SizeMaster::all();
+            $productdetails=ProductDetail::where('product_id',$request['productid'])->get();
+
+            return view('Vendor.product.productskuform',compact(['products','colors','sizes','productdetails']));
         }
-    	$pc = new ProductDetail();
-    	$pc->product_id= $request['productid'];
-    	$pc->color_id= $request['colorid'];
-    	$pc->size_id= $request['sizeid'];
-    	$pc->mrp= $request['mrp'];
-    	$pc->price= $request['price'];
-    	$pc->qty= $request['qty'];
-    	$pc->minqty= $request['minqty'];
-    	$pc->status=1;
-    	$pc->save();
+        catch (CustomeDuplicateException $e){
+            
+            flash("<b>SKU Already Available...!</b>");
+            return back()->withInput();
 
-    	//flash message
-    	flash('<b>SKU Added...!</b>');
+        }
 
-    	//get Product detail
-    	$products = ProductMaster::select(['product_id','product_name'])->get();
-    	$colors=ColorMaster::all();
-    	$sizes=SizeMaster::all();
-    	$productdetails=ProductDetail::where('product_id',$request['productid'])->get();
-
-    	return view('Vendor.product.productskuform',compact(['products','colors','sizes','productdetails']));
+    	
     }
 
    

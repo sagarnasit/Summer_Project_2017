@@ -1,6 +1,6 @@
 <?php
 
-
+use App\ProductMaster;
 
 Route::get('/', function () {
     return view('Boot.index');
@@ -70,7 +70,15 @@ Route::prefix('seller')->group(function () {
 
 
 
+Route::get('exc',function(){
 
+  try {
+    PrductMaster::find(111);
+    
+  } catch (Exception $e) {
+    dd($e);
+  }
+});
 
 
 
