@@ -25,7 +25,7 @@
                                                       <li class="padding-right-15 padding-left-15">
                                                             <strong class="text-uppercase"><span
                                                                           class="pull-left">Total:</span> <span
-                                                                          class="paira-cart-total-price pull-right"><span
+                                                                          class="paira-cartm-total-price pull-right"><span
                                                                                 class="money"
                                                                                 data-currency-usd="$300.00">$300.00</span></span></strong>
                                                       </li>
