@@ -58,6 +58,13 @@ Route::prefix('seller')->group(function () {
             Route::get('/addSKU','Seller\ProductSKUController@index');
             Route::post('/addSKU','Seller\ProductSKUController@store');
 
+//Product Image
+            Route::get('/addImage','Seller\ProductImageController@index');
+            Route::post('/storeImage','Seller\ProductImageController@store');
+
+
+
+
       });
 });
 

@@ -1,7 +1,7 @@
 @extends('Vendor.master')
 
 @section('title')
-      / Add Product SKU
+      / Add ProductSKU
 @stop
 @section('body')
       <div class="white-box" align="center">
@@ -15,7 +15,7 @@
                         <div class=" col-md-offset-3 col-md-6 col-md-offset-3">
                               <div class="form-horizontal">
                                     <div class="form-group">
-                                          <label class="col-md-offset-1 col-sm-2 control-label">Product Name:</label>
+                                          <label class="col-md-offset-1 col-sm-2 control-label">Product:</label>
                                           <div class="col-md-6">
 
 
@@ -23,7 +23,7 @@
                                                         <option class="form-control"  value="null"> -- Select Product -- </option>
                                                         @foreach($products as $product)
                                                                 <option class="form-control"
-                                                                        value='{{ $product->product_id }}'>
+                                                                        value='{{  $product->product_id  }}'>
                                                                       {{ $product->product_name }}
                                                                 </option>
                                                          @endforeach
@@ -108,6 +108,7 @@
                         
 
                   </form>
+                  
             </div>
         
             {{--  Display SKU Details  --}}
@@ -141,6 +142,7 @@
                 
             
       </div>
+     
       <div id='msg'>
             @include('flash::message')
             <script type="text/javascript">
