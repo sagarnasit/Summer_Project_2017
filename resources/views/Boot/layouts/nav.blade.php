@@ -18,10 +18,39 @@
                               <div id="navbar-collapse" class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav font-bold">
                                           <!--=================== Single Menu ===================-->
-                                          <li><a href="index-2.html">Home</a></li>
+                                          <li><a href={{url('/')}}>Home</a></li>
                                           <!--=================== Classic Menu ===================-->
+
                                           <li class="dropdown paira-dropdown">
-                                                <a href="collection.html">Collection<i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
+                                                <a href="collection.html">Brand<i class="paira-a      ngle-down angle-down fa fa-angle-down"></i></a>
+                                                <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled animated fadeIn">
+                                                      <li><a href="#">Converse Shoe</a></li>
+                                                      <li class="dropdown-submenu">
+                                                            <a href="#">Pie Shoe<i class="fa fa-angle-right"></i></a>
+                                                            <ul role="menu" class="dropdown-menu paira-dropdown-menu">
+                                                                  <li><a href="#">Converse Shoe</a></li>
+
+                                                                  <li><a href="#">Official Shoe</a></li>
+                                                                  <li><a href="#">Running Shoe</a></li>
+                                                                  <li class="dropdown-submenu">
+                                                                        <a href="#">Walk Shoe<i class="fa fa-angle-right"></i></a>
+                                                                        <ul role="menu" class="dropdown-menu paira-dropdown-menu">
+                                                                              <li><a href="#">Converse Shoe</a></li>
+                                                                              <li><a href="#">Pie Shoe</a></li>
+                                                                              <li><a href="#">Official Shoe</a></li>
+                                                                              <li><a href="#">Running Shoe</a></li>
+                                                                              <li><a href="#">Walk Shoe</a></li>
+                                                                        </ul>
+                                                                  </li>
+                                                            </ul>
+                                                      </li>
+                                                      <li><a href="#">Official Shoe</a></li>
+                                                      <li><a href="#">Running Shoe</a></li>
+
+                                                </ul>
+                                          </li>
+                                          <li class="dropdown paira-dropdown">
+                                                <a href="collection.html">Category<i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
                                                 <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled animated fadeIn">
                                                       <li><a href="#">Converse Shoe</a></li>
                                                       <li class="dropdown-submenu">
@@ -105,7 +134,7 @@
                                                 </ul>
                                           </li>
                                           <!--=================== Accordion Mega Menu ===================-->
-                                          <li class="dropdown paira-dropdown panel-closp">
+                                          {{--<li class="dropdown paira-dropdown panel-closp">
                                                 <a href="lookbook.html">Lookbook<i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
                                                 <ul class="dropdown-menu paira-dropdown-menu list-unstyled animated fadeIn">
                                                       <li>
@@ -171,11 +200,11 @@
                                                             </div>
                                                       </li>
                                                 </ul>
-                                          </li>
+                                          </li>--}}
                                           <!--=================== Single Menu ===================-->
                                           <li><a href="blog.html">Blog</a></li>
                                           <!--=================== Dropdown Menu ===================-->
-                                          <li class="dropdown paira-dropdown">
+                                         {{-- <li class="dropdown paira-dropdown">
                                                 <a href="#">Pages <i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
                                                 <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled text-capitalize animated fadeIn">
                                                       <li><a href="about.html"> about us </a></li>
@@ -185,7 +214,7 @@
                                                       <li><a href="register.html"> register </a></li>
 
                                                 </ul>
-                                          </li>
+                                          </li>--}}
 
                                     </ul>
                                     <!--=================== Single Menu ===================-->
