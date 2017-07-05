@@ -16,7 +16,7 @@
                         </div>
                     </div>
                     <div class="log-form">
-                        <form accept-charset="UTF-8" action="#" class="contact-form" method="post">
+                        <form accept-charset="UTF-8" action="{{ route('login') }}" class="contact-form" method="post">
                             <div class="col-md-12">
                                 {{ csrf_field() }}
                                 <div class="form-group margin-bottom-40">
@@ -41,7 +41,7 @@
                                 </div>
                             </div>
                             <button  class="btn btn-default text-uppercase font-bold pull-left margin-left-15 margin-bottom-75 btn-lg">login</button>
-                            <a href="reset-password" class="text-uppercase pull-right margin-bottom-75 reset-bt margin-right-15 margin-top-20 font-bold font-color-orange fg-pass">Forget Password<i class="fa fa-long-arrow-right margin-left-10"></i></a>
+                            <a href="password/email" class="text-uppercase pull-right margin-bottom-75 reset-bt margin-right-15 margin-top-20 font-bold font-color-orange fg-pass">Forget Password<i class="fa fa-long-arrow-right margin-left-10"></i></a>
                         </form>
                     </div>
                 </div>

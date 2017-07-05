@@ -6,16 +6,19 @@ Route::get('/', function () {
     return view('Boot.index');
 });
 
-//Login
-Route::get('/login',function (){
-      return view('Boot.auth.login');
-});
+//UserLogin
+Route::get('/login','Auth\LoginController@showLoginForm');
+Route::post('/login','Auth\LoginController@login')->name('login');
 
-//Register
-Route::get('/register',function(){
-      return view('Boot.auth.register');
-});
+//UserRegister
+Route::get('/register','Auth\RegisterController@showRegistrationForm');
+Route::post('/register','Auth\RegisterController@register')->name('register');
 
+//Logout
+Route::post('/logout','Auth\LoginController@logout')->name('logout');
+
+//ForgotPassword
+Route::get('/password/email','Auth\ForgotPasswordController@showLinkRequestForm');
 //Static Page
 Route::get('/contact',function(){return view('Boot.contact');});
 Route::get('/about',function(){return view('Boot.about');});
@@ -48,8 +51,7 @@ Route::prefix('seller')->group(function () {
 
             Route::post('logout', 'SellerAuth\LoginController@logout')->name('seller.logout');
 //Seller Home Route
-            Route::get('dashboard', function(){
-                  return view('Vendor.index');
+            Route::get('dashboard', function(){return view('Vendor.index');
             })->name('seller.home');
 //Product Route
             Route::get('/addproduct','Seller\ProductController@index');
@@ -69,16 +71,6 @@ Route::prefix('seller')->group(function () {
 });
 
 
-
-Route::get('exc',function(){
-
-  try {
-    PrductMaster::find(111);
-    
-  } catch (Exception $e) {
-    dd($e);
-  }
-});
 
 
 

@@ -1,20 +1,20 @@
 
 <!--=================== Bootstrap core CSS ===================-->
-    <link href="assets/Boot/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/Boot/css/bootstrap.min.css" rel="stylesheet">
     <!--=================== Animate CSS ===================-->
-    <link href="assets/Boot/css/animate.min.css" rel="stylesheet">
+    <link href="/assets/Boot/css/animate.min.css" rel="stylesheet">
     <!--=================== Camera Slider CSS ===================-->
-    <link href="assets/Boot/css/camera.css" rel="stylesheet">
+    <link href="/assets/Boot/css/camera.css" rel="stylesheet">
     <!--=================== OWL Carousel CSS ===================-->
-    <link href="assets/Boot/css/owl.carousel.css" rel="stylesheet">
+    <link href="/assets/Boot/css/owl.carousel.css" rel="stylesheet">
     <!--=================== Paira Framework Font and Color CSS ===================-->
-    <link href="assets/Boot/css/paira-color-font.css" rel="stylesheet">
+    <link href="/assets/Boot/css/paira-color-font.css" rel="stylesheet">
     <!--=================== Paira Framework Main CSS ===================-->
-    <link href="assets/Boot/css/paira.css" rel="stylesheet">
+    <link href="/assets/Boot/css/paira.css" rel="stylesheet">
     <!--=================== Paira Framework Main Responsive CSS ===================-->
-    <link href="assets/Boot/css/paira-responsive.css" rel="stylesheet">
+    <link href="/assets/Boot/css/paira-responsive.css" rel="stylesheet">
     <!--=================== Font Awesome ===================-->
-    <link href="assets/Boot/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/Boot/css/font-awesome.min.css" rel="stylesheet">
     <style>
         hr.myHr {
             height: 30px;

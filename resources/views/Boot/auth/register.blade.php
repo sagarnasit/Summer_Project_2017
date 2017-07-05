@@ -15,13 +15,13 @@
                         </div>
                     </div>
                     <div>
-                        <form accept-charset="UTF-8" action="#" class="contact-form" method="post">
+                        <form accept-charset="UTF-8" action="{{ route('register') }}" class="contact-form" method="post">
                             <div class="col-md-12">
                                {{ csrf_field() }}
                                 <div class="form-group margin-bottom-40 ">
 
                                     <label><i class="fa fa-user"></i></label>
-                                    <input type="email" class="form-control {{ $errors->has('name') ? 'alert alert-danger' : '' }}" name="name" placeholder="Tony Stark">
+                                    <input type="text" class="form-control {{ $errors->has('name') ? 'alert alert-danger' : '' }}" name="name" placeholder="Tony Stark">
                                     @if ($errors->has('name'))
                                         <span class="help-block">
                                         <strong class="{{ $errors->has('name') ? ' text-danger' : '' }}">{{ $errors->first('name') }}</strong>
