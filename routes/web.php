@@ -61,7 +61,7 @@ Route::prefix('seller')->group(function () {
             Route::post('/addSKU','Seller\ProductSKUController@store');
 
 //Product Image
-            Route::get('/addImage','Seller\ProductImageController@index');
+            Route::get('/addImage','Seller\ProductImageController@index')->name('add-image');
             Route::post('/storeImage','Seller\ProductImageController@store');
 
 

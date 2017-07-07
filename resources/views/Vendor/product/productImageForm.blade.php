@@ -23,7 +23,7 @@
                                                         <option class="form-control"  value="null"> -- Select Product -- </option>
                                                         @foreach($products as $product)
                                                                 <option class="form-control"
-                                                                        value='{{  $product->product_id  }}'>
+                                                                        value='{{  $product->product_id }}'>
                                                                       {{ $product->product_name }}
                                                                 </option>
                                                          @endforeach
@@ -34,9 +34,9 @@
                               
                               
                                     <div class="form-group">
-                                          <label class="col-md-offset-1 col-sm-2 control-label" for="color">Image:</label>
+                                          <label class="col-md-offset-1 col-sm-2 control-label" for="image">Image:</label>
                                           <div class="col-md-6">
-                                            <input type="file" name="img[]"  required="" />                                        
+                                            <input type="file" name="image"  required="" />
                                           </div>
                                     </div>
                                                                         <div class="form-group">
