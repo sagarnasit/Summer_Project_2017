@@ -24,7 +24,7 @@ class CreateProductDetailsTable extends Migration
             $table->integer('minqty');
             $table->integer('status');
             $table->timestamps();
-            $table->unique( array('product_id', 'color_id','size_id') );
+            $table->unique( array('product_id') );
         });
     }
 

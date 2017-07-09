@@ -16,7 +16,7 @@ class ProductImageController extends Controller
 {
     
     public function index(){
-        $colorid=ColorMaster::select(['color_id'])->get();
+        $colorid = ColorMaster::all();
 
     	$products = ProductMaster::select(['product_id','product_name'])->get();
     	

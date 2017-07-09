@@ -14,7 +14,7 @@ class AddColomnInImageTable extends Migration
     public function up()
     {
         Schema::table('product_images', function (Blueprint $table) {
-            $table->renameColumn('path', 'image');
+            $table->renameColumn('image', 'image');
         });
     }
 
