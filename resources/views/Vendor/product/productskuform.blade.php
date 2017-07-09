@@ -75,6 +75,20 @@
                                           </select>
                                           </div>
                                     </div>
+                                  <div class="form-group">
+                                          <label class="col-md-offset-1 col-sm-2 control-label" for="brand">Brand:</label>
+                                          <div class="col-md-6">
+
+                                          <select name="brandid" id="" class="form-control">
+                                                 <option class="form-control" value="null"> -- Select Brand-- </option>
+                                                @foreach($brands as $brand)
+                                                      <option class="form-control" value='{{ $brand->brand_id }}'>
+                                                            {{ $brand->brand_name}}
+                                                      </option>
+                                                @endforeach
+                                          </select>
+                                          </div>
+                                    </div>
                                     
                               
                                     <div class="form-group">
@@ -133,7 +147,7 @@
                 <div class="col-md-offset-3 col-md-6 col-md-offset-3">
                     <table class="table">
                         <thead>
-                            <th>Color</th><th>Size</th><th>category_id</th><th>MRP</th><th>Price</th><th>Qty</th><th>MinQty</th>
+                            <th>Color</th><th>Size</th><th>category_id</th><th>Brand_id</th><th>MRP</th><th>Price</th><th>Qty</th><th>MinQty</th>
                         </thead>
                         <tbody>
                             @foreach($productdetails as $p)
@@ -142,6 +156,7 @@
                                     <td>{{ $p->color->color_name }}</td>
                                     <td>{{ $p->size->size }}</td>
                                     <td>{{ $p->category_id}}</td>
+                                    <td>{{ $p->brand_id}}</td>
                                     <td>{{ $p->mrp }}</td>
                                     <td>{{ $p->price }}</td>
                                     <td>{{ $p->qty }}</td>

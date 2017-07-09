@@ -19,6 +19,7 @@ class CreateProductDetailsTable extends Migration
             $table->integer('color_id');
             $table->integer('size_id');
             $table->integer('category_id');
+            $table->integer('brand_id');
             $table->integer('mrp');
             $table->integer('price');
             $table->integer('qty');

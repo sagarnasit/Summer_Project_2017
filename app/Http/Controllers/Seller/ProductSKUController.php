@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Seller;
 
 
+use App\Brand;
 use Illuminate\Http\Request;
 use App\Http\Requests\Seller\ProductSKURequest;
 use App\Http\Controllers\Controller;
@@ -23,10 +24,11 @@ class ProductSKUController extends Controller
     	$colors=ColorMaster::all();
     	$sizes=SizeMaster::all();
     	$categories=Category::all();
+    	$brands=Brand::all();
     	//return $products;
     	$productdetails=null;
 
-    	return view('Vendor.product.productskuform',compact(['products','colors','sizes','productdetails','categories']));
+    	return view('Vendor.product.productskuform',compact(['products','colors','sizes','productdetails','categories','brands']));
     }
 
 
@@ -60,6 +62,7 @@ class ProductSKUController extends Controller
             $pc->color_id= $request['colorid'];
             $pc->size_id= $request['sizeid'];
             $pc->category_id=$request['categoryid'];
+            $pc->brand_id=$request['brandid'];
             $pc->mrp= $request['mrp'];
             $pc->price= $request['price'];
             $pc->qty= $request['qty'];
@@ -77,8 +80,9 @@ class ProductSKUController extends Controller
             $sizes=SizeMaster::all();
             $productdetails=ProductDetail::where('product_id',$request['productid'])->get();
             $categories=Category::all();
+            $brands=Brand::all();
 
-            return view('Vendor.product.productskuform',compact(['products','colors','sizes','productdetails','categories']));
+            return view('Vendor.product.productskuform',compact(['products','colors','sizes','productdetails','categories','brands']));
         }
         else
         {
