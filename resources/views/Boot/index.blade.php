@@ -46,15 +46,18 @@
                     </div>
                 </div>
                 <div class="product-widget">
-                    <div class="col-md-6 col-sm-6 col-xs-6 margin-bottom-100 paira-animation" data-paira-animation="fadeInUp" data-paira-animation-delay="0.3s">
-                        <div class="paira-product product position">
+
+
+                    {{--@foreach($products as $product)--}}
+                      <div class="col-md-6 col-sm-6 col-xs-6 margin-bottom-100 paira-animation" data-paira-animation="fadeInUp" data-paira-animation-delay="0.3s">
+                          <div class="paira-product product position">
                             <div class="block-image position">
                                 <a href="#">
                                     <div class="background-overlay"></div>
                                     <img src="assets/images/product/themetidy-paira-framework-boot-responsive-html-template-product-3.jpg" alt="themetidy-paira-framework-foot-responsive-html-template-product-1" class="paira-product-image img-responsive"></a>
                             </div>
                             <div class="product-price">
-                                <span class="money">$120.00</span>
+                                <span class="money">Rs. 200{{--{{$product->price}}--}}</span>
                             </div>
                             <div class="product-new font-italic color-scheme-3"><span>New</span></div>
                             <div class="product-sale font-italic color-scheme-3"><span>Sale</span></div>
@@ -77,8 +80,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6 margin-bottom-100 paira-animation" data-paira-animation="fadeInUp" data-paira-animation-delay="0.3s">
+                      </div>
+                    {{--@endforeach--}}
+
+                    <div class="col-md-6 col-sm-6 col-xs-6 margin-botto m-100 paira-animation" data-paira-animation="fadeInUp" data-paira-animation-delay="0.3s">
                         <div class="paira-product product position">
                             <div class="block-image position">
                                 <a href="#">

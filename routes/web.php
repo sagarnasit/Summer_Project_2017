@@ -67,11 +67,20 @@ Route::prefix('seller')->group(function () {
             Route::get('/addCategory','Seller\CategoryController@index')->name('add-category');
             Route::post('/storeCategory','Seller\CategoryController@store');
 
+//Add Brand
+            Route::get('/addBrand','Seller\BrandController@index')->name('add-brand');
+            Route::post('/storeBrand','Seller\BrandController@store');
+
+
 
 
 
       });
 });
+
+
+//for testing display products
+//Route::any('/xyz','DispalyProductController@index');
 
 
 

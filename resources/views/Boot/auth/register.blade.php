@@ -1,4 +1,4 @@
-@exwtends('Boot.master')
+@extends('Boot.master')
 @section('title')
     <title>Register</title>
 @stop
