@@ -22,6 +22,10 @@
                                                                                       aria-hidden="true"></i>Add Product Image</a>
                   </li>
                   <li>
+                        <a href="/seller/addCategory" class="waves-effect"><i class="fa fa-cube fa-fw"
+                                                                                      aria-hidden="true"></i>Add Category</a>
+                  </li>
+                  <li>
                         <a href="profile.html" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Profile</a>
                   </li>
                   <li>

@@ -332,6 +332,7 @@ class ComposerStaticInit88889e83252f3c3e0cc5bb48960d3952
 
     public static $classMap = array (
         'AddColomnInImageTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_07_080653_add_colomn_in_image_table.php',
+        'App\\Category' => __DIR__ . '/../..' . '/app/Category.php',
         'App\\ColorMaster' => __DIR__ . '/../..' . '/app/ColorMaster.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\CustomeDuplicateException' => __DIR__ . '/../..' . '/app/Exceptions/CustomeDuplicateException.php',
@@ -341,6 +342,7 @@ class ComposerStaticInit88889e83252f3c3e0cc5bb48960d3952
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+        'App\\Http\\Controllers\\CategoryController' => __DIR__ . '/../..' . '/app/Http/Controllers/CategoryController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\SellerAuth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/SellerAuth/ForgotPasswordController.php',
@@ -373,6 +375,7 @@ class ComposerStaticInit88889e83252f3c3e0cc5bb48960d3952
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
         'Carbon\\Exceptions\\InvalidDateException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
+        'CreateCategoriesTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_09_090045_create_categories_table.php',
         'CreateColorMastersTable' => __DIR__ . '/../..' . '/database/migrations/2017_06_30_151253_create_color_masters_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateProductDetailsTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_03_111850_create_product_details_table.php',

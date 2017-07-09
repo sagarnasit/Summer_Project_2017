@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddColomnInImageTable' => $baseDir . '/database/migrations/2017_07_07_080653_add_colomn_in_image_table.php',
+    'App\\Category' => $baseDir . '/app/Category.php',
     'App\\ColorMaster' => $baseDir . '/app/ColorMaster.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\CustomeDuplicateException' => $baseDir . '/app/Exceptions/CustomeDuplicateException.php',
@@ -16,6 +17,7 @@ return array(
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
     'App\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',
     'App\\Http\\Controllers\\Auth\\ResetPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+    'App\\Http\\Controllers\\CategoryController' => $baseDir . '/app/Http/Controllers/CategoryController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\SellerAuth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/SellerAuth/ForgotPasswordController.php',
@@ -48,6 +50,7 @@ return array(
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
     'Carbon\\CarbonInterval' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
     'Carbon\\Exceptions\\InvalidDateException' => $vendorDir . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
+    'CreateCategoriesTable' => $baseDir . '/database/migrations/2017_07_09_090045_create_categories_table.php',
     'CreateColorMastersTable' => $baseDir . '/database/migrations/2017_06_30_151253_create_color_masters_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateProductDetailsTable' => $baseDir . '/database/migrations/2017_07_03_111850_create_product_details_table.php',

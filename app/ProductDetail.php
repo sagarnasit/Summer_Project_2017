@@ -20,4 +20,9 @@ class ProductDetail extends Model
     public function product(){
     	return $this->belongsTo('App\ProductMaster','product_id');
     }
+
+    public function category()
+    {
+        return $this->belongsTo('App\Category','category_id');
+    }
 }

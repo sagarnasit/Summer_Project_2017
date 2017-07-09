@@ -63,6 +63,9 @@ Route::prefix('seller')->group(function () {
 //Product Image
             Route::get('/addImage','Seller\ProductImageController@index')->name('add-image');
             Route::post('/storeImage','Seller\ProductImageController@store');
+//Add Category
+            Route::get('/addCategory','Seller\CategoryController@index')->name('add-category');
+            Route::post('/storeCategory','Seller\CategoryController@store');
 
 
 
