@@ -10,6 +10,7 @@ use App\ProductMaster;
 use App\ColorMaster;
 use App\SizeMaster;
 use App\ProductDetail;
+use App\Category;
 use App\Exceptions\CustomeDuplicateException;
 
 
@@ -21,10 +22,11 @@ class ProductSKUController extends Controller
     	$products = ProductMaster::select(['product_id','product_name'])->get();
     	$colors=ColorMaster::all();
     	$sizes=SizeMaster::all();
+    	$categories=Category::all();
     	//return $products;
     	$productdetails=null;
 
-    	return view('Vendor.product.productskuform',compact(['products','colors','sizes','productdetails']));
+    	return view('Vendor.product.productskuform',compact(['products','colors','sizes','productdetails','categories']));
     }
 
 
@@ -57,6 +59,7 @@ class ProductSKUController extends Controller
             $pc->product_id= $request['productid'];
             $pc->color_id= $request['colorid'];
             $pc->size_id= $request['sizeid'];
+            $pc->category_id=$request['categoryid'];
             $pc->mrp= $request['mrp'];
             $pc->price= $request['price'];
             $pc->qty= $request['qty'];
@@ -73,8 +76,9 @@ class ProductSKUController extends Controller
             $colors=ColorMaster::all();
             $sizes=SizeMaster::all();
             $productdetails=ProductDetail::where('product_id',$request['productid'])->get();
+            $categories=Category::all();
 
-            return view('Vendor.product.productskuform',compact(['products','colors','sizes','productdetails']));
+            return view('Vendor.product.productskuform',compact(['products','colors','sizes','productdetails','categories']));
         }
         else
         {

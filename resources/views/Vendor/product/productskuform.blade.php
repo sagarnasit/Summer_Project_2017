@@ -61,6 +61,20 @@
                                           </select>
                                           </div>
                                     </div>
+                                   <div class="form-group">
+                                          <label class="col-md-offset-1 col-sm-2 control-label" for="category">Category:</label>
+                                          <div class="col-md-6">
+
+                                          <select name="categoryid" id="" class="form-control">
+                                                 <option class="form-control" value="null"> -- Select Category -- </option>
+                                                @foreach($categories as $category)
+                                                      <option class="form-control" value='{{ $category->category_id }}'>
+                                                            {{ $category->category_name}}
+                                                      </option>
+                                                @endforeach
+                                          </select>
+                                          </div>
+                                    </div>
                                     
                               
                                     <div class="form-group">
@@ -119,7 +133,7 @@
                 <div class="col-md-offset-3 col-md-6 col-md-offset-3">
                     <table class="table">
                         <thead>
-                            <th>Color</th><th>Size</th><th>MRP</th><th>Price</th><th>Qty</th><th>MinQty</th>
+                            <th>Color</th><th>Size</th><th>category_id</th><th>MRP</th><th>Price</th><th>Qty</th><th>MinQty</th>
                         </thead>
                         <tbody>
                             @foreach($productdetails as $p)
@@ -127,6 +141,7 @@
                                     
                                     <td>{{ $p->color->color_name }}</td>
                                     <td>{{ $p->size->size }}</td>
+                                    <td>{{ $p->category_id}}</td>
                                     <td>{{ $p->mrp }}</td>
                                     <td>{{ $p->price }}</td>
                                     <td>{{ $p->qty }}</td>
