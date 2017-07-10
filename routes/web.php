@@ -80,7 +80,7 @@ Route::prefix('seller')->group(function () {
 
 
 //for testing display products
-//Route::any('/xyz','DispalyProductController@index');
+Route::any('/','DispalyProductController@index');
 
 
 

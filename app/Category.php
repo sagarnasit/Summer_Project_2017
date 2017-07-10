@@ -9,9 +9,9 @@ class Category extends Model
     protected $except=[];
     protected $primaryKey= 'category_id';
 
-    public function products()
+    public function productdetails()
     {
-        return $this->hasMany('App\ProductDetails','category_id');
+        return $this->hasMany('App\ProductDetail','category_id');
     }
 
 }

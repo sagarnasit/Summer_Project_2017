@@ -12,6 +12,9 @@ class ProductDetail extends Model
     public function color(){
     	return $this->belongsTo('App\ColorMaster','color_id');
     }
+    public function images(){
+    	return $this->belongsTo('App\ProductImage','product_id');
+    }
 
     public function size(){
     	return $this->belongsTo('App\SizeMaster','size_id');

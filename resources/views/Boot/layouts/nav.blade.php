@@ -3,7 +3,7 @@
             <div class="row">
                   <!--=================== Logo ===================-->
                   <div class="col-md-2 col-sm-4 col-xs-6">
-                        <a href="#"><img src="assets/images/logo.jpg" alt="" class="pull-left"></a>
+                        <a href={{url('/')}}><img src="assets/images/logo.jpg" alt="" class="pull-left"></a>
                   </div>
                   <div class="col-md-10 margin-top-5">
                         <!--=================== Main Menu ===================-->
@@ -22,8 +22,10 @@
                                           <!--=================== Classic Menu ===================-->
 
                                           <li class="dropdown paira-dropdown">
-                                                <a href="collection.html">Brand<i class="paira-a      ngle-down angle-down fa fa-angle-down"></i></a>
+                                                <a href={{url('/')}}>Brand<i class="paira-a      ngle-down angle-down fa fa-angle-down"></i></a>
                                                 <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled animated fadeIn">
+
+                                                     {{-- @foreach($brands as $brand)--}}
                                                       <li><a href="#">Converse Shoe</a></li>
                                                       <li class="dropdown-submenu">
                                                             <a href="#">Pie Shoe<i class="fa fa-angle-right"></i></a>
@@ -50,7 +52,7 @@
                                                 </ul>
                                           </li>
                                           <li class="dropdown paira-dropdown">
-                                                <a href="collection.html">Category<i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
+                                                <a href="{{url('/')}}">Category<i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
                                                 <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled animated fadeIn">
                                                       <li><a href="#">Converse Shoe</a></li>
                                                       <li class="dropdown-submenu">

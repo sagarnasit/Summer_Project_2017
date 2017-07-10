@@ -9,7 +9,7 @@ class Brand extends Model
     protected $except=[];
     protected $primaryKey='brand_id';
 
-    public function products()
+    public function productdetails()
     {
         return $this->hasMany('App\ProductDetail','brand_id');
     }
