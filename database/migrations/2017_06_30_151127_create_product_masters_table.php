@@ -15,6 +15,7 @@ class CreateProductMastersTable extends Migration
     {
         Schema::create('product_masters', function (Blueprint $table) {
             $table->increments('product_id');
+            $table->integer('brand_id');
             $table->string('product_name');
             $table->text('description');
             $table->timestamps();

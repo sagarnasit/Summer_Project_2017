@@ -12,6 +12,21 @@
                         {{ csrf_field() }}
                         <div class="col-md-offset-3 col-md-6 col-md-offset-3">
                               <div class="form-group">
+                                    <label class="col-sm-2 control-label">Brand</label>
+                                    <div class="col-sm-10">
+                                          <select name="brandid" class="form-control" required="">
+                                                        <option class="form-control"  value="null"> -- Select Brand -- </option>
+                                                        @foreach($brands as $brand)
+                                                                <option class="form-control"
+                                                                        value='{{  $brand->brand_id  }}'>
+                                                                      {{ $brand->brand_name }}
+                                                                </option>
+                                                         @endforeach
+
+                                          </select>
+                                    </div>
+                              </div>
+                              <div class="form-group">
                                     <label class="col-sm-2 control-label">Product Name</label>
                                     <div class="col-sm-10">
                                           <input type="text" name="name" class="form-control" required="">

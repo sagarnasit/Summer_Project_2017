@@ -75,7 +75,7 @@
                                           </select>
                                           </div>
                                     </div>
-                                  <div class="form-group">
+                                 {{--  <div class="form-group">
                                           <label class="col-md-offset-1 col-sm-2 control-label" for="brand">Brand:</label>
                                           <div class="col-md-6">
 
@@ -88,7 +88,7 @@
                                                 @endforeach
                                           </select>
                                           </div>
-                                    </div>
+                                    </div> --}}
                                     
                               
                                     <div class="form-group">
