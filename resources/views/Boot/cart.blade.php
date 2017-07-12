@@ -13,62 +13,38 @@
                         </div>
                     </div>
                     <div class="col-md-12 margin-bottom-40">
-                        <a href="#" class="pull-left margin-bottom-40 cart-continue-shopping"><i class="fa fa-long-arrow-left margin-right-10"></i><strong class="font-color-orange text-uppercase">Continue Shopping</strong></a>
+                        <a href="/checkout" class="pull-left margin-bottom-40 cart-continue-shopping"><i class="fa fa-long-arrow-left margin-right-10"></i><strong class="font-color-orange text-uppercase">Continue Shopping</strong></a>
                         <div class="cart-item-list">
                             <h6 class="text-uppercase panel-title cart-title">Product Lists</h6>
+                       @foreach($cartItems as $cartItem)
                             <ul class="list-unstyled">
                                 <li>
-                                    <div class="col-md-4 paira-animation" data-paira-animation="fadeInLeft" data-paira-animation-delay="0.2s">
-                                        <img class="img-responsive" src="assets/images/category/themetidy-paira-framework-boot-responsive-html-template-category-1.jpg" alt="">
-                                    </div>
-                                    <div class="col-md-8 margin-top-20">
-                                        <a href="#" class="margin-top-10"><strong class="font-size-18">Converse Technical Shoe</strong></a>
-                                        <a href="#" class="pull-right"><i class="fa  fa-times-circle fa-2x"></i></a>
-                                        <h4 class="margin-top-20 margin-bottom-20"><span class="money font-size-16 color-scheme-3">S - Blue - Leather </span></h4>
-                                        <h4 class="margin-bottom-20 pull-right"><span class="money font-bold">$240.00</span></h4>
-                                        <div class="margin-bottom-10 quantity pull-left">
-                                            <button class="pull-left btn-success btn" data-direction="down"><i class="fa fa-angle-down"></i></button>
-                                            <input type="text" value="1" class="pull-left text-center product_quantity_text">
-                                            <button class="btn-success btn pull-left" data-direction="up"><i class="fa fa-angle-up"></i></button>
-                                        </div>
-                                        <a href="#" class="btn btn-default pull-left color-scheme-1 margin-left-10 margin-right-10 cart-update"><i class="fa fa-pencil"></i></a>
-                                    </div>
-                                </li>
-                                <li>
                                     <div class="col-md-4 paira-animation" data-paira-animation="fadeInLeft" data-paira-animation-delay="0.5s">
-                                        <img class="img-responsive" src="assets/images/category/themetidy-paira-framework-boot-responsive-html-template-category-3.jpg" alt="">
+                                        <img class="img-responsive" src="images/Adidas_shhoe.jpg{{--{{url('images',$cartItem->name)}}--}}" alt="">
                                     </div>
                                     <div class="col-md-8 margin-top-20">
-                                        <a href="#" class="margin-top-10"><strong class="font-size-18">Converse Technical Shoe</strong></a>
-                                        <a href="#" class="pull-right"><i class="fa  fa-times-circle fa-2x"></i></a>
-                                        <h4 class="margin-top-20 margin-bottom-20"><span class="money font-size-16 color-scheme-3">S - Blue - Leather </span></h4>
-                                        <h4 class="margin-bottom-20 pull-right"><span class="money font-bold">$240.00</span></h4>
+                                        <a href="#" class="margin-top-10"><strong class="font-size-18"></strong></a>
+{{--
+                                        <a href="{{route('cart.destroy',$cartItem->id)}}" class="pull-right"><i class="fa  fa-times-circle fa-2x"></i></a>
+--}}
+                                        <form action="{{route('cart.destroy',$cartItem->rowId)}}" method="POST">
+                                            {{csrf_field()}}
+                                            {{method_field('DELETE')}}
+                                            <input  class="button small alert" type="submit" value="Delete">
+                                        </form>
+                                        <h4 class="margin-top-20 margin-bottom-20"><span class="money font-size-16 color-scheme-3"> {{ $cartItem->name}}</span></h4>
+                                        <h4 class="margin-bottom-20 pull-right"><span class="money font-bold">Rs. {{$cartItem->price}}</span></h4>
                                         <div class="margin-bottom-10 quantity pull-left">
                                             <button class="pull-left btn-success btn" data-direction="down"><i class="fa fa-angle-down"></i></button>
-                                            <input type="text" value="1" class="pull-left text-center product_quantity_text">
+                                            <input type="text" value="1{{--{{$cartItem->qty}}--}}" class="pull-left text-center product_quantity_text">
                                             <button class="btn-success btn pull-left" data-direction="up"><i class="fa fa-angle-up"></i></button>
                                         </div>
                                         <a href="#" class="btn btn-default pull-left color-scheme-1 margin-left-10 margin-right-10 cart-update"><i class="fa fa-pencil"></i></a>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="col-md-4 paira-animation" data-paira-animation="fadeInLeft" data-paira-animation-delay="0.8s">
-                                        <img class="img-responsive" src="assets/images/category/themetidy-paira-framework-boot-responsive-html-template-category-5.jpg" alt="">
-                                    </div>
-                                    <div class="col-md-8 margin-top-20">
-                                        <a href="#" class="margin-top-10"><strong class="font-size-18">Converse Technical Shoe</strong></a>
-                                        <a href="#" class="pull-right"><i class="fa  fa-times-circle fa-2x"></i></a>
-                                        <h4 class="margin-top-20 margin-bottom-20"><span class="money font-size-16 color-scheme-3">S - Blue - Leather </span></h4>
-                                        <h4 class="margin-bottom-20 pull-right"><span class="money font-bold">$240.00</span></h4>
-                                        <div class="margin-bottom-10 quantity pull-left">
-                                            <button class="pull-left btn-success btn" data-direction="down"><i class="fa fa-angle-down"></i></button>
-                                            <input type="text" value="1" class="pull-left text-center product_quantity_text">
-                                            <button class="btn-success btn pull-left" data-direction="up"><i class="fa fa-angle-up"></i></button>
-                                        </div>
-                                        <a href="#" class="btn btn-default pull-left color-scheme-1 margin-left-10 margin-right-10 cart-update"><i class="fa fa-pencil"></i></a>
-                                    </div>
-                                </li>
+
                             </ul>
+                               @endforeach
                         </div>
                     </div>
                 </div>
@@ -78,7 +54,7 @@
                             <figcaption><h4 class="panel-heading font-bold">Sub Total</h4></figcaption>
                             <div class="cart-sub-total">
                                 <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <h2 class="margin-top-50 margin-bottom-20"><span class="money font-bold font-bold font-color-orange font-size-50">$510.00</span></h2>
+                                    <h2 class="margin-top-50 margin-bottom-20"><span class="money font-bold font-bold font-color-orange font-size-50">Rs. {{Cart::total()}}</span></h2>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <textarea id="note" name="note" class="margin-top-10 margin-bottom-10 form-control" placeholder="Special instructions..."></textarea>
@@ -90,7 +66,7 @@
                         </figure>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
-                        <figure>
+                      {{--  <figure>
                             <figcaption><h4 class="panel-heading font-bold">Get Shipping Estimates</h4></figcaption>
                             <div class="cart-shipping-calculate margin-top-20">
                                 <div class="col-lg-4 col-md-4 col-sm-4">
@@ -346,7 +322,7 @@
                                     <input type="text" class="form-control margin-bottom-20" id="address_zip" name="address[zip]" placeholder="Potal / Zip Code">
                                 </div>
                             </div>
-                        </figure>
+                        </figure>--}}
                     </div>
                     <aside class="col-lg-12 col-md-12 col-sm-12 margin-bottom-75">
                         <figure>

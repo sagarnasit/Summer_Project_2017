@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Seller;
 
+use App\ProductDetail;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Category;
@@ -12,6 +13,13 @@ class CategoryController extends Controller
     public function index()
     {
         return view('Vendor.product.addcategory');
+    }
+
+    public function show($id)
+    {
+
+        $products=ProductDetail::where('category_id',$id)->value('product_name');
+        return view('Boot.layouts.nav',compact('products'));
     }
 
     public function store(Request $request)

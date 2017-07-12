@@ -2,9 +2,13 @@
 
 use App\ProductMaster;
 
-Route::get('/', function () {
-    return view('Boot.index');
-});
+
+
+//display products
+Route::get('/','DispalyProductController@index');
+
+//Add category and Brand in nav baar
+//Route::get('/','AddCatBrandController@index');
 
 //UserLogin
 Route::get('/login','Auth\LoginController@showLoginForm');
@@ -24,9 +28,15 @@ Route::get('/contact',function(){return view('Boot.contact');});
 Route::get('/about',function(){return view('Boot.about');});
 
 //Cart
-Route::get('/cart',function() {
+/*Route::get('/cart',function() {
       return view('Boot.cart');
-});
+});*/
+
+Route::resource('/cart','CartController');
+
+
+//Add to cart
+Route::get('/cart/add-item/{id}','CartController@addItem')->name('cart-additem');
 
 Route::prefix('seller')->group(function () {
 
@@ -65,6 +75,7 @@ Route::prefix('seller')->group(function () {
             Route::post('/storeImage','Seller\ProductImageController@store');
 //Add Category
             Route::get('/addCategory','Seller\CategoryController@index')->name('add-category');
+            Route::get('/showCategory','Seller\CategoryController@show')->name('show-category');
             Route::post('/storeCategory','Seller\CategoryController@store');
 
 //Add Brand
@@ -79,8 +90,6 @@ Route::prefix('seller')->group(function () {
 });
 
 
-//for testing display products
-Route::any('/','DispalyProductController@index');
 
 
 

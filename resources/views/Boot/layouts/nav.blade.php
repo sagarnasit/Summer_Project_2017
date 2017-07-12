@@ -22,62 +22,25 @@
                                           <!--=================== Classic Menu ===================-->
 
                                           <li class="dropdown paira-dropdown">
-                                                <a href={{url('/')}}>Brand<i class="paira-a      ngle-down angle-down fa fa-angle-down"></i></a>
-                                                <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled animated fadeIn">
+                                                <a href={{url('/')}}>Brand<i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
+                                             {{-- <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled animated fadeIn">
+                                                     @foreach($brands as $brand)
+                                                      <li><a href="#">{{$brand->brand_name}}</a></li>
+                                                      @endforeach
 
-                                                     {{-- @foreach($brands as $brand)--}}
-                                                      <li><a href="#">Converse Shoe</a></li>
-                                                      <li class="dropdown-submenu">
-                                                            <a href="#">Pie Shoe<i class="fa fa-angle-right"></i></a>
-                                                            <ul role="menu" class="dropdown-menu paira-dropdown-menu">
-                                                                  <li><a href="#">Converse Shoe</a></li>
-
-                                                                  <li><a href="#">Official Shoe</a></li>
-                                                                  <li><a href="#">Running Shoe</a></li>
-                                                                  <li class="dropdown-submenu">
-                                                                        <a href="#">Walk Shoe<i class="fa fa-angle-right"></i></a>
-                                                                        <ul role="menu" class="dropdown-menu paira-dropdown-menu">
-                                                                              <li><a href="#">Converse Shoe</a></li>
-                                                                              <li><a href="#">Pie Shoe</a></li>
-                                                                              <li><a href="#">Official Shoe</a></li>
-                                                                              <li><a href="#">Running Shoe</a></li>
-                                                                              <li><a href="#">Walk Shoe</a></li>
-                                                                        </ul>
-                                                                  </li>
-                                                            </ul>
-                                                      </li>
-                                                      <li><a href="#">Official Shoe</a></li>
-                                                      <li><a href="#">Running Shoe</a></li>
-
-                                                </ul>
+                                                </ul>--}}
                                           </li>
                                           <li class="dropdown paira-dropdown">
                                                 <a href="{{url('/')}}">Category<i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
-                                                <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled animated fadeIn">
-                                                      <li><a href="#">Converse Shoe</a></li>
-                                                      <li class="dropdown-submenu">
-                                                            <a href="#">Pie Shoe<i class="fa fa-angle-right"></i></a>
-                                                            <ul role="menu" class="dropdown-menu paira-dropdown-menu">
-                                                                  <li><a href="#">Converse Shoe</a></li>
-
-                                                                  <li><a href="#">Official Shoe</a></li>
-                                                                  <li><a href="#">Running Shoe</a></li>
-                                                                  <li class="dropdown-submenu">
-                                                                        <a href="#">Walk Shoe<i class="fa fa-angle-right"></i></a>
-                                                                        <ul role="menu" class="dropdown-menu paira-dropdown-menu">
-                                                                              <li><a href="#">Converse Shoe</a></li>
-                                                                              <li><a href="#">Pie Shoe</a></li>
-                                                                              <li><a href="#">Official Shoe</a></li>
-                                                                              <li><a href="#">Running Shoe</a></li>
-                                                                              <li><a href="#">Walk Shoe</a></li>
-                                                                        </ul>
-                                                                  </li>
-                                                            </ul>
-                                                      </li>
-                                                      <li><a href="#">Official Shoe</a></li>
-                                                      <li><a href="#">Running Shoe</a></li>
-
-                                                </ul>
+                                             {{-- <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled animated fadeIn">
+                                                      @if(!empty($categories))
+                                                        @forelse($categories as $cat)
+                                                            <li><a href="{{route('show-category',$cat->category_id)}}">{{$cat->category_name}}</a></li>
+                                                              @empty
+                                                              <h3>No Items</h3>
+                                                         @endforelse
+                                                            @endif
+                                                </ul>--}}
                                           </li>
                                           <!--=================== Grid Mega Menu ===================-->
                                           <li class="dropdown paira-dropdown mega-menu-fw">

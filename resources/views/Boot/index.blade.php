@@ -154,7 +154,7 @@
                                 </div>
                                 <div class="paira-product-cart-con product-button text-center">
                                     <ul class="list-inline">
-                                        <li class=""><a href="#" class=" text-uppercase color-scheme-3 hover-add-cart"><i class="fa fa-shopping-cart fa-2x margin-right-5"></i><span>Add to cart</span> </a></li>
+                                        <li class=""><a href="{{route('cart-additem',$product->product_id)}}" class=" text-uppercase color-scheme-3 hover-add-cart"><i class="fa fa-shopping-cart fa-2x margin-right-5"></i><span>Add to cart</span> </a></li>
 
                                     </ul>
                                 </div>
