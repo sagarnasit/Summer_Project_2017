@@ -138,6 +138,7 @@
                                     <div class="background-overlay"></div>
                                     {{--assets/images/product/themetidy-paira-framework-boot-responsive-html-template-product-1.jpg--}}
                                     {{--{{url('images',$shirt->image)}}"--}}
+                                    
                                     <img src="{{url('images',$product->images->image)}}" alt="themetidy-paira-framework-foot-responsive-html-template-product-1" class="paira-product-image img-responsive">
                                 </a>
                             </div>

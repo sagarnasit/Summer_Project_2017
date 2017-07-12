@@ -13,7 +13,7 @@ class ProductDetail extends Model
     	return $this->belongsTo('App\ColorMaster','color_id');
     }
     public function images(){
-    	return $this->belongsTo('App\ProductImage','product_id');
+    	return $this->belongsTo('App\ProductImage','product_id','product_id')->where('color_id', $this->color_id);
     }
 
     public function size(){

@@ -4,7 +4,7 @@ use App\ProductMaster;
 
 
 
-//display products
+//Home Page
 Route::get('/','DispalyProductController@index');
 
 //Add category and Brand in nav baar

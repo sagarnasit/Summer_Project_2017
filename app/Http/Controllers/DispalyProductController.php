@@ -20,12 +20,12 @@ class DispalyProductController extends Controller
 
     public function index()
     {
-        $products=ProductDetail::all();
+        $products=ProductDetail::distinct('color_id')->get();
         $image=ProductImage::all();
-        $product_detail=ProductMaster::all();
+        $product_detail=ProductMaster::distinct();
 
-        $brands=Brand::all();
-        $categories=Category::all();
+        // $brands=Brand::all();
+        // $categories=Category::all();
 
         $view=View::make('Boot.index',compact(['products','image','product_detail']));
        /* $view->nest('Boot.layouts.nav',compact('brands','categories'));*/
