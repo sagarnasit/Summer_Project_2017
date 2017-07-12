@@ -20,7 +20,7 @@
                             <ul class="list-unstyled">
                                 <li>
                                     <div class="col-md-4 paira-animation" data-paira-animation="fadeInLeft" data-paira-animation-delay="0.5s">
-                                        <img class="img-responsive" src="images/Adidas_shhoe.jpg{{--{{url('images',$cartItem->name)}}--}}" alt="">
+                                        <img class="img-responsive" src="{{--images/Adidas_shhoe.jpg--}}{{url('images',$cartItem->image)}}" alt="">
                                     </div>
                                     <div class="col-md-8 margin-top-20">
                                         <a href="#" class="margin-top-10"><strong class="font-size-18"></strong></a>
@@ -30,13 +30,13 @@
                                         <form action="{{route('cart.destroy',$cartItem->rowId)}}" method="POST">
                                             {{csrf_field()}}
                                             {{method_field('DELETE')}}
-                                            <input  class="button small alert" type="submit" value="Delete">
+                                            <input  class="btn btn-default pull-right"  type="submit" value="Delete">
                                         </form>
                                         <h4 class="margin-top-20 margin-bottom-20"><span class="money font-size-16 color-scheme-3"> {{ $cartItem->name}}</span></h4>
                                         <h4 class="margin-bottom-20 pull-right"><span class="money font-bold">Rs. {{$cartItem->price}}</span></h4>
                                         <div class="margin-bottom-10 quantity pull-left">
                                             <button class="pull-left btn-success btn" data-direction="down"><i class="fa fa-angle-down"></i></button>
-                                            <input type="text" value="1{{--{{$cartItem->qty}}--}}" class="pull-left text-center product_quantity_text">
+                                            <input type="text" value="1" class="pull-left text-center product_quantity_text">
                                             <button class="btn-success btn pull-left" data-direction="up"><i class="fa fa-angle-up"></i></button>
                                         </div>
                                         <a href="#" class="btn btn-default pull-left color-scheme-1 margin-left-10 margin-right-10 cart-update"><i class="fa fa-pencil"></i></a>
