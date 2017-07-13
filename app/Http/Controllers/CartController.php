@@ -20,6 +20,7 @@ class CartController extends Controller
     {
 
         $cartItems = Cart::content();
+        //$quantity=ProductDetail::where('product_id',$)->value('quantity');
         return view('Boot.cart', compact('cartItems'));
     }
 
@@ -88,6 +89,7 @@ class CartController extends Controller
      */
     public function update(Request $request, $id)
     {
+
         Cart::update($id,['qty'=>$request->qty]);
         return back();
 

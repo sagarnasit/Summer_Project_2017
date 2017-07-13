@@ -17,6 +17,7 @@
                         <div class="cart-item-list">
                             <h6 class="text-uppercase panel-title cart-title">Product Lists</h6>
                        @foreach($cartItems as $cartItem)
+
                             <ul class="list-unstyled">
                                 <li>
                                     <div class="col-md-4 paira-animation" data-paira-animation="fadeInLeft" data-paira-animation-delay="0.5s">
@@ -34,10 +35,19 @@
                                             <input  class="btn btn-default pull-right"  type="submit" value="Delete">
                                         </form>
                                           {{-- <button class="pull-left btn-success btn" data-direction="down"><i class="fa fa-angle-down"></i></button>--}}
-                                        <form action="{{route('cart.update',$cartItem->$rowId)}}" method="PUT" >
-                                            <input name="qty"  value="{{$cartItem->qty}}" class="pull-left text-center product_quantity_text">
+                                          {{--  <form action="{{route('cart.update',$cartItem->rowId)}}" method="">
+                                                <input type="number" name="qty"  max="10" min="1" value="{{$cartItem->qty}}" class="pull-left text-center product_quantity_text">
                                                 <input class="btn btn-default pull-right" type="submit"  value="Update">
-                                            </form>
+                                            </form>--}}
+                                            {!! Form::open(['route'=>['cart.update',$cartItem->rowId], 'method' => 'PUT']) !!}
+                                            {{csrf_field()}}
+                                               <input name="qty" class="pull-left text-center product_quantity_text" type="number" max="10" min="1" value="{{$cartItem->qty}}" >
+                                               <input class="btn btn-default pull-right" type="submit"  value="Update">
+                                            {!! Form::close() !!}
+                                            {{--<form action="['route'=>['cart.update',$cartItem->rowId]]" method="ANY">
+                                                <input name="qty" type="number" max="10" min="1" class="pull-left text-center product_quantity_text" value="{{$cartItem->qty}}" >
+                                                <input class="btn btn-default pull-right" type="submit" value="Update">
+                                            </form>--}}
                                         </div>
 
                                            {{-- <button class="btn-success btn pull-left" data-direction="up"><i class="fa fa-angle-up"></i></button>--}}
@@ -63,7 +73,8 @@
                                     <textarea id="note" name="note" class="margin-top-10 margin-bottom-10 form-control" placeholder="Special instructions..."></textarea>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <input type="submit" id="checkout" class="btn btn-success btn-lg btn-block text-uppercase margin-top-50" name="checkout" value="Proceed To Checkout">
+                                    {{--<input type="submit" id="checkout" class="btn btn-success btn-lg btn-block text-uppercase margin-top-50" name="checkout" value="Proceed To Checkout">--}}
+                                    <button type="submit" id="checkout" class="btn btn-success btn-lg btn-block text-uppercase margin-top-50" name="checkout">Proceed To Checkout</button>
                                 </div>
                             </div>
                         </figure>

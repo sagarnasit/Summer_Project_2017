@@ -6,11 +6,11 @@
                               <li class="dropdown cart-menu-body paira-cart-menu-body margin-clear">
                                     <a href="/cart" class="padding-bottom-15"><i
                                                   class="fa fa-shopping-cart fa-2x color-scheme-2"></i><span
-                                                  class="paira-cart-item-count">10</span><span
+                                                  class="paira-cart-item-count">{{Cart::count()}}</span><span
                                                   class="for-mobile-tab"><span
                                                         class="paira-cart-total-price"><span
                                                               class="money font-bold"
-                                                              data-currency-usd="$0.00">Rs. 450</span></span></span></a>
+                                                              data-currency-usd="$0.00">Rs. {{Cart::total()}}</span></span></span></a>
 
 
                               </li>
