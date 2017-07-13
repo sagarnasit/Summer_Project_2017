@@ -3063,6 +3063,8 @@ class ComposerStaticInit88889e83252f3c3e0cc5bb48960d3952
         'Ramsey\\Uuid\\UuidFactory' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactory.php',
         'Ramsey\\Uuid\\UuidFactoryInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactoryInterface.php',
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
+        'RenameQtyToQuantityInTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_13_083141_rename_qty_to_quantity_in_table.php',
+        'RenmeQtyToQuantityInTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_13_083446_renme_qty_to_quantity_in_table.php',
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
         'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Driver/Driver.php',

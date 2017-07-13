@@ -28,9 +28,10 @@ class CartController extends Controller
     public function addItem($id)
     {
         $product=ProductDetail::find($id);
+
         $product_name=ProductMaster::where('product_id',$id)->value('product_name');
         $image=ProductImage::where('product_id',$id)->value('image');
-        Cart::add(['id'=>$id,'name'=>$product_name,'price'=>$product->price,'image'=>$product->images->image,'qty'=>$product->qty]);
+        Cart::add(['id'=>$id,'name'=>$product_name,'qty' => 1,'price'=>$product->price,'image'=>$product->images->image]);
         return back();
     }
 
@@ -87,7 +88,9 @@ class CartController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        Cart::update($id,['qty'=>$request->qty]);
+        return back();
+
     }
 
     /**
