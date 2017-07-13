@@ -165,3 +165,5 @@ Route::get('/getAjaxSize', function () {
       }
 });
 */
+
+Route::any('/subscribers','SubscribersController@store');

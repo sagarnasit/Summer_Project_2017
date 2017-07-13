@@ -3,19 +3,21 @@
       <section class="footer-top">
             <div class="container">
                   <div class="row">
-                        <div class="col-lg-9 col-md-9 col-sm-9">
-                              <div class="split">
-                                    <!--=================== Newsletter ===================-->
-                                    <form action="#" method="post" target="_blank" novalidate="">
-                                          <input type="email" class="form-control color-scheme-3" name="newsletter-email" id="newsletter-email" placeholder="Enter Your Email Address" required="">
-                                    </form>
+                        <form action="/subscribers" method="POST">
+                              <div class="col-lg-9 col-md-9 col-sm-9">
+                                    <div class="split">
+                                          <!--=================== Newsletter ===================-->
+                                          {{csrf_field()}}
+                                          <input type="email" class="form-control color-scheme-3" name="email" id="email" placeholder="Enter Your Email Address" required="">
+                                    </div>
                               </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                              <!--=================== Newsletter ===================-->
-                              <button type="submit" class="btn btn-default">Subscribe</button>
-                        </div>
+                              <div class="col-lg-3 col-md-3 col-sm-3">
+                                    <!--=================== Newsletter ===================-->
+                                    <button type="submit" class="btn btn-default">Subscribe</button>
+                              </div>
+                        </form>
                   </div>
+                  @include ('Boot.layouts.errors')
             </div>
       </section>
       <!--=================== Footer Middle Section ===================-->
