@@ -41,7 +41,7 @@
                         <div class="col-lg-3 col-md-3 col-sm-3 animated fadeInLeft"  data-paira-animation="fadeInDown" data-paira-animation-delay="0.5s">
                               <h4 class="page-header page-header1">ORDERS & RETURNS</h4>
                               <ul class="list-unstyled footer-list-style">
-                                    <li><a href="#">Shipping Policy</a></li>
+                                    <li><a href="/shippingpolicy">Shipping Policy</a></li>
                                     <li><a href="#">Return Policy</a></li>
                                     <li><a href="#">Delivery</a></li>
                                     <li><a href="#">Order Policy</a></li>
