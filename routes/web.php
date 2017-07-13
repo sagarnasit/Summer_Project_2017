@@ -30,64 +30,64 @@ Route::get('/about',function(){return view('Boot.about');});
 //Cart
 /*Route::get('/cart',function() {
       return view('Boot.cart');
-});*/
+    });*/
 
-Route::resource('/cart','CartController');
+    Route::resource('/cart','CartController');
 
 
 //Add to cart
-Route::get('/cart/add-item/{id}','CartController@addItem')->name('cart-additem');
+    Route::get('/cart/add-item/{id}','CartController@addItem')->name('cart-additem');
 
-Route::prefix('seller')->group(function () {
+    Route::prefix('seller')->group(function () {
 
 //Logged in users/seller cannot access or send requests these pages
       Route::group( [  'middleware' => 'seller_guest'], function() {
 
 
-            Route::get('register', 'SellerAuth\RegisterController@showRegistrationForm')->name('seller.register');
-            Route::post('register', 'SellerAuth\RegisterController@register');
-            Route::get('login', 'SellerAuth\LoginController@showLoginForm')->name('seller.login');
-            Route::post('login', 'SellerAuth\LoginController@login')->name('seller.login.submit');
+        Route::get('register', 'SellerAuth\RegisterController@showRegistrationForm')->name('seller.register');
+        Route::post('register', 'SellerAuth\RegisterController@register');
+        Route::get('login', 'SellerAuth\LoginController@showLoginForm')->name('seller.login');
+        Route::post('login', 'SellerAuth\LoginController@login')->name('seller.login.submit');
             //Password reset routes
-            Route::get('password/reset', 'SellerAuth\ForgotPasswordController@showLinkRequestForm');
-            Route::post('password/email', 'SellerAuth\ForgotPasswordController@sendResetLinkEmail');
-            Route::get('password/reset/{token}', 'SellerAuth\ResetPasswordController@showResetForm');
-            Route::post('password/reset', 'SellerAuth\ResetPasswordController@reset');
+        Route::get('password/reset', 'SellerAuth\ForgotPasswordController@showLinkRequestForm');
+        Route::post('password/email', 'SellerAuth\ForgotPasswordController@sendResetLinkEmail');
+        Route::get('password/reset/{token}', 'SellerAuth\ResetPasswordController@showResetForm');
+        Route::post('password/reset', 'SellerAuth\ResetPasswordController@reset');
 
       });
 
 //Only logged in sellers can access or send requests to these pages
       Route::group(['middleware' => 'seller_auth'], function(){
 
-            Route::post('logout', 'SellerAuth\LoginController@logout')->name('seller.logout');
+        Route::post('logout', 'SellerAuth\LoginController@logout')->name('seller.logout');
 //Seller Home Route
-            Route::get('dashboard', function(){return view('Vendor.index');
-            })->name('seller.home');
+        Route::get('dashboard', function(){return view('Vendor.index');
+      })->name('seller.home');
 //Product Route
-            Route::get('/addproduct','Seller\ProductController@index');
-            Route::post('/addproduct','Seller\ProductController@store');
+        Route::get('/addproduct','Seller\ProductController@index');
+        Route::post('/addproduct','Seller\ProductController@store');
 //ProductSKu 
-            Route::get('/addSKU','Seller\ProductSKUController@index');
-            Route::post('/addSKU','Seller\ProductSKUController@store');
+        Route::get('/addSKU','Seller\ProductSKUController@index');
+        Route::post('/addSKU','Seller\ProductSKUController@store');
 
 //Product Image
-            Route::get('/addImage','Seller\ProductImageController@index')->name('add-image');
-            Route::post('/storeImage','Seller\ProductImageController@store');
+        Route::get('/addImage','Seller\ProductImageController@index')->name('add-image');
+        Route::post('/storeImage','Seller\ProductImageController@store');
 //Add Category
-            Route::get('/addCategory','Seller\CategoryController@index')->name('add-category');
-            Route::get('/showCategory','Seller\CategoryController@show')->name('show-category');
-            Route::post('/storeCategory','Seller\CategoryController@store');
+        Route::get('/addCategory','Seller\CategoryController@index')->name('add-category');
+        Route::get('/showCategory','Seller\CategoryController@show')->name('show-category');
+        Route::post('/storeCategory','Seller\CategoryController@store');
 
 //Add Brand
-            Route::get('/addBrand','Seller\BrandController@index')->name('add-brand');
-            Route::post('/storeBrand','Seller\BrandController@store');
+        Route::get('/addBrand','Seller\BrandController@index')->name('add-brand');
+        Route::post('/storeBrand','Seller\BrandController@store');
 
 
 
 
 
       });
-});
+    });
 
 
 
@@ -166,4 +166,6 @@ Route::get('/getAjaxSize', function () {
 });
 */
 
-Route::any('/subscribers','SubscribersController@store');
+Route::post('/subscribers','SubscribersController@store');
+
+Route::get('/shippingpolicy',function(){return view('Boot.Static.shippingpolicy');});
