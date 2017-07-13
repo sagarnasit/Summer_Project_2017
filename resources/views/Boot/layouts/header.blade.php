@@ -20,7 +20,7 @@
 
                   </div>
 
-                  @if (Auth::guard()->guest())
+                  @if (Auth::guard('web')->guest())
                         <div class="pull-right user-account">
                               <ul class="list-inline">
                                     <li class="btn-group">
