@@ -60,7 +60,7 @@
                                           <li><img src="assets/images/product/themetidy-paira-framework-boot-responsive-html-template-product-4.jpg" alt=""></li>
                                     </ul>
                               </div>
-                              <a href="#" target="_blank" class="btn btn-default btn-block margin-top-20 font-color-black font-bold text-uppercase">View Gallery</a>
+                              <a href="/product" target="_blank" class="btn btn-default btn-block margin-top-20 font-color-black font-bold text-uppercase">View Gallery</a>
                         </div>
                         <!--=================== Footer Middle Column 4 ===================-->
                         <div class="col-lg-3 col-md-3 col-sm-3 btn-find animated fadeInRight"  data-paira-animation="fadeInRight" data-paira-animation-delay="1.2s">
