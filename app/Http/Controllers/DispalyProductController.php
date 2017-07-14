@@ -33,4 +33,10 @@ class DispalyProductController extends Controller
         return $view;
 
     }
+
+    public function showall()
+    {
+        $product=ProductDetail::all();
+        return view('Boot.products',compact('product'));
+    }
 }

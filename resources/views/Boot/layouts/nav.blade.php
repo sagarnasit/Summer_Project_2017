@@ -19,6 +19,7 @@
                                     <ul class="nav navbar-nav font-bold">
                                           <!--=================== Single Menu ===================-->
                                           <li><a href={{url('/')}}>Home</a></li>
+                                          <li><a href={{url('/product')}}>Products</a></li>
                                           <!--=================== Classic Menu ===================-->
 
                                           <li class="dropdown paira-dropdown">

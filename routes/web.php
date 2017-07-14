@@ -6,6 +6,7 @@ use App\ProductMaster;
 
 //Home Page
 Route::get('/','DispalyProductController@index');
+Route::get('/product','DispalyProductController@showall');
 
 //Add category and Brand in nav baar
 //Route::get('/','AddCatBrandController@index');
@@ -13,6 +14,8 @@ Route::get('/','DispalyProductController@index');
 //UserLogin
 Route::get('/login','Auth\LoginController@showLoginForm');
 Route::post('/login','Auth\LoginController@login')->name('login');
+
+
 
 //UserRegister
 Route::get('/register','Auth\RegisterController@showRegistrationForm');
