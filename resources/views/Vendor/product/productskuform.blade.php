@@ -158,8 +158,8 @@
                                    
                                     <td>{{ $p->mrp }}</td>
                                     <td>{{ $p->price }}</td>
-                                    <td>{{ $p->qty }}</td>
-                                    <td>{{ $p->minqty }}</td>
+                                    <td>{{ $p->quantity }}</td>
+                                    <td>{{ $p->minquantity }}</td>
 
                                 </tr>
                             @endforeach

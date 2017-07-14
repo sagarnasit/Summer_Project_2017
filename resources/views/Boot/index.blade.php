@@ -3,7 +3,15 @@
 @section('title')
     <title>Home</title>
 @stop
-
+@section('css')
+  <style type="text/css">
+    .photo{
+      height: 350px;
+      width: 500px;
+      overflow: hidden; 
+    }
+  </style>
+@stop
 @section('body')
     <section class="main-slider">
         <!--=================== Camera Slider ===================-->
@@ -36,88 +44,58 @@
 
 
     <!--=================== Recent Product Section ===================-->
-    <section class="recent-product text-center padding-bottom-60">
+  <section class="top-seller text-center padding-bottom-60">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h1 class="text-uppercase">Recent Products</h1>
+                        <h1 class="text-uppercase">Recent Product</h1>
                         <hr>
                     </div>
                 </div>
-                <div class="product-widget">
-
-
-                    {{--@foreach($products as $product)--}}
-                    <div class="col-md-6 col-sm-6 col-xs-6 margin-bottom-100 paira-animation" data-paira-animation="fadeInUp" data-paira-animation-delay="0.3s">
+                <div class="product-seller">
+                    <div class="paira-related-product related-product">
+                        @foreach($products as $product)
                         <div class="paira-product product position">
                             <div class="block-image position">
                                 <a href="#">
                                     <div class="background-overlay"></div>
-                                    <img src="assets/images/product/themetidy-paira-framework-boot-responsive-html-template-product-3.jpg" alt="themetidy-paira-framework-foot-responsive-html-template-product-1" class="paira-product-image img-responsive"></a>
+                                    {{--assets/images/product/themetidy-paira-framework-boot-responsive-html-template-product-1.jpg--}}
+                                    {{--{{url('images',$shirt->image)}}"--}}
+                                    
+                                    <img src="{{url('images',$product->productdetails[0]->images->image)}}" alt="themetidy-paira-framework-foot-responsive-html-template-product-1" class="paira-product-image img-responsive photo">
+                                </a>
                             </div>
                             <div class="product-price">
-                                <span class="money">Rs. 200{{--{{$product->price}}--}}</span>
+                                <del><span class="money font-color-orange margin-right-10">Rs. {{$product->mrp}}</span></del>
+                                <span class="money">Rs. {{$product->productdetails[0]->price}}</span>
                             </div>
-                            <div class="product-new font-italic color-scheme-3"><span>New</span></div>
-                            <div class="product-sale font-italic color-scheme-3"><span>Sale</span></div>
-                            <h4 class="color-scheme-3"> Converse Technical Shoe</h4>
+                            {{--<div class="product-new font-italic color-scheme-3"><span>New</span></div>
+                            <div class="product-sale font-italic color-scheme-3"><span>Sale</span></div>--}}
+                            <h4 class="color-scheme-3"> {{$product->productdetails[0]->product->product_name}}</h4>
                             <div class="product-hover text-uppercase">
                                 <div class="paira-rating-con product-rating padding-bottom-40 color-scheme-3">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
+                                    <i class=""></i>
                                 </div>
                                 <div class="paira-product-cart-con product-button text-center">
                                     <ul class="list-inline">
-                                        <li class=""><a href="" class=" text-uppercase color-scheme-3"><i class="fa fa-shopping-cart fa-2x margin-right-5"></i> Add to cart</a></li>
-                                        {{-- <li><a href="#" class="paira-quick-view quick-view color-scheme-3"><i class="fa fa-eye fa-2x"></i></a></li>
-                                         <li><a href="#" class="color-scheme-3"><i class="fa fa-heart-o fa-2x"></i></a></li>
-                                         <li><a href="#" class="color-scheme-3"><i class="fa fa-retweet fa-2x"></i></a></li>--}}
+                                        <li class=""><a href="{{route('cart-additem',$product->productdetails[0]->product_id)}}" class=" text-uppercase color-scheme-3 hover-add-cart"><i class="fa fa-shopping-cart fa-2x margin-right-5"></i><span>Add to cart</span> </a></li>
+
                                     </ul>
                                 </div>
+
                             </div>
                         </div>
+                        @endforeach
                     </div>
-                    {{--@endforeach--}}
-
-                    <div class="col-md-6 col-sm-6 col-xs-6 margin-botto m-100 paira-animation" data-paira-animation="fadeInUp" data-paira-animation-delay="0.3s">
-                        <div class="paira-product product position">
-                            <div class="block-image position">
-                                <a href="#">
-                                    <div class="background-overlay"></div>
-                                    <img src="assets/images/product/themetidy-paira-framework-boot-responsive-html-template-product-4.jpg" alt="themetidy-paira-framework-foot-responsive-html-template-product-1" class="paira-product-image img-responsive"></a>
-                            </div>
-                            <div class="product-price">
-                                <span class="money">$120.00</span>
-                            </div>
-                            <div class="product-new font-italic color-scheme-3"><span>New</span></div>
-                            <div class="product-sale font-italic color-scheme-3"><span>Sale</span></div>
-                            <h4 class="color-scheme-3"> Converse Technical Shoe</h4>
-                            <div class="product-hover text-uppercase">
-                                <div class="paira-rating-con product-rating padding-bottom-40 color-scheme-3">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <div class="paira-product-cart-con product-button text-center">
-                                    <ul class="list-inline">
-                                        <li class=""><a href="#" class=" text-uppercase color-scheme-3"><i class="fa fa-shopping-cart fa-2x margin-right-5"></i> Add to cart</a></li>
-                                        {{--<li><a href="#" class="paira-quick-view quick-view color-scheme-3"><i class="fa fa-eye fa-2x"></i></a></li>
-                                        <li><a href="#" class="color-scheme-3"><i class="fa fa-heart-o fa-2x"></i></a></li>
-                                        <li><a href="#" class="color-scheme-3"><i class="fa fa-retweet fa-2x"></i></a></li>--}}
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="related-product-btn">
+                        <button class="paira-related-product-left pull-left paira-animation"  data-paira-animation="fadeInDown" data-paira-animation-delay="0.3s"><a><img src="assets/images/slider/themetidy-paira-framework-boot-responsive-html-template-slider-pre.png" alt="" class="paira-product-image img-responsive"></a></button>
+                        <button class="paira-related-product-right pull-right paira-animation"  data-paira-animation="fadeInDown" data-paira-animation-delay="0.3s"><a><img src="assets/images/slider/themetidy-paira-framework-boot-responsive-html-template-slider-next.png" alt="" class="paira-product-image img-responsive"></a></button>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
     </section>
     <!--=================== Top Selling Product Section ===================-->
     <section class="top-seller text-center padding-bottom-60">
@@ -139,23 +117,23 @@
                                     {{--assets/images/product/themetidy-paira-framework-boot-responsive-html-template-product-1.jpg--}}
                                     {{--{{url('images',$shirt->image)}}"--}}
                                     
-                                    <img src="{{url('images',$product->images->image)}}" alt="themetidy-paira-framework-foot-responsive-html-template-product-1" class="paira-product-image img-responsive">
+                                    <img src="{{url('images',$product->productdetails[0]->images->image)}}" alt="themetidy-paira-framework-foot-responsive-html-template-product-1" class="paira-product-image img-responsive photo">
                                 </a>
                             </div>
                             <div class="product-price">
                                 <del><span class="money font-color-orange margin-right-10">Rs. {{$product->mrp}}</span></del>
-                                <span class="money">Rs. {{$product->price}}</span>
+                                <span class="money">Rs. {{$product->productdetails[0]->price}}</span>
                             </div>
                             {{--<div class="product-new font-italic color-scheme-3"><span>New</span></div>
                             <div class="product-sale font-italic color-scheme-3"><span>Sale</span></div>--}}
-                            <h4 class="color-scheme-3"> {{$product->product->product_name}}</h4>
+                            <h4 class="color-scheme-3"> {{$product->productdetails[0]->product->product_name}}</h4>
                             <div class="product-hover text-uppercase">
                                 <div class="paira-rating-con product-rating padding-bottom-40 color-scheme-3">
                                     <i class=""></i>
                                 </div>
                                 <div class="paira-product-cart-con product-button text-center">
                                     <ul class="list-inline">
-                                        <li class=""><a href="{{route('cart-additem',$product->product_id)}}" class=" text-uppercase color-scheme-3 hover-add-cart"><i class="fa fa-shopping-cart fa-2x margin-right-5"></i><span>Add to cart</span> </a></li>
+                                        <li class=""><a href="{{route('cart-additem',$product->productdetails[0]->product_id)}}" class=" text-uppercase color-scheme-3 hover-add-cart"><i class="fa fa-shopping-cart fa-2x margin-right-5"></i><span>Add to cart</span> </a></li>
 
                                     </ul>
                                 </div>

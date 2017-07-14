@@ -70,8 +70,8 @@ class ProductSKUController extends Controller
             // $pc->brand_id=$request['brandid'];
             $pc->mrp= $request['mrp'];
             $pc->price= $request['price'];
-            $pc->qty= $request['qty'];
-            $pc->minqty= $request['minqty'];
+            $pc->quantity= $request['qty'];
+            $pc->minquantity= $request['minqty'];
             $pc->status=1;
             $pc->save();
 

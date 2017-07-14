@@ -3,6 +3,17 @@
 @section('title')
       / Add Product Image
 @stop
+
+@section('css')
+  <style type="text/css">
+    .photo{
+      height: 100px;
+      width: 200px;
+      overflow: hidden; 
+    }
+  </style>
+@stop
+
 @section('body')
       <div class="white-box" align="center">
             <h2>Add Product Image</h2>
@@ -42,7 +53,7 @@
                                                                         <div class="form-group">
                                         <div class="col-md-offset-3 col-md-6">
                                         
-                                           <button type="submit" class="btn btn-success">Add SKU</button>
+                                           <button type="submit" class="btn btn-success">Add Image</button>
                                            <button type="reset" class="btn btn-success">Clear</button>
                                         </div>
                                     </div>
