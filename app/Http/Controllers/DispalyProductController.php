@@ -37,7 +37,7 @@ class DispalyProductController extends Controller
 
     public function showall()
     {
-        $product=ProductDetail::all();
+        $product=ProductDetail::paginate(5);
         return view('Boot.products',compact('product'));
     }
 }

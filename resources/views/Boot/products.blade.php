@@ -17,6 +17,7 @@
 
                     <div class="cart-item-list">
 
+   <h3>Total {{$product->total()}} Products founds</h3>
     @foreach($product as $p)
            <ul class="list-unstyled">
             <li>
@@ -34,6 +35,11 @@
 
     @endforeach
 
+                    </div>
+                    {{$product->links() }}
+                </div>
+            </div>
+        </div>
   </section>
 
 
