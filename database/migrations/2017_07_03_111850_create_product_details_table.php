@@ -20,8 +20,8 @@ class CreateProductDetailsTable extends Migration
             $table->integer('size_id');           
             $table->integer('mrp');
             $table->integer('price');
-            $table->integer('qty');
-            $table->integer('minqty');
+            $table->integer('quantity');
+            $table->integer('minquantity');
             $table->integer('status');
             $table->timestamps();
             $table->unique( array('product_id','color_id','size_id') );

@@ -20,7 +20,8 @@ class DispalyProductController extends Controller
 
     public function index()
     {
-        $products=ProductDetail::distinct('color_id')->get();
+        $products=ProductMaster::all();
+        // return $products;
         $image=ProductImage::all();
         $product_detail=ProductMaster::distinct();
 

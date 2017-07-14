@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Seller;
 
 use Illuminate\Foundation\Http\FormRequest;
-
+use Illuminate\Validation\Rule;
 class ProductSKURequest extends FormRequest
 {
     /**
@@ -24,9 +24,9 @@ class ProductSKURequest extends FormRequest
     public function rules()
     {
         return [
-           'productid'=> 'required',
-            'colorid' => 'required',
-            'sizeid' => 'required',
+           'productid'=> ['required', Rule::notIn(['null']),],
+            'colorid' => ['required', Rule::notIn(['null']),],
+            'sizeid' => ['required ', Rule::notIn(['null']),],
             'mrp' => 'required',
             'price' => 'required',
             'qty' => 'required',
