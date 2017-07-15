@@ -10,6 +10,7 @@ class BrandController extends Controller
 {
     public function index()
     {
+        
         return view('Vendor.product.addbrand');
     }
 

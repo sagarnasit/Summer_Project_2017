@@ -4,6 +4,9 @@
       / Add Product
 @stop
 @section('body')
+<div id='msg'>
+  @include('flash::message')
+</div>
       <div class="white-box" align="center">
             <h2>Add New Product</h2>
             <hr>
@@ -64,19 +67,8 @@
                   </form>
             </div>
       </div>
-      <div id='msg'>
-            @include('flash::message')
-      </div>
-      <style type="text/css">
-            #msg {
-                  position: absolute;
-
-                  right: 0;
-
-                  z-index: 10;
-            }
-
-      </style>
+     
+      
 @stop
 @section('javascript')
 

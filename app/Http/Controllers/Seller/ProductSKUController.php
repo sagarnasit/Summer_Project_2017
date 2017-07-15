@@ -26,7 +26,7 @@ class ProductSKUController extends Controller
     	
     	//return $products;
     	$productdetails=null;
-
+        
     	return view('Vendor.product.productskuform',compact(['products','colors','sizes','productdetails']));
     }
 
@@ -76,7 +76,7 @@ class ProductSKUController extends Controller
             $pc->save();
 
             //flash message
-            flash('<b>SKU Added...!</b>');
+            flash('<b>SKU Added...!</b>')->error();
 
 
             //get Product detail

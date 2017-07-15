@@ -4,6 +4,10 @@
       / Add ProductSKU
 @stop
 @section('body')
+
+      <div id='msg'>
+            @include('flash::message')           
+      </div>
       <div class="white-box" align="center">
             <h2>Add ProductSKU</h2>
             <hr>
@@ -172,11 +176,6 @@
             
       </div>
      
-      <div id='msg'>
-            @include('flash::message')
-            <script type="text/javascript">
-                
-            </script>
-      </div>
+     
 
 @stop

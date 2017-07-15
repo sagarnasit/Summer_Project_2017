@@ -19,14 +19,13 @@
 <link href="/assets/Vendor/css/colors/default.css" id="theme" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.1.1/css/iziToast.css">
 <style type="text/css">
-        #msg {
-         	position: absolute;
-           /*top:5;*/
-           right: 0;          
-           width: 25%;
-           z-index: 10;
-           
-
-      }
+    #msg {
+		position: fixed;
+		/*top:5;*/
+		right: 0;          
+		width: 25%;
+		z-index: 10;
+		margin-bottom: 0;
+    }
     
 </style>
