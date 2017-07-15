@@ -166,8 +166,21 @@ Route::get('/getAjaxSize', function () {
 });
 */
 
+//footer About Us
+Route::get('/about_us',function(){return view('Boot.static_pages.about_us');});
+
+//footer Contact Us
+Route::get('/contact_us',function(){return view('Boot.static_pages.contact_us');});
+
+//footer Terms of Use
+Route::get('/terms_of_use',function(){return view('Boot.static_pages.terms_of_use');});
+
+//footer Subscribe Form
 Route::post('/subscribers','SubscribersController@store');
 
-Route::get('/shippingpolicy',function(){return view('Boot.Static Pages.shippingpolicy');});
+//footer Shipping Policy
+Route::get('/shipping_policy',function(){return view('Boot.static_pages.shipping_policy');});
 
-Route::get('/returnpolicy',function(){return view('Boot.Static Pages.returnpolicy');});
+//footer Return Policy
+Route::get('/return_policy',function(){return view('Boot.static_pages.return_policy');});
+

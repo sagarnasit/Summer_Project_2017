@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="returnpolicy"><br>
+			<div class="return_policy"><br>
 				<p>
 					Boot is committed to making your shopping experience a success and is offering free returns. If you are not satisfied with your online purchase, we will accept returns of unworn merchandise for up to 30 days from purchase for a full refund. Proof of purchase or packing slip invoice is required for reimbursement of the full purchase price. In all cases, refunds will be made in the form of the original payment.
 				</p>
