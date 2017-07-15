@@ -37,7 +37,21 @@ class DispalyProductController extends Controller
 
     public function showall()
     {
-        $product=ProductDetail::paginate(2);
+        $product=ProductDetail::latest()->paginate(10);
         return view('Boot.products',compact('product'));
+    }
+
+   /* public function search($query, $s)
+    {
+         return $query->where('product_name','like', '%' .$s. '%');
+    }*/
+
+    public function searchall(Request $request)
+    {
+
+        $s=$request->input('s');
+
+        $product= ProductMaster::latest()->where('product_name','like', '%' .$s. '%')->paginate(10);
+        return view('Boot.searchProducts',compact('product','s'));
     }
 }

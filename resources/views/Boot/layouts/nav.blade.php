@@ -187,10 +187,10 @@
                                     <div class="dropdown navbar-form navbar-right navbar-search search-drop-bar margin-top-10">
                                           <a data-toggle="dropdown" href="#" aria-expanded="false"><i class="fa fa-search fa-2x"></i></a>
                                           <ul class="dropdown-menu box paira-animation" id="box" data-paira-animation="fadeInDown" data-paira-animation-delay="0.0s">
-                                                <form class="navbar-form" action="http://demo.enpek.com/search">
+                                                <form class="navbar-form" action="/search" method="get">
                                                       <div class="form-group">
                                                             <i class="fa fa-search"></i>
-                                                            <input type="text" name="q" class="form-control font-bold font-size-16" placeholder="Search Here" value="">
+                                                            <input type="text" name="s" class="form-control font-bold font-size-16" placeholder="Search Here" value="{{ isset($s) ? $s : ''}}">
                                                       </div>
                                                 </form>
                                                 <a class="boxclose" id="close"></a>
@@ -201,3 +201,4 @@
                   </div>
             </div>
       </div>
+</section>

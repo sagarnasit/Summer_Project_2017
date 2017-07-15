@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-md-8 margin-top-20">
                     <h4 class="margin-top-20 margin-bottom-20"><span class="money font-size-16 color-scheme-3"> {{ $p->product->product_name}}</span></h4>
-                    <h4  class="margin-bottom-20"><span class="money font-bold">Rs. {{$p->price}}</span></h4>
+                    <h4  class="margin-bottom-20"><span class="money font-bold">Rs. {{$p->productprice}}</span></h4>
                     <a href="{{route('cart-additem',$p->product_id)}}"  class="btn btn-default font-color-black ">Add TO Cart</a>
 
                 </div>

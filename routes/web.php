@@ -6,7 +6,12 @@ use App\ProductMaster;
 
 //Home Page
 Route::get('/','DispalyProductController@index');
+
+//show products
 Route::get('/product','DispalyProductController@showall');
+
+//searching
+Route::get('/search','DispalyProductController@searchall');
 
 //Add category and Brand in nav baar
 //Route::get('/','AddCatBrandController@index');
