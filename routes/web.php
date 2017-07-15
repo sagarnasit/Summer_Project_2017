@@ -168,4 +168,6 @@ Route::get('/getAjaxSize', function () {
 
 Route::post('/subscribers','SubscribersController@store');
 
-Route::get('/shippingpolicy',function(){return view('Boot.Static.shippingpolicy');});
+Route::get('/shippingpolicy',function(){return view('Boot.Static Pages.shippingpolicy');});
+
+Route::get('/returnpolicy',function(){return view('Boot.Static Pages.returnpolicy');});

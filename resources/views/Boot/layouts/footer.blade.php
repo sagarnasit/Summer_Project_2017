@@ -42,7 +42,7 @@
                               <h4 class="page-header page-header1">ORDERS & RETURNS</h4>
                               <ul class="list-unstyled footer-list-style">
                                     <li><a href="/shippingpolicy">Shipping Policy</a></li>
-                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="returnpolicy">Return Policy</a></li>
                                     <li><a href="#">Delivery</a></li>
                                     <li><a href="#">Order Policy</a></li>
                                     <li><a href="#">Store Policy</a></li>
