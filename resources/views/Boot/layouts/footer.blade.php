@@ -30,7 +30,7 @@
                               <ul class="list-unstyled footer-list-style">
                                     <li><a href="/about_us">About Us</a></li>
                                     <li><a href="/contact_us">Contact Us</a></li>
-                                    <li><a href="/terms_of_use">Terms & Conditions</a></li>
+                                    <li><a href="/terms_and _condition">Terms & Conditions</a></li>
                               </ul>
                         </div>
                         <!--=================== Footer Middle Column 2 ===================-->
@@ -38,11 +38,8 @@
                               <h4 class="page-header page-header1">POLICY INFO</h4>
                               <ul class="list-unstyled footer-list-style">
                                     <li><a href="/shipping_policy">Shipping Policy</a></li>
-                                    <li><a href="return_policy">Return Policy</a></li>
-                                    <li><a href="#">Delivery</a></li>
-                                    <li><a href="#">Order Policy</a></li>
-                                    <li><a href="#">Store Policy</a></li>
-                                    <li><a class="margin-bottom-30" href="#">Gift Return Policy</a></li>
+                                    <li><a href="/return_policy">Return Policy</a></li>
+                                    <li><a href="/privacy_policy">Privacy Policy</a></li>
                               </ul>
                         </div>
                         <!--=================== Footer Middle Column 3 ===================-->
@@ -63,15 +60,15 @@
                         <div class="col-lg-3 col-md-3 col-sm-3 btn-find animated fadeInRight"  data-paira-animation="fadeInRight" data-paira-animation-delay="1.2s">
                               <h4 class="page-header">Shop local store</h4>
                               <!-- <button type="submit" class="btn btn-default color-scheme-3 font-size-20 font-bold font-size-16">
-                                <i class="fa fa-map-marker margin-right-10"></i>Find a store</button> -->
-                                <a href="/map"><button type="submit" class="btn btn-default color-scheme-3 font-size-20 font-bold font-size-16">
+                              <i class="fa fa-map-marker margin-right-10"></i>Find a store</button> -->
+                              <a href="/map"><button type="submit" class="btn btn-default color-scheme-3 font-size-20 font-bold font-size-16">
                                   <i class="fa fa-map-marker margin-right-10"></i>Find a store</button></a>
-                        </div>
-                  </div>
-            </div>
-      </section>
-      <!--=================== Footer Bottom Section ===================-->
-      <section class="footer-bottom animated fadeInUp">
+                            </div>
+                      </div>
+                </div>
+          </section>
+          <!--=================== Footer Bottom Section ===================-->
+          <section class="footer-bottom animated fadeInUp">
             <div class="container">
                   <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-3 fadeInRight"></div>

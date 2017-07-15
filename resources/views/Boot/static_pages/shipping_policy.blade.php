@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="privacy_policy"><br>
+			<div class="shipping_policy"><br>
 				<h3>
 					What are the delivery charges?
 				</h3>
