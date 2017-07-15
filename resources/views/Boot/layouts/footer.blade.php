@@ -67,7 +67,8 @@
                               <h4 class="page-header">Shop local store</h4>
                               <!-- <button type="submit" class="btn btn-default color-scheme-3 font-size-20 font-bold font-size-16">
                                 <i class="fa fa-map-marker margin-right-10"></i>Find a store</button> -->
-                                <a href="/map">Find a store</a>
+                                <a href="/map"><button type="submit" class="btn btn-default color-scheme-3 font-size-20 font-bold font-size-16">
+                                  <i class="fa fa-map-marker margin-right-10"></i>Find a store</button></a>
                         </div>
                   </div>
             </div>
