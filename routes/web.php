@@ -74,7 +74,7 @@ Route::get('/about',function(){return view('Boot.about');});
 //Product Route
         Route::get('/addproduct','Seller\ProductController@index');
         Route::post('/addproduct','Seller\ProductController@store');
-//ProductSKu 
+//ProductSKu
         Route::get('/addSKU','Seller\ProductSKUController@index');
         Route::post('/addSKU','Seller\ProductSKUController@store');
 
@@ -116,9 +116,9 @@ Route::get('/getAjaxColor', function () {
                         <label  class=\"col-sm-2 control-label\">Color</label>
                         <div class=\"col-sm-10\">
                               <select class=\"form-control\">
-                              
+
                               </select>
-                             
+
                             </div>
                        </div>
                         <div class='row'>
@@ -128,14 +128,14 @@ Route::get('/getAjaxColor', function () {
                         </div>
                         <div class='col-md-offset-1 col-md-11'>
                               <div id='addsize'>
-                                           
-                              </div>      
-                       
+
+                              </div>
+
                         </div>
                  </div>
-                  
+
             </div>
-           
+
             ";
       }
 
@@ -147,32 +147,34 @@ Route::get('/getAjaxSize', function () {
       if (Request::ajax()) {
             return"
             <div class='row form-inline'>
-            
-                  
+
+
                    <div class=\"form-group\">
                         <label for=\"email\">Size</label>
                         <select name='size' class='form-control'>
                   </div>
                   <div class=\"form-group\">
-   
+
                       <input type=\"text\" name='mrp' class=\"form-control\"  placeholder='MRP'/>
                   </div>
                   <div class=\"form-group\">
-   
+
                       <input type=\"text\" name='pricr' class=\"form-control\"  placeholder='Price'/>
                   </div>
                   <div class=\"form-group\">
-   
+
                       <input type=\"text\" name='qty' class=\"form-control\"  placeholder='Quantity'/>
                   </div>
             </div>
-           
-            
+
+
             ";
 
       }
 });
 */
+
+Route::get('/map',function(){return view('Boot.store');});
 
 Route::post('/subscribers','SubscribersController@store');
 

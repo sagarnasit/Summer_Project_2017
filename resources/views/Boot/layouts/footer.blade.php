@@ -65,7 +65,9 @@
                         <!--=================== Footer Middle Column 4 ===================-->
                         <div class="col-lg-3 col-md-3 col-sm-3 btn-find animated fadeInRight"  data-paira-animation="fadeInRight" data-paira-animation-delay="1.2s">
                               <h4 class="page-header">Shop local store</h4>
-                              <button type="submit" class="btn btn-default color-scheme-3 font-size-20 font-bold font-size-16"><i class="fa fa-map-marker margin-right-10"></i>Find a store</button>
+                              <!-- <button type="submit" class="btn btn-default color-scheme-3 font-size-20 font-bold font-size-16">
+                                <i class="fa fa-map-marker margin-right-10"></i>Find a store</button> -->
+                                <a href="/map">Find a store</a>
                         </div>
                   </div>
             </div>
