@@ -70,11 +70,11 @@
                                     <h2 class="margin-top-50 margin-bottom-20"><span class="money font-bold font-bold font-color-orange font-size-50">Rs. {{Cart::total()}}</span></h2>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <textarea id="note" name="note" class="margin-top-10 margin-bottom-10 form-control" placeholder="Special instructions..."></textarea>
+                                    {{--<textarea id="note" name="note" class="margin-top-10 margin-bottom-10 form-control" placeholder="Special instructions..."></textarea>--}}
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     {{--<input type="submit" id="checkout" class="btn btn-success btn-lg btn-block text-uppercase margin-top-50" name="checkout" value="Proceed To Checkout">--}}
-                                    <button type="submit" id="checkout" class="btn btn-success btn-lg btn-block text-uppercase margin-top-50" name="checkout">Proceed To Checkout</button>
+                                    <button     type="submit" id="checkout" class="btn btn-success btn-lg btn-block text-uppercase margin-top-50" name="checkout">Proceed To Checkout</button>
                                 </div>
                             </div>
                         </figure>

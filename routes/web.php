@@ -7,12 +7,20 @@ use App\ProductMaster;
 //Home Page
 Route::get('/','DispalyProductController@index');
 
+//show products
+Route::get('/product','DispalyProductController@showall');
+
+//searching
+Route::get('/search','DispalyProductController@searchall');
+
 //Add category and Brand in nav baar
 //Route::get('/','AddCatBrandController@index');
 
 //UserLogin
 Route::get('/login','Auth\LoginController@showLoginForm');
 Route::post('/login','Auth\LoginController@login')->name('login');
+
+
 
 //UserRegister
 Route::get('/register','Auth\RegisterController@showRegistrationForm');
@@ -66,7 +74,7 @@ Route::get('/about',function(){return view('Boot.about');});
 //Product Route
         Route::get('/addproduct','Seller\ProductController@index');
         Route::post('/addproduct','Seller\ProductController@store');
-//ProductSKu 
+//ProductSKu
         Route::get('/addSKU','Seller\ProductSKUController@index');
         Route::post('/addSKU','Seller\ProductSKUController@store');
 
@@ -108,9 +116,9 @@ Route::get('/getAjaxColor', function () {
                         <label  class=\"col-sm-2 control-label\">Color</label>
                         <div class=\"col-sm-10\">
                               <select class=\"form-control\">
-                              
+
                               </select>
-                             
+
                             </div>
                        </div>
                         <div class='row'>
@@ -120,14 +128,14 @@ Route::get('/getAjaxColor', function () {
                         </div>
                         <div class='col-md-offset-1 col-md-11'>
                               <div id='addsize'>
-                                           
-                              </div>      
-                       
+
+                              </div>
+
                         </div>
                  </div>
-                  
+
             </div>
-           
+
             ";
       }
 
@@ -139,33 +147,34 @@ Route::get('/getAjaxSize', function () {
       if (Request::ajax()) {
             return"
             <div class='row form-inline'>
-            
-                  
+
+
                    <div class=\"form-group\">
                         <label for=\"email\">Size</label>
                         <select name='size' class='form-control'>
                   </div>
                   <div class=\"form-group\">
-   
+
                       <input type=\"text\" name='mrp' class=\"form-control\"  placeholder='MRP'/>
                   </div>
                   <div class=\"form-group\">
-   
+
                       <input type=\"text\" name='pricr' class=\"form-control\"  placeholder='Price'/>
                   </div>
                   <div class=\"form-group\">
-   
+
                       <input type=\"text\" name='qty' class=\"form-control\"  placeholder='Quantity'/>
                   </div>
             </div>
-           
-            
+
+
             ";
 
       }
 });
 */
 
+<<<<<<< HEAD
 //footer About Us
 Route::get('/about_us',function(){return view('Boot.static_pages.about_us');});
 
@@ -184,3 +193,10 @@ Route::get('/shipping_policy',function(){return view('Boot.static_pages.shipping
 //footer Return Policy
 Route::get('/return_policy',function(){return view('Boot.static_pages.return_policy');});
 
+=======
+Route::get('/map',function(){return view('Boot.store');});
+
+Route::post('/subscribers','SubscribersController@store');
+
+Route::get('/shippingpolicy',function(){return view('Boot.Static.shippingpolicy');});
+>>>>>>> 70669a8474c83354d48adbcf7aa9f2ba826f8d7f

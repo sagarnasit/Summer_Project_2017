@@ -20,7 +20,8 @@ class DispalyProductController extends Controller
 
     public function index()
     {
-        $products=ProductDetail::distinct('color_id')->get();
+        $products=ProductMaster::all();
+        // return $products;
         $image=ProductImage::all();
         $product_detail=ProductMaster::distinct();
 
@@ -32,5 +33,25 @@ class DispalyProductController extends Controller
 
         return $view;
 
+    }
+
+    public function showall()
+    {
+        $product=ProductDetail::latest()->paginate(10);
+        return view('Boot.products',compact('product'));
+    }
+
+   /* public function search($query, $s)
+    {
+         return $query->where('product_name','like', '%' .$s. '%');
+    }*/
+
+    public function searchall(Request $request)
+    {
+
+        $s=$request->input('s');
+
+        $product= ProductMaster::latest()->where('product_name','like', '%' .$s. '%')->paginate(10);
+        return view('Boot.searchProducts',compact('product','s'));
     }
 }

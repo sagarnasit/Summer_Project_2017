@@ -19,6 +19,7 @@
             @include('Boot.layouts.header')
 
 
+
             <main class="home-page">
                  @yield('body')
             </main>

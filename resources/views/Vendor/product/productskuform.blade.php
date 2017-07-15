@@ -4,6 +4,10 @@
       / Add ProductSKU
 @stop
 @section('body')
+
+      <div id='msg'>
+            @include('flash::message')           
+      </div>
       <div class="white-box" align="center">
             <h2>Add ProductSKU</h2>
             <hr>
@@ -158,8 +162,8 @@
                                    
                                     <td>{{ $p->mrp }}</td>
                                     <td>{{ $p->price }}</td>
-                                    <td>{{ $p->qty }}</td>
-                                    <td>{{ $p->minqty }}</td>
+                                    <td>{{ $p->quantity }}</td>
+                                    <td>{{ $p->minquantity }}</td>
 
                                 </tr>
                             @endforeach
@@ -172,11 +176,6 @@
             
       </div>
      
-      <div id='msg'>
-            @include('flash::message')
-            <script type="text/javascript">
-                
-            </script>
-      </div>
+     
 
 @stop
