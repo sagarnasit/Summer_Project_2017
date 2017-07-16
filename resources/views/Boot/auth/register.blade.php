@@ -21,7 +21,7 @@
                                 <div class="form-group margin-bottom-40 ">
 
                                     <label><i class="fa fa-user"></i></label>
-                                    <input type="text" class="form-control {{ $errors->has('name') ? 'alert alert-danger' : '' }}" name="name" placeholder="Tony Stark">
+                                    <input type="text" required  class="form-control {{ $errors->has('name') ? 'alert alert-danger' : '' }}" name="name" placeholder="Tony Stark">
                                     @if ($errors->has('name'))
                                         <span class="help-block">
                                         <strong class="{{ $errors->has('name') ? ' text-danger' : '' }}">{{ $errors->first('name') }}</strong>
@@ -31,7 +31,7 @@
                                 <div class="form-group margin-bottom-40">
 
                                     <label><i class="fa fa-envelope"></i></label>
-                                    <input type="email" class="form-control {{ $errors->has('email') ? 'alert alert-danger' : '' }}" name="email" placeholder="you@example.com">
+                                    <input type="email" required class="form-control {{ $errors->has('email') ? 'alert alert-danger' : '' }}" name="email" placeholder="you@example.com">
                                     @if ($errors->has('email'))
                                         <span class="help-block">
                                         <strong class="{{ $errors->has('email') ? ' text-danger' : '' }}">{{ $errors->first('email') }}</strong>
@@ -41,7 +41,7 @@
                                 <div class="form-group margin-bottom-40">
 
                                 <label><i class="fa fa-lock"></i></label>
-                                <input type="password" class="form-control {{ $errors->has('password') ? 'alert alert-danger' : '' }}" name="password" placeholder="Password">
+                                <input type="password" required class="form-control {{ $errors->has('password') ? 'alert alert-danger' : '' }}" name="password" placeholder="Password">
                                     @if ($errors->has('password'))
                                         <span class="help-block">
                                         <strong class="{{ $errors->has('password') ? ' text-danger' : '' }}">{{ $errors->first('password') }}</strong>
@@ -51,7 +51,7 @@
                                 <div class="form-group margin-bottom-40">
 
                                 <label><i class="fa fa-lock"></i></label>
-                                <input type="password" class="form-control {{ $errors->has('password_confirmation') ? 'alert alert-danger' : '' }}" name="password_confirmation" placeholder="Confirm Password">
+                                <input type="password" required class="form-control {{ $errors->has('password_confirmation') ? 'alert alert-danger' : '' }}" name="password_confirmation" placeholder="Confirm Password">
                                     @if ($errors->has('password_confirmation'))
                                         <span class="help-block">
                                         <strong class="{{ $errors->has('password_confirmation') ? ' text-danger' : '' }}">{{ $errors->first('password_confirmation') }}</strong>

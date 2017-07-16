@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Providers;
+use App\Category;
 use App\Brand;
 
-use App\Category;
 use Illuminate\Support\ServiceProvider;
 
 class ViewComposerServiceProvider extends ServiceProvider
@@ -15,10 +15,12 @@ class ViewComposerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-       /*view()->composer('Boot.layouts.nav',function($view)
-       {
-           $view->with('latest', Category::latest()->first());
-       });*/
+      view()->composer('Boot.layouts.nav',function($view){
+        $view->with([
+          'categories'=>Category::all(),
+          'brands'=>Brand::all(),
+        ]);
+      });
     }
 
     /**

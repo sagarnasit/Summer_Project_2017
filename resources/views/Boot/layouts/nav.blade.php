@@ -24,21 +24,24 @@
 
                                           <li class="dropdown paira-dropdown">
                                                 <a href={{url('/')}}>Brand<i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
-                                              {{--<ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled animated fadeIn">
-                                                     @foreach($brands as $brand)
-                                                      <li><a href="#">{{$brand->brand_name}}</a></li>
+                                                <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled animated fadeIn">
+                                                      @foreach($brands as $brand)
+                                                        <li><a href="#">{{$brand->brand_name}}</a></li>
                                                       @endforeach
 
-                                                </ul>--}}
-                                          {{--<li> {!! link_to_action('HomeController@show',$latest->category_name,[$latest->category_id]) !!}</li>--}}
+                                                </ul>
+
                                           </li>
                                           <li class="dropdown paira-dropdown">
-                                        <a href="#">Pages <i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
-                                        <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled text-capitalize animated fadeIn">
-                                            <li><a href="about.html"> about us </a></li>
+                                            <a href="">Catagory <i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
+                                            <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled text-capitalize animated fadeIn">
 
-                                        </ul>
-                                    </li>
+                                              @foreach($categories as $category)
+                                               <li><a href="">{{$category->category_name}}</a></li>
+                                               @endforeach
+
+                                            </ul>
+                                          </li>
 
                                           <!--=================== Grid Mega Menu ===================-->
                                           <li class="dropdown paira-dropdown mega-menu-fw">
