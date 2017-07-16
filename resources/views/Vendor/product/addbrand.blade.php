@@ -20,21 +20,26 @@
                         <input type="text" name="brandname" class="form-control" required="">
                     </div>
                 </div>
-
             </div>
-
             <div class="col-md-offset-3 col-md-6">
                 <div align="center" class="form-group">
                     <button type="submit" id="colorbutton" class="btn btn-success">Add Brand</button>
                 </div>
             </div>
-
         </form>
     </div>
-
-    
+</div>
+<div class="white-box" align="center">
+    <table class="table table-hover table-bordered">
+        <tr class="danger">
+            <th>Brand Name</th>
+        </tr>
+        @foreach ($brands as $brand)
+        <tr class="warning">
+            <td>{{$brand->brand_name}}</td>
+        </tr>
+        @endforeach
+    </table>
 </div>
 </div>
-
-
 @stop

@@ -10,8 +10,8 @@ class BrandController extends Controller
 {
     public function index()
     {
-        
-        return view('Vendor.product.addbrand');
+        $brands = Brand::all();
+        return view('Vendor.product.addbrand',compact('brands'));
     }
 
 

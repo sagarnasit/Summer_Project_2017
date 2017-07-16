@@ -12,7 +12,8 @@ class CategoryController extends Controller
 
     public function index()
     {
-        return view('Vendor.product.addcategory');
+        $categorys = Category::all();
+        return view('Vendor.product.addcategory',compact('categorys'));
     }
 
     public function show($id)
