@@ -74,7 +74,7 @@ Route::get('/about',function(){return view('Boot.about');});
 //Product Route
         Route::get('/addproduct','Seller\ProductController@index');
         Route::post('/addproduct','Seller\ProductController@store');
-//ProductSKu 
+//ProductSKu
         Route::get('/addSKU','Seller\ProductSKUController@index');
         Route::post('/addSKU','Seller\ProductSKUController@store');
 
@@ -116,9 +116,9 @@ Route::get('/getAjaxColor', function () {
                         <label  class=\"col-sm-2 control-label\">Color</label>
                         <div class=\"col-sm-10\">
                               <select class=\"form-control\">
-                              
+
                               </select>
-                             
+
                             </div>
                        </div>
                         <div class='row'>
@@ -128,14 +128,14 @@ Route::get('/getAjaxColor', function () {
                         </div>
                         <div class='col-md-offset-1 col-md-11'>
                               <div id='addsize'>
-                                           
-                              </div>      
-                       
+
+                              </div>
+
                         </div>
                  </div>
-                  
+
             </div>
-           
+
             ";
       }
 
@@ -147,33 +147,52 @@ Route::get('/getAjaxSize', function () {
       if (Request::ajax()) {
             return"
             <div class='row form-inline'>
-            
-                  
+
+
                    <div class=\"form-group\">
                         <label for=\"email\">Size</label>
                         <select name='size' class='form-control'>
                   </div>
                   <div class=\"form-group\">
-   
+
                       <input type=\"text\" name='mrp' class=\"form-control\"  placeholder='MRP'/>
                   </div>
                   <div class=\"form-group\">
-   
+
                       <input type=\"text\" name='pricr' class=\"form-control\"  placeholder='Price'/>
                   </div>
                   <div class=\"form-group\">
-   
+
                       <input type=\"text\" name='qty' class=\"form-control\"  placeholder='Quantity'/>
                   </div>
             </div>
-           
-            
+
+
             ";
 
       }
 });
 */
 
+//footer Subscribe Form
 Route::post('/subscribers','SubscribersController@store');
 
-Route::get('/shippingpolicy',function(){return view('Boot.Static.shippingpolicy');});
+//footer About Us
+Route::get('/about_us',function(){return view('Boot.static_pages.about_us');});
+
+//footer Contact Us
+Route::get('/contact_us',function(){return view('Boot.static_pages.contact_us');});
+
+//footer Privacy Policy
+Route::get('/privacy_policy',function(){return view('Boot.static_pages.privacy_policy');});
+
+//footer Return Policy
+Route::get('/return_policy',function(){return view('Boot.static_pages.return_policy');});
+
+//footer Shipping Policy
+Route::get('/shipping_policy',function(){return view('Boot.static_pages.shipping_policy');});
+
+//footer Terms of Use
+Route::get('/terms_and _condition',function(){return view('Boot.static_pages.terms_and_condition');});
+
+Route::get('/map',function(){return view('Boot.store');});
