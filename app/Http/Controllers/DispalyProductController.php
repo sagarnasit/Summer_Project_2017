@@ -50,7 +50,13 @@ class DispalyProductController extends Controller
 
     public function searchvia($id)
     {
-        $products=ProductDetail::where('brand_id',$id)->get();
+        $products=ProductDetail::where('brand_id',$id)->paginate(10);
         return view('Boot.serchvia',compact('products'));
+    }
+
+    public function searchviacat($id)
+    {
+        $products=ProductDetail::where('category_id',$id)->paginate(10);
+        return view('Boot.serchviacat',compact('products'));
     }
 }

@@ -37,7 +37,7 @@
                                             <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled text-capitalize animated fadeIn">
 
                                               @foreach($categories as $category)
-                                               <li><a href="">{{$category->category_name}}</a></li>
+                                               <li><a href="{{route('search-via-cat',$category->category_id)}}">{{$category->category_name}}</a></li>
                                                @endforeach
 
                                             </ul>
