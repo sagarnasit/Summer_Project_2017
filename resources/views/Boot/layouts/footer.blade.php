@@ -54,7 +54,7 @@
                               <h4 class="page-header page-header1">Instagram Gallery</h4>
                               <div class="instagram">
                                     <ul class="list-inline margin-bottom-20">
-                                          <li><img src="assets/images/product/themetidy-paira-framework-boot-responsive-html-template-product-1.jpg" alt=""></li>
+                                          <li><img src="{{--images/best_girl.jpg--}}assets/images/product/themetidy-paira-framework-boot-responsive-html-template-product-1.jpg" alt=""></li>
                                           <li><img src="assets/images/product/themetidy-paira-framework-boot-responsive-html-template-product-2.jpg" alt=""></li>
                                           <li><img src="assets/images/product/themetidy-paira-framework-boot-responsive-html-template-product-3.jpg" alt=""></li>
                                           <li><img src="assets/images/product/themetidy-paira-framework-boot-responsive-html-template-product-4.jpg" alt=""></li>

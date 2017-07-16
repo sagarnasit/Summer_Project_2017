@@ -21,11 +21,11 @@
                             <ul class="list-unstyled">
                                 <li>
                                     <div class="col-md-4 paira-animation" data-paira-animation="fadeInLeft" data-paira-animation-delay="0.5s">
-                                        <img class="img-responsive" src="{{--{{url('images',$p->productdetails->images->image)}}--}}" alt="">
+                                        <img class="img-responsive" src="{{--{{url('images',$p->images->image)}}--}}" alt="">
                                     </div>
                                     <div class="col-md-8 margin-top-20">
                                         <h4 class="margin-top-20 margin-bottom-20"><span class="money font-size-16 color-scheme-3"> {{ $p->product_name}}</span></h4>
-                                        <h4  class="margin-bottom-20"><span class="money font-bold">Rs. 500 {{--{{$p->price}}--}}</span></h4>
+                                        <h4  class="margin-bottom-20"><span class="money font-bold">Rs. {{--{{$p->productdetails->price}}--}}</span></h4>
                                         <a href="{{route('cart-additem',$p->product_id)}}"  class="btn btn-default font-color-black ">Add TO Cart</a>
 
                                     </div>

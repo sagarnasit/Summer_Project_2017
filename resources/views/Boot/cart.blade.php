@@ -13,7 +13,7 @@
                         </div>
                     </div>
                     <div class="col-md-12 margin-bottom-40">
-                        <a href="/checkout" class="pull-left margin-bottom-40 cart-continue-shopping"><i class="fa fa-long-arrow-left margin-right-10"></i><strong class="font-color-orange text-uppercase">Continue Shopping</strong></a>
+                        <a href="/product" class="pull-left margin-bottom-40 cart-continue-shopping"><i class="fa fa-long-arrow-left margin-right-10"></i><strong class="font-color-orange text-uppercase">Continue Shopping</strong></a>
                         <div class="cart-item-list">
                             <h6 class="text-uppercase panel-title cart-title">Product Lists</h6>
                        @foreach($cartItems as $cartItem)
@@ -86,7 +86,8 @@
                             <div class="cart-shipping-calculate">
                                 <div class="col-lg-4 col-md-4 col-sm-4"></div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <button type="button" class="btn btn-default color-scheme-1 btn-lg btn-block text-uppercase">Calculate shipping</button>
+                                    <a href="/product" ></a>
+                                    <button  type="button" class="btn btn-default color-scheme-1 btn-lg btn-block text-uppercase">Continue Shopping</button>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                 </div>

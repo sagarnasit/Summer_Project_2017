@@ -70,8 +70,7 @@
                                 <del><span class="money font-color-orange margin-right-10">Rs. {{$product->mrp}}</span></del>
                                 <span class="money">Rs. {{$product->productdetails[0]->price}}</span>
                             </div>
-                            {{--<div class="product-new font-italic color-scheme-3"><span>New</span></div>
-                            <div class="product-sale font-italic color-scheme-3"><span>Sale</span></div>--}}
+
                             <h4 class="color-scheme-3"> {{$product->productdetails[0]->product->product_name}}</h4>
                             <div class="product-hover text-uppercase">
                                 <div class="paira-rating-con product-rating padding-bottom-40 color-scheme-3">
@@ -157,10 +156,11 @@
                 <div class="col-md-12">
                     <div class="paira-brand">
                         <ul class="list-inline">
-                            <li><a href="#" class="text-uppercase color-scheme-3"><i class="fa  fa-shield font-color-orange margin-right-10 fa-5x pull-left"></i><p class="font-size-50 pull-left">saka</p></a></li>
-                            <li><a href="#" class="text-uppercase color-scheme-3"><i class="fa  fa-sun-o font-color-orange fa-5x margin-right-10 pull-left"></i><p class="font-size-50 pull-left">yana</p></a></li>
-                            <li><a href="#" class="text-uppercase color-scheme-3"><i class="fa  fa-apple font-color-orange fa-5x margin-right-10 pull-left"></i><p class="font-size-50 pull-left">zaha</p></a></li>
-                            <li><a href="#" class="text-uppercase color-scheme-3"><i class="fa  fa-lightbulb-o font-color-orange fa-5x margin-right-10 pull-left"></i><p class="font-size-50 pull-left">zaka</p></a></li>
+                            <li><a href="#" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-shield font-color-orange margin-right-10 fa-5x pull-left"></i>--}}<p class="font-size-50 pull-left">saka</p></a></li>
+                            <li><a href="#" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-sun-o font-color-orange fa-5x margin-right-10 pull-left"></i>--}}<p class="font-size-50 pull-left">yana</p></a></li>
+                            <li><a href="#" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-apple font-color-orange fa-5x margin-right-10 pull-left"></i>--}}<p class="font-size-50 pull-left">zaha</p></a></li>
+                            <li><a href="#" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-lightbulb-o font-color-orange fa-5x margin-right-10 pull-left"></i>--}}<p class="font-size-50 pull-left">zaka</p></a></li>
+                            <li><a href="#" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-lightbulb-o font-color-orange fa-5x margin-right-10 pull-left"></i>--}}<p class="font-size-50 pull-left">zaka</p></a></li>
                         </ul>
                     </div>
                 </div>

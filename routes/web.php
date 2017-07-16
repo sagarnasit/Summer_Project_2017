@@ -14,7 +14,7 @@ Route::get('/product','DispalyProductController@showall');
 Route::get('/search','DispalyProductController@searchall');
 
 //Add category and Brand in nav baar
-//Route::get('/','AddCatBrandController@index');
+/*Route::post('/','AddCatBrandController@index');*/
 
 //UserLogin
 Route::get('/login','Auth\LoginController@showLoginForm');
