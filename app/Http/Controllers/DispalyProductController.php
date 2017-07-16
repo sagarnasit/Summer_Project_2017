@@ -46,4 +46,11 @@ class DispalyProductController extends Controller
         $product= ProductMaster::latest()->where('product_name','like', '%' .$s. '%')->paginate(4);
         return view('Boot.searchProducts',compact('product','s'));
     }
+
+
+    public function searchvia($id)
+    {
+        $products=ProductDetail::where('brand_id',$id)->get();
+        return view('Boot.serchvia',compact('products'));
+    }
 }
