@@ -48,7 +48,7 @@ class DispalyProductController extends Controller
     }
 
 
-    public function searchvia($id)
+    public function searchviabrand($id)
     {
         $products=ProductDetail::where('brand_id',$id)->paginate(10);
         return view('Boot.serchvia',compact('products'));
@@ -58,5 +58,11 @@ class DispalyProductController extends Controller
     {
         $products=ProductDetail::where('category_id',$id)->paginate(10);
         return view('Boot.serchviacat',compact('products'));
+    }
+
+    public function  simpleproduct()
+    {
+
+        return view('Boot.simpleproduct');
     }
 }

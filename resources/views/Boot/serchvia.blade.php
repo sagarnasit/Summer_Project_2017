@@ -1,6 +1,6 @@
 @extends('Boot.master')
 @section('title')
-    <title>Products</title>
+    <title>Search</title>
 @stop
 @section('body')
     <section class="cart-content paira-animation-container">

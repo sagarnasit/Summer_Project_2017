@@ -14,8 +14,11 @@ Route::get('/product','DispalyProductController@showall');
 Route::get('/search','DispalyProductController@searchall');
 
 //searching_via
-Route::get('/searchvia/{id}','DispalyProductController@searchvia')->name('search-via');
+Route::get('/searchviabrand/{id}','DispalyProductController@searchviabrand')->name('search-via-brand');
 Route::get('/searchviacat/{id}','DispalyProductController@searchviacat')->name('search-via-cat');
+
+//simple_product_display
+Route::get('/simpleproduct','DispalyProductController@simpleproduct')->name('simple-product');
 
 //Add category and Brand in nav baar
 /*Route::post('/','AddCatBrandController@index');*/

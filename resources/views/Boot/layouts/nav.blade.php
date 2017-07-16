@@ -26,7 +26,7 @@
                                                 <a href={{url('/')}}>Brand<i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
                                                 <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled animated fadeIn">
                                                       @foreach($brands as $brand)
-                                                        <li><a href="{{route('search-via',$brand->brand_id)}}">{{$brand->brand_name}}</a></li>
+                                                        <li><a href="{{route('search-via-brand',$brand->brand_id)}}">{{$brand->brand_name}}</a></li>
                                                       @endforeach
 
                                                 </ul>
