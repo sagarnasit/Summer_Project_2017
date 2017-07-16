@@ -8,7 +8,7 @@
     .photo{
       height: 350px;
       width: 500px;
-      overflow: hidden; 
+      overflow: hidden;
     }
   </style>
 @stop
@@ -44,6 +44,44 @@
 
 
     <!--=================== Recent Product Section ===================-->
+  <section class="top-seller text-center padding-bottom-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <h1 class="text-uppercase">Recent Product</h1>
+                        <hr>
+                    </div>
+                </div>
+                <div class="product-seller">
+                    <div class="paira-related-product related-product">
+                        @foreach($products as $product)
+                        <div class="paira-product product position">
+                            <div class="block-image position">
+                                <a href="#">
+                                    <div class="background-overlay"></div>
+                                    {{--assets/images/product/themetidy-paira-framework-boot-responsive-html-template-product-1.jpg--}}
+                                    {{--{{url('images',$shirt->image)}}"--}}
+
+                                    <img src="{{url('images',$product->productdetails[0]->images->image)}}" alt="themetidy-paira-framework-foot-responsive-html-template-product-1" class="paira-product-image img-responsive photo">
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <del><span class="money font-color-orange margin-right-10">Rs. {{$product->mrp}}</span></del>
+                                <span class="money">Rs. {{$product->productdetails[0]->price}}</span>
+                            </div>
+
+                            <h4 class="color-scheme-3"> {{$product->productdetails[0]->product->product_name}}</h4>
+                            <div class="product-hover text-uppercase">
+                                <div class="paira-rating-con product-rating padding-bottom-40 color-scheme-3">
+                                    <i class=""></i>
+                                </div>
+                                <div class="paira-product-cart-con product-button text-center">
+                                    <ul class="list-inline">
+                                        <li class=""><a href="{{route('cart-additem',$product->productdetails[0]->product_id)}}" class=" text-uppercase color-scheme-3 hover-add-cart"><i class="fa fa-shopping-cart fa-2x margin-right-5"></i><span>Add to cart</span> </a></li>
+
+                                    </ul>
+                                </div>
 
     <!--=================== Top Selling Product Section ===================-->
     <section class="top-seller text-center padding-bottom-60">
@@ -64,7 +102,7 @@
                                     <div class="background-overlay"></div>
                                     {{--assets/images/product/themetidy-paira-framework-boot-responsive-html-template-product-1.jpg--}}
                                     {{--{{url('images',$shirt->image)}}"--}}
-                                    
+
                                     <img src="{{url('images',$product->productdetails[0]->images->image)}}" alt="themetidy-paira-framework-foot-responsive-html-template-product-1" class="paira-product-image img-responsive photo">
                                 </a>
                             </div>
@@ -105,10 +143,11 @@
                 <div class="col-md-12">
                     <div class="paira-brand">
                         <ul class="list-inline">
-                            <li><a href="#" class="text-uppercase color-scheme-3"><i class="fa  fa-shield font-color-orange margin-right-10 fa-5x pull-left"></i><p class="font-size-50 pull-left">saka</p></a></li>
-                            <li><a href="#" class="text-uppercase color-scheme-3"><i class="fa  fa-sun-o font-color-orange fa-5x margin-right-10 pull-left"></i><p class="font-size-50 pull-left">yana</p></a></li>
-                            <li><a href="#" class="text-uppercase color-scheme-3"><i class="fa  fa-apple font-color-orange fa-5x margin-right-10 pull-left"></i><p class="font-size-50 pull-left">zaha</p></a></li>
-                            <li><a href="#" class="text-uppercase color-scheme-3"><i class="fa  fa-lightbulb-o font-color-orange fa-5x margin-right-10 pull-left"></i><p class="font-size-50 pull-left">zaka</p></a></li>
+                            <li><a href="#" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-shield font-color-orange margin-right-10 fa-5x pull-left"></i>--}}<p class="font-size-50 pull-left">saka</p></a></li>
+                            <li><a href="#" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-sun-o font-color-orange fa-5x margin-right-10 pull-left"></i>--}}<p class="font-size-50 pull-left">yana</p></a></li>
+                            <li><a href="#" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-apple font-color-orange fa-5x margin-right-10 pull-left"></i>--}}<p class="font-size-50 pull-left">zaha</p></a></li>
+                            <li><a href="#" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-lightbulb-o font-color-orange fa-5x margin-right-10 pull-left"></i>--}}<p class="font-size-50 pull-left">zaka</p></a></li>
+                            <li><a href="#" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-lightbulb-o font-color-orange fa-5x margin-right-10 pull-left"></i>--}}<p class="font-size-50 pull-left">zaka</p></a></li>
                         </ul>
                     </div>
                 </div>

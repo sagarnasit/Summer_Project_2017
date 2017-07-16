@@ -21,15 +21,11 @@ class DispalyProductController extends Controller
     public function index()
     {
         $products=ProductMaster::all();
-        // return $products;
         $image=ProductImage::all();
         $product_detail=ProductMaster::distinct();
 
-        // $brands=Brand::all();
-        // $categories=Category::all();
-
         $view=View::make('Boot.index',compact(['products','image','product_detail']));
-       /* $view->nest('Boot.layouts.nav',compact('brands','categories'));*/
+
 
         return $view;
 
@@ -37,21 +33,17 @@ class DispalyProductController extends Controller
 
     public function showall()
     {
-        $product=ProductDetail::latest()->paginate(10);
+        $product=ProductDetail::latest()->paginate(4);
         return view('Boot.products',compact('product'));
     }
 
-   /* public function search($query, $s)
-    {
-         return $query->where('product_name','like', '%' .$s. '%');
-    }*/
 
     public function searchall(Request $request)
     {
 
         $s=$request->input('s');
 
-        $product= ProductMaster::latest()->where('product_name','like', '%' .$s. '%')->paginate(10);
+        $product= ProductMaster::latest()->where('product_name','like', '%' .$s. '%')->paginate(4);
         return view('Boot.searchProducts',compact('product','s'));
     }
 }

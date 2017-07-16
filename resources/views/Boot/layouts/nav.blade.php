@@ -15,7 +15,7 @@
                                           <span class="icon-bar"></span>
                                     </button>
                               </div>
-                              <div id="navbar-collapse" class="navbar-collapse collapse">
+                              <div id="navbar-collapse" class="navbar-collapse cowellapse">
                                     <ul class="nav navbar-nav font-bold">
                                           <!--=================== Single Menu ===================-->
                                           <li><a href={{url('/')}}>Home</a></li>
@@ -24,20 +24,22 @@
 
                                           <li class="dropdown paira-dropdown">
                                                 <a href={{url('/')}}>Brand<i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
-                                             {{-- <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled animated fadeIn">
+                                              {{--<ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled animated fadeIn">
                                                      @foreach($brands as $brand)
                                                       <li><a href="#">{{$brand->brand_name}}</a></li>
                                                       @endforeach
 
                                                 </ul>--}}
+                                          {{--<li> {!! link_to_action('HomeController@show',$latest->category_name,[$latest->category_id]) !!}</li>--}}
                                           </li>
                                           <li class="dropdown paira-dropdown">
                                         <a href="#">Pages <i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
                                         <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled text-capitalize animated fadeIn">
                                             <li><a href="about.html"> about us </a></li>
-                                          
+
                                         </ul>
                                     </li>
+
                                           <!--=================== Grid Mega Menu ===================-->
                                           <li class="dropdown paira-dropdown mega-menu-fw">
                                                 <a href="product.html">Shop<i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
@@ -94,90 +96,8 @@
                                                       </li>
                                                 </ul>
                                           </li>
-                                          <!--=================== Accordion Mega Menu ===================-->
-                                          {{--<li class="dropdown paira-dropdown panel-closp">
-                                                <a href="lookbook.html">Lookbook<i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
-                                                <ul class="dropdown-menu paira-dropdown-menu list-unstyled animated fadeIn">
-                                                      <li>
-                                                            <div class="mega-menu-content">
-                                                                  <div class="row">
-                                                                        <div class="col-md-9 pull-left">
-                                                                              <div id="accordion" class="panel-group">
-                                                                                    <div class="panel panel-default">
-                                                                                          <div class="panel-heading">
-                                                                                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Woman<i class="fa fa-angle-right pull-right"></i></a></h4>
-                                                                                          </div>
-                                                                                          <div id="collapseOne" class="panel-collapse collapse in">
-                                                                                                <div class="panel-body font-normal">
-                                                                                                      <ul class="list-unstyled">
-                                                                                                            <li>
-                                                                                                                  <div class="col-md-4 col-sm-4">
-                                                                                                                        <ul role="menu" class="mega-menu-in list-unstyled">
-                                                                                                                              <li><a href="#">Converse Shoe</a></li>
-                                                                                                                              <li><a href="#">Pie Shoe</a></li>
 
-                                                                                                                        </ul>
-                                                                                                                  </div>
-                                                                                                                  <div class="col-md-4 col-sm-4">
-                                                                                                                        <ul role="menu" class="mega-menu-in list-unstyled">
-                                                                                                                              <li><a href="#">Converse Shoe</a></li>
-                                                                                                                              <li><a href="#">Pie Shoe</a></li>
-
-                                                                                                                        </ul>
-                                                                                                                  </div>
-
-                                                                                                            </li>
-                                                                                                      </ul>
-                                                                                                </div>
-                                                                                          </div>
-                                                                                    </div>
-                                                                                    <div class="panel panel-default">
-                                                                                          <div class="panel-heading">
-                                                                                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Man<i class=" fa fa-angle-right pull-right"></i></a></h4>
-                                                                                          </div>
-                                                                                          <div id="collapseTwo" class="panel-collapse collapse">
-                                                                                                <div class="panel-body font-normal">
-                                                                                                      <ul class="list-unstyled">
-                                                                                                            <li>
-                                                                                                                  <div class="col-md-4 col-sm-4">
-                                                                                                                        <ul role="menu" class="mega-menu-in list-unstyled">
-                                                                                                                              <li><a href="#">Converse Shoe</a></li>
-                                                                                                                              <li><a href="#">Pie Shoe</a></li>
-                                                                                                                        </ul>
-                                                                                                                  </div>
-
-                                                                                                            </li>
-                                                                                                      </ul>
-                                                                                                </div>
-                                                                                          </div>
-                                                                                    </div>
-
-                                                                              </div>
-                                                                        </div>
-                                                                        <div class="col-md-3">
-                                                                              <img class="pull-right img-responsive mega-img1" src="assets/images/header/themetidy-paira-framework-boot-responsive-html-template-menu-5.jpg" alt="">
-                                                                        </div>
-                                                                  </div>
-                                                            </div>
-                                                      </li>
-                                                </ul>
-                                          </li>--}}
-                                          <!--=================== Single Menu ===================-->
-                                          <li><a href="blog.html">Blog</a></li>
-                                          <!--=================== Dropdown Menu ===================-->
-                                         {{-- <li class="dropdown paira-dropdown">
-                                                <a href="#">Pages <i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
-                                                <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled text-capitalize animated fadeIn">
-                                                      <li><a href="about.html"> about us </a></li>
-                                                      <li><a href="contact.html"> contact us </a></li>
-                                                      <li><a href="search.html"> search </a></li>
-                                                      <li><a href="login.html"> login </a></li>
-                                                      <li><a href="register.html"> register </a></li>
-
-                                                </ul>
-                                          </li>--}}
-
-                                    </ul>
+                                          </ul>
                                     <!--=================== Single Menu ===================-->
                                     <div class="dropdown navbar-form navbar-right navbar-search search-drop-bar margin-top-10">
                                           <a data-toggle="dropdown" href="#" aria-expanded="false"><i class="fa fa-search fa-2x"></i></a>
