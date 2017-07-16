@@ -143,35 +143,6 @@ Route::get('/getAjaxColor', function () {
 });
 
 
-Route::get('/getAjaxSize', function () {
-      if (Request::ajax()) {
-            return"
-            <div class='row form-inline'>
-            
-                  
-                   <div class=\"form-group\">
-                        <label for=\"email\">Size</label>
-                        <select name='size' class='form-control'>
-                  </div>
-                  <div class=\"form-group\">
-   
-                      <input type=\"text\" name='mrp' class=\"form-control\"  placeholder='MRP'/>
-                  </div>
-                  <div class=\"form-group\">
-   
-                      <input type=\"text\" name='pricr' class=\"form-control\"  placeholder='Price'/>
-                  </div>
-                  <div class=\"form-group\">
-   
-                      <input type=\"text\" name='qty' class=\"form-control\"  placeholder='Quantity'/>
-                  </div>
-            </div>
-           
-            
-            ";
-
-      }
-});
 */
 
 Route::post('/subscribers','SubscribersController@store');

@@ -32,17 +32,12 @@
                                                 </ul>--}}
                                           </li>
                                           <li class="dropdown paira-dropdown">
-                                                <a href="{{url('/')}}">Category<i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
-                                             {{-- <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled animated fadeIn">
-                                                      @if(!empty($categories))
-                                                        @forelse($categories as $cat)
-                                                            <li><a href="{{route('show-category',$cat->category_id)}}">{{$cat->category_name}}</a></li>
-                                                              @empty
-                                                              <h3>No Items</h3>
-                                                         @endforelse
-                                                            @endif
-                                                </ul>--}}
-                                          </li>
+                                        <a href="#">Pages <i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
+                                        <ul role="menu" class="dropdown-menu paira-dropdown-menu list-unstyled text-capitalize animated fadeIn">
+                                            <li><a href="about.html"> about us </a></li>
+                                          
+                                        </ul>
+                                    </li>
                                           <!--=================== Grid Mega Menu ===================-->
                                           <li class="dropdown paira-dropdown mega-menu-fw">
                                                 <a href="product.html">Shop<i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
