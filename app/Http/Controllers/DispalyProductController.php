@@ -23,11 +23,12 @@ class DispalyProductController extends Controller
 
     public function index()
     {
-        $products=ProductMaster::all();
-        $image=ProductImage::all();
-        $product_detail=ProductMaster::distinct();
+        $products=ProductMaster::latest()->take(10)->get();
+        $image=ProductImage::latest()->take(10)->get();
+        $product_detail=ProductMaster::latest()->take(10)->get();
+        $brands=Brand::latest()->take(4)->get();
 
-        $view=View::make('Boot.index',compact(['products','image','product_detail']));
+        $view=View::make('Boot.index',compact(['products','image','product_detail','brands']));
 
 
         return $view;

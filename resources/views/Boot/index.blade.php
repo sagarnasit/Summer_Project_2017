@@ -104,11 +104,9 @@
                 <div class="col-md-12">
                     <div class="paira-brand">
                         <ul class="list-inline">
-                            <li><a href="#" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-shield font-color-orange margin-right-10 fa-5x pull-left"></i>--}}<p class="font-size-50 pull-left">saka</p></a></li>
-                            <li><a href="#" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-sun-o font-color-orange fa-5x margin-right-10 pull-left"></i>--}}<p class="font-size-50 pull-left">yana</p></a></li>
-                            <li><a href="#" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-apple font-color-orange fa-5x margin-right-10 pull-left"></i>--}}<p class="font-size-50 pull-left">zaha</p></a></li>
-                            <li><a href="#" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-lightbulb-o font-color-orange fa-5x margin-right-10 pull-left"></i>--}}<p class="font-size-50 pull-left">zaka</p></a></li>
-                            <li><a href="#" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-lightbulb-o font-color-orange fa-5x margin-right-10 pull-left"></i>--}}<p class="font-size-50 pull-left">zaka</p></a></li>
+                            @foreach($brands as $brand)
+                            <li><a href="{{route('search-via-brand',$brand->brand_id)}}" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-shield font-color-orange margin-right-10 fa-5x pull-left"></i>--}}<p class="font-size-50 pull-left">{{$brand->brand_name}}</p></a></li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -148,7 +146,7 @@
                                 <a href="#"><img src="assets/images/category/themetidy-paira-framework-boot-responsive-html-template-category-2.jpg" alt="" class="paira-product-image img-responsive"></a>
                             </div>
                             <div class="product-hover text-uppercase">
-                                <a href="collection.html" class="btn btn-success text-uppercase position">Shop The collection</a>
+                                <a href="/product" class="btn btn-success text-uppercase position">Shop The collection</a>
                             </div>
                         </div>
                     </div>
