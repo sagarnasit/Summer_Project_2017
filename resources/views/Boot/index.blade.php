@@ -121,10 +121,10 @@
                     <div class="paira-product product position category-content">
                         <div class="col-md-8">
                             <div class="position">
-                                <a href="#"><img src="assets/images/category/themetidy-paira-framework-boot-responsive-html-template-category-1.jpg" alt="" class="paira-product-image img-responsive"></a>
+                                <a href="/product"><img src="images/Adidas_shhoe.jpg" alt="" class="paira-product-image img-responsive"></a>
                             </div>
                             <div class="product-hover text-uppercase">
-                                <a href="collection.html" class="btn btn-success text-uppercase position">Shop The collection</a>
+                                <a href="/product" class="btn btn-success text-uppercase position">Shop The collection</a>
                             </div>
                         </div>
                         <div class="col-md-4 background-or text-center">
@@ -143,7 +143,7 @@
                         </div>
                         <div class="col-md-8">
                             <div class="position">
-                                <a href="#"><img src="assets/images/category/themetidy-paira-framework-boot-responsive-html-template-category-2.jpg" alt="" class="paira-product-image img-responsive"></a>
+                                <a href="/product"><img src="images/best_girl.jpg" alt="" class="paira-product-image img-responsive"></a>
                             </div>
                             <div class="product-hover text-uppercase">
                                 <a href="/product" class="btn btn-success text-uppercase position">Shop The collection</a>
