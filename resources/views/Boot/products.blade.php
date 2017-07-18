@@ -21,7 +21,7 @@
            <ul class="list-unstyled">
             <li>
                 <div class="col-md-4 paira-animation" data-paira-animation="fadeInLeft" data-paira-animation-delay="0.5s">
-                   <img class="img-responsive" src="{{url('images',$p->images->image)}}" alt="">
+                    <a href="{{route('simple-product',$p->product_id)}}">   <img class="img-responsive" src="{{url('images',$p->images->image)}}" alt=""></a>
                 </div>
                 <div class="col-md-8 margin-top-20">
                     <a href="{{route('simple-product',$p->product_id)}}" >{{ $p->product->product_name}}</a>
