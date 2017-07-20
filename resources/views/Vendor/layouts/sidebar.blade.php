@@ -29,6 +29,16 @@
                         <a href="/seller/addBrand" class="waves-effect"><i class="fa fa-cube fa-fw"
                                                                                       aria-hidden="true"></i>Add Brand</a>
                   </li>
+
+                  <li>
+                        <a href="/seller/addColor" class="waves-effect"><i class="fa fa-cube fa-fw"
+                                                                                      aria-hidden="true"></i>Add Colour</a>
+                  </li>
+
+                  <li>
+                        <a href="/seller/addSize" class="waves-effect"><i class="fa fa-cube fa-fw"
+                                                                                      aria-hidden="true"></i>Add Size</a>
+                  </li>
                   <li>
                         <a href="profile.html" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Profile</a>
                   </li>

@@ -26,13 +26,13 @@ class BrandController extends Controller
          $brand->save();
 
          flash('Brand Inserted....');
-         return view('Vendor.product.addbrand');
+         return back();
 
      }
      else
      {
          flash('Brand Already Exist....');
-         return view('Vendor.product.addbrand');
+         return back();
 
      }
 

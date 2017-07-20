@@ -97,8 +97,13 @@ Route::get('/about',function(){return view('Boot.about');});
         Route::get('/addBrand','Seller\BrandController@index')->name('add-brand');
         Route::post('/storeBrand','Seller\BrandController@store');
 
+//Add color
+Route::get('/addColor','Seller\ColorController@index')->name('add-color');
+Route::post('/storeColor','Seller\ColorController@store');
 
-
+//Add Size
+Route::get('/addSize','Seller\SizeController@index')->name('add-size');
+Route::post('/storeSize','Seller\SizeController@store');
 
 
       });
