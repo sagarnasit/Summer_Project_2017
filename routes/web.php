@@ -207,4 +207,4 @@ Route::get('/map',function(){return view('Boot.store');});
 Route::get('/review',function(){return view('Boot.review_order');});
 
 //User Profile
-Route::get('/user-profile',function(){return view('Boot.user-profile');});
+Route::get('/user-profile',function(){return view('Boot.user-profile');})->middleware('auth');
