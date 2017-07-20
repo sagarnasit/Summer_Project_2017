@@ -31,6 +31,7 @@
           position:{lat:23.1885, lng:72.6290},
           map:map
         });
+
         var infoWindow = new google.maps.InfoWindow({
           content:'<h5>BOOT STORE</h5>'
         });

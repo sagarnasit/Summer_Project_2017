@@ -74,7 +74,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     {{--<input type="submit" id="checkout" class="btn btn-success btn-lg btn-block text-uppercase margin-top-50" name="checkout" value="Proceed To Checkout">--}}
-                                    <button     type="submit" id="checkout" class="btn btn-success btn-lg btn-block text-uppercase margin-top-50" name="checkout">Proceed To Checkout</button>
+                                    <a href="/review"><button type="button" id="checkout" class="btn btn-success btn-lg btn-block text-uppercase margin-top-50" name="checkout">Proceed To Checkout</button></a>
                                 </div>
                             </div>
                         </figure>

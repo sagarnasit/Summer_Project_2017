@@ -203,3 +203,5 @@ Route::get('/shipping_policy',function(){return view('Boot.static_pages.shipping
 Route::get('/terms_and _condition',function(){return view('Boot.static_pages.terms_and_condition');});
 
 Route::get('/map',function(){return view('Boot.store');});
+
+Route::get('/review',function(){return view('Boot.review_order');});
