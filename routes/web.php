@@ -190,23 +190,26 @@ Route::get('/getAjaxSize', function () {
 Route::post('/subscribers','SubscribersController@store');
 
 //footer About Us
-Route::get('/about_us',function(){return view('Boot.static_pages.about_us');});
+Route::get('/about-us',function(){return view('Boot.static_pages.about-us');});
 
 //footer Contact Us
-Route::get('/contact_us',function(){return view('Boot.static_pages.contact_us');});
+Route::get('/contact-us',function(){return view('Boot.static_pages.contact-us');});
 
 //footer Privacy Policy
-Route::get('/privacy_policy',function(){return view('Boot.static_pages.privacy_policy');});
+Route::get('/privacy-policy',function(){return view('Boot.static_pages.privacy-policy');});
 
 //footer Return Policy
-Route::get('/return_policy',function(){return view('Boot.static_pages.return_policy');});
+Route::get('/return-policy',function(){return view('Boot.static_pages.return-policy');});
 
 //footer Shipping Policy
-Route::get('/shipping_policy',function(){return view('Boot.static_pages.shipping_policy');});
+Route::get('/shipping-policy',function(){return view('Boot.static_pages.shipping-policy');});
 
 //footer Terms of Use
-Route::get('/terms_and _condition',function(){return view('Boot.static_pages.terms_and_condition');});
+Route::get('/terms-and-condition',function(){return view('Boot.static_pages.terms-and-condition');});
 
 Route::get('/map',function(){return view('Boot.store');});
 
 Route::get('/review',function(){return view('Boot.review_order');});
+
+//User Profile
+Route::get('/user-profile',function(){return view('Boot.user-profile');});

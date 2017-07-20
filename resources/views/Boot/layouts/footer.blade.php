@@ -28,18 +28,18 @@
                         <div class="col-lg-3 col-md-3 col-sm-3 animated fadeInLeft"  data-paira-animation="fadeInLeft" data-paira-animation-delay="0.2s">
                               <h4 class="page-header">COMPANY</h4>
                               <ul class="list-unstyled footer-list-style">
-                                    <li><a href="/about_us">About Us</a></li>
-                                    <li><a href="/contact_us">Contact Us</a></li>
-                                    <li><a href="/terms_and _condition">Terms & Conditions</a></li>
+                                    <li><a href="/about-us">About Us</a></li>
+                                    <li><a href="/contact-us">Contact Us</a></li>
+                                    <li><a href="/terms-and-condition">Terms & Conditions</a></li>
                               </ul>
                         </div>
                         <!--=================== Footer Middle Column 2 ===================-->
                         <div class="col-lg-3 col-md-3 col-sm-3 animated fadeInLeft"  data-paira-animation="fadeInDown" data-paira-animation-delay="0.5s">
                               <h4 class="page-header page-header1">POLICY INFO</h4>
                               <ul class="list-unstyled footer-list-style">
-                                    <li><a href="/shipping_policy">Shipping Policy</a></li>
-                                    <li><a href="/return_policy">Return Policy</a></li>
-                                    <li><a href="/privacy_policy">Privacy Policy</a></li>
+                                    <li><a href="/shipping-policy">Shipping Policy</a></li>
+                                    <li><a href="/return-policy">Return Policy</a></li>
+                                    <li><a href="/privacy-policy">Privacy Policy</a></li>
                               </ul>
                         </div>
                         <!--=================== Footer Middle Column 3 ===================-->
