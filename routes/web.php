@@ -98,12 +98,12 @@ Route::get('/about',function(){return view('Boot.about');});
         Route::post('/storeBrand','Seller\BrandController@store');
 
 //Add color
-Route::get('/addColor','Seller\ColorController@index')->name('add-color');
-Route::post('/storeColor','Seller\ColorController@store');
+        Route::get('/addColor','Seller\ColorController@index')->name('add-color');
+        Route::post('/storeColor','Seller\ColorController@store');
 
 //Add Size
-Route::get('/addSize','Seller\SizeController@index')->name('add-size');
-Route::post('/storeSize','Seller\SizeController@store');
+        Route::get('/addSize','Seller\SizeController@index')->name('add-size');
+        Route::post('/storeSize','Seller\SizeController@store');
 
 
       });
@@ -212,4 +212,4 @@ Route::get('/map',function(){return view('Boot.store');});
 Route::get('/review',function(){return view('Boot.review_order');});
 
 //User Profile
-Route::get('/user-profile',function(){return view('Boot.user-profile');})->middleware('auth');
+Route::get('/user-profile','Auth\AddressController@index')->middleware('auth');
