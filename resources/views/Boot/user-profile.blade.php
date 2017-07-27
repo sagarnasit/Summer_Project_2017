@@ -3,7 +3,7 @@
 <title>User Profile</title>
 @stop
 @section('body')
-<section class="cart-content paira-animation-container">
+<section>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center margin-bottom-40">
@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="user-profile">
+			<div>
 				<form class="form-horizontal">
 					<div class="form-group">
 						<label for="userName" class="col-sm-2 control-label">Name</label>

@@ -3,7 +3,7 @@
 <title>Return Policy</title>
 @stop
 @section('body')
-<section class="cart-content paira-animation-container">
+<section>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center margin-bottom-40">
@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="return_policy"><br>
+			<div><br>
 				<p>
 					Boot&#39;s returns and exchange policy gives you an option to return or exchange items purchased on Boot for any reason within 30 days of receipt of the item. We only ask that you don&#39;t use the product and preserve its original condition, tags, and packaging. You are welcome to try on a product but please take adequate measure to preserve its condition. There are two ways to return the product to us:
 				</p>

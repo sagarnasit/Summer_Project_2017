@@ -1,33 +1,39 @@
 @extends('Boot.master')
 @section('title')
-    <title>Review Order</title>
+<title>Review Order</title>
 @stop
-
-
-
 @section('body')
-<form class="" action="" method="post" >
-  <div style="margin:10px">
-    <table width=80% align='center' border="2" style="border: 2px solid; border-radius: 250px;" >
-    <caption style="background-color:black">Review Order</caption>
-      <thead>
-        <tr>
-          <th>Item Detials</th>
-          <th>Quantity</th>
-          <th>Delivery Options</th>
-          <th>Subtotal</th>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center margin-bottom-40">
+        <div class="page-header">
+          <h1 class="text-uppercase">Review Order</h1>
+          <hr>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+      <table class="table">
+        <tr bgcolor="#000000">
+            <th class="col-md-8 text-center"><h4><font color="#ffffff">Item Details</font></h4></th>
+            <th class="col-md-2 text-center"><h4><font color="#ffffff">Quantity</font></h4></th>
+            <th class="col-md-2 text-center"><h4><font color="#ffffff">Total</font></h4></th>
         </tr>
-      </thead>
-      <tbody>
         <tr>
-          <td><img src="images\Puma_shoe.jpg" width="15%" alt=""><h5></h5></td>
-          <td>4</td>
-          <td>options</td>
-          <td align='right'><b>Price</b>:Rs.400 <br><b>Delivery Charges</b>:Rs.30 <br><b>Total</b>:Rs.430</td>
+            <td class="col-md-8 text-center"><img src="images\Puma_shoe.jpg" width="15%" alt=""></td>
+            <td class="col-md-2 text-center">4</td>
+            <td class="col-md-2 text-center">Rs. 100</td>
         </tr>
-      </tbody>
+        <tr>
+          <td></td>
+          <td class="text-center"><h4>Sub-total</h4></td>
+          <td class="text-center"><h4>Rs. 100</h4></td>
+        </tr>
     </table>
-    </
+      </div>
+    </div>
   </div>
-  <form>
+</section>
 @stop

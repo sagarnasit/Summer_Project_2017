@@ -3,7 +3,7 @@
 <title>Shipping Policy</title>
 @stop
 @section('body')
-<section class="cart-content paira-animation-container">
+<section>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center margin-bottom-40">
@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="shipping_policy"><br>
+			<div><br>
 				<h3>
 					What are the delivery charges?
 				</h3>

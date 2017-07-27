@@ -4,7 +4,7 @@
 <title>Privacy Policy</title>
 @stop
 @section('body')
-<section class="cart-content paira-animation-container">
+<section>
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center margin-bottom-40">
@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="privacy_policy"><br>
+            <div><br>
                 <p>
                     At Boot (&quot;<b>Boot</b>&quot;, &quot;<b>we</b>&quot;, “<b>us</b>”, or “our”), we respect and protect your privacy rights. This Privacy Policy describes:
                 </p>
