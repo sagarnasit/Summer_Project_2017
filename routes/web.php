@@ -209,7 +209,7 @@ Route::get('/terms-and-condition',function(){return view('Boot.static_pages.term
 
 Route::get('/map',function(){return view('Boot.store');});
 
-Route::get('/review',function(){return view('Boot.review_order');});
+Route::get('/review','ReviewsController@cart')->middleware('auth');
 
 //User Profile
 Route::get('/user-profile','Auth\AddressController@index')->middleware('auth');

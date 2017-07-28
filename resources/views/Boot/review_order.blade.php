@@ -14,25 +14,41 @@
       </div>
     </div>
     <div class="row">
-      <div>
-      <table class="table">
+      <table class="table   table-bordered='0'">
         <tr bgcolor="#000000">
-            <th class="col-md-8 text-center"><h4><font color="#ffffff">Item Details</font></h4></th>
-            <th class="col-md-2 text-center"><h4><font color="#ffffff">Quantity</font></h4></th>
-            <th class="col-md-2 text-center"><h4><font color="#ffffff">Total</font></h4></th>
+          <th class="col-md-8 text-center"><h4><font color="#ffffff">Item Details</font></h4></th>
+          <th class="col-md-2 text-center"><h4><font color="#ffffff">Quantity</font></h4></th>
+          <th class="col-md-2 text-center"><h4><font color="#ffffff">Total</font></h4></th>
         </tr>
+        @foreach($cartItems as $cartItem)
         <tr>
-            <td class="col-md-8 text-center"><img src="images\Puma_shoe.jpg" width="15%" alt=""></td>
-            <td class="col-md-2 text-center">4</td>
-            <td class="col-md-2 text-center">Rs. 100</td>
+          <td class="col-md-8 text-center">{{ $cartItem->name}}</td>
+          <td class="col-md-2 text-center">{{$cartItem->qty}}</td>
+          <td class="col-md-2 text-center">Rs. {{$cartItem->price}}</td>
         </tr>
-        <tr>
-          <td></td>
-          <td class="text-center"><h4>Sub-total</h4></td>
-          <td class="text-center"><h4>Rs. 100</h4></td>
-        </tr>
-    </table>
-      </div>
+        @endforeach
+      </table>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 margin-bottom-40">
+      <figure class="margin-bottom-30">
+        <figcaption>
+          <h4 class="panel-heading font-bold">Sub Total ({{Cart::count()}} items)</h4>
+        </figcaption>
+        <div class="cart-sub-total">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <h2 class="margin-top-50 margin-bottom-20">
+              <span class="money font-bold font-bold font-color-orange font-size-50">Rs. {{Cart::total()}}
+              </span>
+            </h2>
+          </div>
+        </div>
+      </figure>
+    </div>
+    <div class="">
+      <hr class="myHr">
+    </div>
+    <div class="row">
+      <h4>Shipping Address</h4>
     </div>
   </div>
 </section>
