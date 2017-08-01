@@ -211,5 +211,14 @@ Route::get('/map',function(){return view('Boot.store');});
 
 Route::get('/review','ReviewsController@cart')->middleware('auth');
 
-//User Profile
-Route::get('/user-profile','Auth\AddressController@index')->middleware('auth');
+// User Account Manupulation Link
+Route::get('/your-account',function(){return view ('Boot.your-account');})->middleware('auth');
+
+//User Login and Security Link
+Route::get('/login-security','Auth\AddressController@index')->middleware('auth');
+
+// //User Account Manupulation Link
+// Route::get('/your-account','Auth\AddressController@index')->middleware('auth');
+
+// //User Account Manupulation Link
+// Route::get('/your-account','Auth\AddressController@index')->middleware('auth');
