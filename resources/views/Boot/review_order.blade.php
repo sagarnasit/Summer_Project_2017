@@ -27,7 +27,17 @@
         </tr>
       </tbody>
     </table>
-    </
+  <div class="payment-options">
+    <span>
+       <input type="radio" name="pay" value="COD" checked="checked">COD
+       <input type="submit" name="" value="COD">
+     </span>
+    <span>
+      <input type="radio" name="pay" value="gateway">GATEWAY
+      <input type="submit" name="" value="GATEWAY">
+    </span>
+    <span><input type="submit" name="" value="Continue"></span>
+  </div>
   </div>
   <form>
 @stop
