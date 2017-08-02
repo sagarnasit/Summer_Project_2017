@@ -215,10 +215,13 @@ Route::get('/review','ReviewsController@cart')->middleware('auth');
 Route::get('/your-account',function(){return view ('Boot.your-account');})->middleware('auth');
 
 //User Login and Security Link
-Route::get('/login-security','Auth\AddressController@index')->middleware('auth');
+Route::get('/login-security',function(){return view ('Boot.login-security');})->middleware('auth');
 
-// //User Account Manupulation Link
-// Route::get('/your-account','Auth\AddressController@index')->middleware('auth');
+//User Login and Security Updte Form
+Route::post('/login-security-form','Auth\YourAccountController@loginsecurity')->middleware('auth');
+
+//User Addresses Manupulation Link
+Route::get('/addresses','Auth\YourAccountController@addresses')->middleware('auth');
 
 // //User Account Manupulation Link
 // Route::get('/your-account','Auth\AddressController@index')->middleware('auth');
