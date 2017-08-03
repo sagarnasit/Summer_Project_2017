@@ -186,25 +186,25 @@ Route::get('/getAjaxSize', function () {
 });
 */
 
-//footer Subscribe Form
+//footer Subscriber Form
 Route::post('/subscribers','SubscribersController@store');
 
-//footer About Us
+//footer About Us Static Page
 Route::get('/about-us',function(){return view('Boot.static_pages.about-us');});
 
-//footer Contact Us
+//footer Contact Us Static Page
 Route::get('/contact-us',function(){return view('Boot.static_pages.contact-us');});
 
-//footer Privacy Policy
+//footer Privacy Policy Static Page
 Route::get('/privacy-policy',function(){return view('Boot.static_pages.privacy-policy');});
 
-//footer Return Policy
+//footer Return Policy Static Page
 Route::get('/return-policy',function(){return view('Boot.static_pages.return-policy');});
 
-//footer Shipping Policy
+//footer Shipping Policy Static Page
 Route::get('/shipping-policy',function(){return view('Boot.static_pages.shipping-policy');});
 
-//footer Terms of Use
+//footer Terms of Use Static Page
 Route::get('/terms-and-condition',function(){return view('Boot.static_pages.terms-and-condition');});
 
 Route::get('/map',function(){return view('Boot.store');});
@@ -217,11 +217,19 @@ Route::get('/your-account',function(){return view ('Boot.your-account');})->midd
 //User Login and Security Link
 Route::get('/login-security',function(){return view ('Boot.login-security');})->middleware('auth');
 
-//User Login and Security Updte Form
+//User Login and Security Update Form Link
 Route::post('/login-security-form','Auth\YourAccountController@loginsecurity')->middleware('auth');
 
-//User Addresses Manupulation Link
+//User Addresses
 Route::get('/addresses','Auth\YourAccountController@addresses')->middleware('auth');
+
+//User Addresses Addition Link
+Route::get('/addressesadd',function(){return view ('Boot.addressesadd');})->middleware('auth');
+
+//User Addresses Addition Form Link
+Route::post('/addressesadd-form','Auth\YourAccountController@addressesadd')->middleware('auth');
+
+//User 
 
 // //User Account Manupulation Link
 // Route::get('/your-account','Auth\AddressController@index')->middleware('auth');

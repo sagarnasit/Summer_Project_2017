@@ -17,7 +17,6 @@
                               </div>
                         </form>
                   </div>
-                  @include ('Boot.layouts.errors')
             </div>
       </section>
       <!--=================== Footer Middle Section ===================-->
@@ -62,13 +61,13 @@
                               <!-- <button type="submit" class="btn btn-default color-scheme-3 font-size-20 font-bold font-size-16">
                               <i class="fa fa-map-marker margin-right-10"></i>Find a store</button> -->
                               <a href="/map"><button type="submit" class="btn btn-default color-scheme-3 font-size-20 font-bold font-size-16">
-                                  <i class="fa fa-map-marker margin-right-10"></i>Find a store</button></a>
-                            </div>
-                      </div>
-                </div>
-          </section>
-          <!--=================== Footer Bottom Section ===================-->
-          <section class="footer-bottom animated fadeInUp">
+                                <i class="fa fa-map-marker margin-right-10"></i>Find a store</button></a>
+                          </div>
+                    </div>
+              </div>
+        </section>
+        <!--=================== Footer Bottom Section ===================-->
+        <section class="footer-bottom animated fadeInUp">
             <div class="container">
                   <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-3 fadeInRight"></div>

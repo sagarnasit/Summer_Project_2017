@@ -16,22 +16,31 @@
 		<div class="row">
 			<div>
 				<form class="form-horizontal">
-					<?php $a = 1; ?>
+					<?php $a = 1;?>
 					@foreach ($users as $user)
 					<div class="form-group">
-						<label for="addressDetails" class="col-sm-2 control-label">Address {{ $a }}</label>
+						<label for="addressDetails {{ $a }}" class="col-sm-2 control-label">Address {{ $a }}</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="addressDetails" name="addressDetails" value="{{ $user->add_details }}">
+							<input type="text" class="form-control" id="addressDetails {{ $a }}" name="addressDetails {{ $a }}" value="{{ $user->address }}, {{ $user->city }}, {{ $user->state }}, {{ $user->pincode }}">
 							<br>
-							<button class="btn btn-default pull-right">Edit</button>
+							<a href="">
+								<button class="btn btn-default pull-right">Edit</button>
+							</a>
 						</div>
 					</div>
-					<?php $a++; ?>
+					<?php $a++;?>
 					@endforeach
-					<div class="form-group">
-						<button  class="btn btn-success text-uppercase padding-left-45 font-bold padding-right-45 pull-right margin-right-15 btn-lg">Save Changes</button>
-					</div>
 				</form>
+				<div class="form-group col-lg-8 col-md-8 col-sm-8">
+					<a href="addressesadd">
+						<button  class="btn btn-success text-uppercase padding-left-45 font-bold padding-right-45 pull-right margin-left-15 btn-lg">Add Address</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4">
+				<a href="/your-account">
+					<button  type="button" class="btn btn-default color-scheme-1 btn-lg btn-block text-uppercase pull-right">Do Nothing</button>
+				</a>
 			</div>
 		</div>
 		<br>
