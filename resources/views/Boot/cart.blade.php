@@ -21,7 +21,7 @@
                             <ul class="list-unstyled">
                                 <li>
                                     <div class="col-md-4 paira-animation" data-paira-animation="fadeInLeft" data-paira-animation-delay="0.5s">
-                                        <img class="img-responsive" src="{{--images/Adidas_shhoe.jpg--}}{{url('images',$cartItem->image)}}" alt="">
+                                        <img class="img-responsive" src="{{url('images',$cartItem->image)}}" alt="is not getting">
                                     </div>
                                     <div class="col-md-8 margin-top-20">
                                        {{-- <a href="#" class="margin-top-10"><strong class="font-size-18"></strong></a>--}}

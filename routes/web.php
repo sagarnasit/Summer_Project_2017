@@ -98,12 +98,12 @@ Route::get('/about',function(){return view('Boot.about');});
         Route::post('/storeBrand','Seller\BrandController@store');
 
 //Add color
-Route::get('/addColor','Seller\ColorController@index')->name('add-color');
-Route::post('/storeColor','Seller\ColorController@store');
+        Route::get('/addColor','Seller\ColorController@index')->name('add-color');
+        Route::post('/storeColor','Seller\ColorController@store');
 
 //Add Size
-Route::get('/addSize','Seller\SizeController@index')->name('add-size');
-Route::post('/storeSize','Seller\SizeController@store');
+        Route::get('/addSize','Seller\SizeController@index')->name('add-size');
+        Route::post('/storeSize','Seller\SizeController@store');
 
 
       });
@@ -209,7 +209,16 @@ Route::get('/terms-and-condition',function(){return view('Boot.static_pages.term
 
 Route::get('/map',function(){return view('Boot.store');});
 
-Route::get('/review',function(){return view('Boot.review_order');});
+Route::get('/review','ReviewsController@cart')->middleware('auth');
 
-//User Profile
-Route::get('/user-profile',function(){return view('Boot.user-profile');});
+// User Account Manupulation Link
+Route::get('/your-account',function(){return view ('Boot.your-account');})->middleware('auth');
+
+//User Login and Security Link
+Route::get('/login-security','Auth\AddressController@index')->middleware('auth');
+
+// //User Account Manupulation Link
+// Route::get('/your-account','Auth\AddressController@index')->middleware('auth');
+
+// //User Account Manupulation Link
+// Route::get('/your-account','Auth\AddressController@index')->middleware('auth');

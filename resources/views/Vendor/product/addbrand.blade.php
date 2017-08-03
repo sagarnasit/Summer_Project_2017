@@ -30,12 +30,12 @@
     </div>
 </div>
 <div class="white-box" align="center">
-    <table class="table table-hover table-bordered">
-        <tr class="danger">
-            <th>Brand Name</th>
+    <table class="table table-bordered">
+        <tr bgcolor="#696969">
+            <th><font color="#ffffff">Brand Name</font></th>
         </tr>
         @foreach ($brands as $brand)
-        <tr class="warning">
+        <tr>
             <td>{{$brand->brand_name}}</td>
         </tr>
         @endforeach

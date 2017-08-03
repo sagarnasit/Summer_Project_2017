@@ -35,12 +35,12 @@
     </form>
 </div>
 <div class="white-box" align="center">
-    <table class="table table-hover table-bordered">
-        <tr class="danger">
-            <th>Category Name</th>
+    <table class="table table-bordered">
+        <tr bgcolor="#696969">
+            <th><font color="#ffffff">Category Name</font></th>
         </tr>
         @foreach ($categorys as $category)
-        <tr class="warning">
+        <tr>
             <td>{{$category->category_name}}</td>
         </tr>
         @endforeach

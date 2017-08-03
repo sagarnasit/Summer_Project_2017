@@ -3,7 +3,7 @@
 <title>About Us</title>
 @stop
 @section('body')
-<section class="cart-content paira-animation-container">
+<section>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center margin-bottom-40">
@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="about_us"><br>
+			<div><br>
 				<p>
 					Shopping online particularly at Boot is a child’s play; all you need is a mobile phone or laptop or tablet with Internet connection to get started. Simply log into Boot.com and browse through the wide assortment of footwear across categories at an affordable price. Once you have zeroed in on your favorite products, simply place the order by filling in the details; the products will be delivered right at your doorstep.
 

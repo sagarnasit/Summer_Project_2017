@@ -8,7 +8,7 @@
 		<div class="row">
 			<div class="col-md-12 text-center margin-bottom-40">
 				<div class="page-header">
-					<h1 class="text-uppercase">User Profile</h1>
+					<h1 class="text-uppercase">Login & Security</h1>
 					<hr>
 				</div>
 			</div>
@@ -17,13 +17,13 @@
 			<div>
 				<form class="form-horizontal">
 					<div class="form-group">
-						<label for="userName" class="col-sm-2 control-label">Name</label>
+						<label for="userName" class="col-sm-2 control-label">Name : </label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="userName" name="userName" value="{{ Auth::user()->name }}">
+							<p class="form-control-static">{{ Auth::user()->name }}</p>
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-2 control-label">Email</label>
+						<label class="col-sm-2 control-label">E - mail : </label>
 						<div class="col-sm-10">
 							<p class="form-control-static">{{ Auth::user()->email }}</p>
 						</div>
