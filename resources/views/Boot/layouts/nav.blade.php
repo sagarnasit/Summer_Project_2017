@@ -44,62 +44,7 @@
                                           </li>
 
                                           <!--=================== Grid Mega Menu ===================-->
-                                          <li class="dropdown paira-dropdown mega-menu-fw">
-                                                <a href="product.html">Shop<i class="paira-angle-down angle-down fa fa-angle-down"></i></a>
-                                                <ul class="dropdown-menu paira-dropdown-menu list-unstyled padding-bottom-20 font-normal animated fadeIn">
-                                                      <li>
-                                                            <div class="col-md-3 col-sm-3">
-                                                                  <h4 class="mega-menu-in-header">Man</h4>
-                                                                  <hr>
-                                                                  <ul role="menu" class="mega-menu-in list-unstyled">
-                                                                        <li><a href="#">Converse Shoe</a></li>
-                                                                        <li><a href="#">Pie Shoe</a></li>
-                                                                        <li><a href="#">Official Shoe</a></li>
-                                                                        <li><a href="#">Running Shoe</a></li>
-                                                                        <li><a href="#">Walk Shoe</a></li>
-                                                                        <li><a href="#">Converse Shoe</a></li>
-                                                                        <li><a href="#">Pie Shoe</a></li>
-                                                                        <li><a href="#">Official Shoe</a></li>
-                                                                        <li><a href="#">Running Shoe</a></li>
-                                                                  </ul>
-                                                            </div>
-                                                            <div class="col-md-3 col-sm-3">
-                                                                  <h4 class="mega-menu-in-header">Woman</h4>
-                                                                  <hr>
-                                                                  <ul role="menu" class="mega-menu-in list-unstyled">
-                                                                        <li><a href="#">Converse Shoe</a></li>
-                                                                        <li><a href="#">Pie Shoe</a></li>
-                                                                        <li><a href="#">Official Shoe</a></li>
-                                                                        <li><a href="#">Running Shoe</a></li>
-                                                                        <li><a href="#">Walk Shoe</a></li>
-                                                                        <li><a href="#">Converse Shoe</a></li>
-                                                                        <li><a href="#">Pie Shoe</a></li>
-                                                                        <li><a href="#">Official Shoe</a></li>
-                                                                        <li><a href="#">Running Shoe</a></li>
-                                                                  </ul>
-                                                            </div>
-                                                            <div class="col-md-3 col-sm-3">
-                                                                  <h4 class="mega-menu-in-header">Kid</h4>
-                                                                  <hr>
-                                                                  <ul role="menu" class="mega-menu-in list-unstyled">
-                                                                        <li><a href="#">Converse Shoe</a></li>
-                                                                        <li><a href="#">Pie Shoe</a></li>
-                                                                        <li><a href="#">Official Shoe</a></li>
-                                                                        <li><a href="#">Running Shoe</a></li>
-                                                                        <li><a href="#">Walk Shoe</a></li>
-                                                                        <li><a href="#">Converse Shoe</a></li>
-                                                                        <li><a href="#">Pie Shoe</a></li>
-                                                                        <li><a href="#">Official Shoe</a></li>
-                                                                        <li><a href="#">Running Shoe</a></li>
-                                                                  </ul>
-                                                            </div>
-                                                            <div class="col-md-3 col-sm-3">
-                                                                  <img class="pull-right img-responsive mega-img" src="assets/images/header/themetidy-paira-framework-boot-responsive-html-template-menu-4.jpg" alt="">
-                                                            </div>
-                                                      </li>
-                                                </ul>
-                                          </li>
-
+                                        
                                           </ul>
                                     <!--=================== Single Menu ===================-->
                                     <div class="dropdown navbar-form navbar-right navbar-search search-drop-bar margin-top-10">
