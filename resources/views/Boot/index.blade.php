@@ -43,7 +43,7 @@
     </section>
 
 
-  
+
     <!--=================== Top Selling Product Section ===================-->
     <section class="top-seller text-center padding-bottom-60">
         <div class="container">
@@ -97,6 +97,89 @@
             </div>
         </div>
     </section>
+
+    {{--Recent Products--}}
+    <section class="recent-product text-center padding-bottom-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <h1 class="text-uppercase">Recent Products</h1>
+                        <hr>
+                    </div>
+                </div>
+                <div class="product-widget">
+                    <div class="col-md-6 col-sm-6 col-xs-6 margin-bottom-100 paira-animation" data-paira-animation="fadeInUp" data-paira-animation-delay="0.3s">
+                        @foreach($products as $product)
+                        <div class="paira-product product position">
+                            <div class="block-image position">
+                                <a href="#">
+                                    <div class="background-overlay"></div>
+                                    <img src="{{url('images',$product->productdetails[0]->images->image)}}" alt="themetidy-paira-framework-foot-responsive-html-template-product-1" class="paira-product-image img-responsive"></a>
+                            </div>
+                            <div class="product-price">
+                                <span class="money">$120.00</span>
+                            </div>
+                            <div class="product-new font-italic color-scheme-3"><span>New</span></div>
+                            <div class="product-sale font-italic color-scheme-3"><span>Sale</span></div>
+                            <h4 class="color-scheme-3"> Converse Technical Shoe</h4>
+                            <div class="product-hover text-uppercase">
+                                <div class="paira-rating-con product-rating padding-bottom-40 color-scheme-3">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="paira-product-cart-con product-button text-center">
+                                    <ul class="list-inline">
+                                        <li class=""><a href="#" class=" text-uppercase color-scheme-3"><i class="fa fa-shopping-cart fa-2x margin-right-5"></i> Add to cart</a></li>
+                                        <li><a href="#" class="paira-quick-view quick-view color-scheme-3"><i class="fa fa-eye fa-2x"></i></a></li>
+                                        <li><a href="#" class="color-scheme-3"><i class="fa fa-heart-o fa-2x"></i></a></li>
+                                        <li><a href="#" class="color-scheme-3"><i class="fa fa-retweet fa-2x"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                            @endforeach
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 margin-bottom-100 paira-animation" data-paira-animation="fadeInUp" data-paira-animation-delay="0.3s">
+                        <div class="paira-product product position">
+                            <div class="block-image position">
+                                <a href="#">
+                                    <div class="background-overlay"></div>
+                                    <img src="assets/images/product/themetidy-paira-framework-boot-responsive-html-template-product-4.jpg" alt="themetidy-paira-framework-foot-responsive-html-template-product-1" class="paira-product-image img-responsive"></a>
+                            </div>
+                            <div class="product-price">
+                                <span class="money">$120.00</span>
+                            </div>
+                            <div class="product-new font-italic color-scheme-3"><span>New</span></div>
+                            <div class="product-sale font-italic color-scheme-3"><span>Sale</span></div>
+                            <h4 class="color-scheme-3"> Converse Technical Shoe</h4>
+                            <div class="product-hover text-uppercase">
+                                <div class="paira-rating-con product-rating padding-bottom-40 color-scheme-3">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="paira-product-cart-con product-button text-center">
+                                    <ul class="list-inline">
+                                        <li class=""><a href="#" class=" text-uppercase color-scheme-3"><i class="fa fa-shopping-cart fa-2x margin-right-5"></i> Add to cart</a></li>
+                                        <li><a href="#" class="paira-quick-view quick-view color-scheme-3"><i class="fa fa-eye fa-2x"></i></a></li>
+                                        <li><a href="#" class="color-scheme-3"><i class="fa fa-heart-o fa-2x"></i></a></li>
+                                        <li><a href="#" class="color-scheme-3"><i class="fa fa-retweet fa-2x"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--=================== Brand Logo Section ===================-->
     <section class="brand margin-bottom-75">
         <div class="container">
@@ -108,47 +191,6 @@
                             <li><a href="{{route('search-via-brand',$brand->brand_id)}}" class="text-uppercase color-scheme-3">{{--<i class="fa  fa-shield font-color-orange margin-right-10 fa-5x pull-left"></i>--}}<p class="font-size-50 pull-left">{{$brand->brand_name}}</p></a></li>
                             @endforeach
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--=================== Recent Product Section ===================-->
-    <section class="category text-center margin-bottom-75">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-6 paira-animation" data-paira-animation="fadeInUp" data-paira-animation-delay="0.3s">
-                    <div class="paira-product product position category-content">
-                        <div class="col-md-8">
-                            <div class="position">
-                                <a href="/product"><img src="images/Adidas_shhoe.jpg" alt="" class="paira-product-image img-responsive"></a>
-                            </div>
-                            <div class="product-hover text-uppercase">
-                                <a href="/product" class="btn btn-success text-uppercase position">Shop The collection</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 background-or text-center">
-                            <h4 class="text-uppercase font-bold font-color-white padding-top-45">Concerese</h4>
-                            <h1 class="font-bold">10</h1>
-                            <h4 class="text-uppercase">Products</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-6 paira-animation" data-paira-animation="fadeInUp" data-paira-animation-delay="0.3s">
-                    <div class="position paira-product product category-content1">
-                        <div class="col-md-4 background-or1">
-                            <h4 class="text-uppercase font-bold font-color-white padding-top-45">Concerese</h4>
-                            <h1 class="font-bold">10</h1>
-                            <h4 class="text-uppercase">Products</h4>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="position">
-                                <a href="/product"><img src="images/best_girl.jpg" alt="" class="paira-product-image img-responsive"></a>
-                            </div>
-                            <div class="product-hover text-uppercase">
-                                <a href="/product" class="btn btn-success text-uppercase position">Shop The collection</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
