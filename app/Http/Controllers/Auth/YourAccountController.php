@@ -43,7 +43,9 @@ class YourAccountController extends Controller
 			'state' => 'required'
 			]);
 		Address::create(request(['user_id','pincode','address','city','state']));
-		return redirect('/your-account');
+		\Session::flash('message.level', 'success');
+		\Session::flash('message.content','Address added Successfully !!!');
+		return back();
 	}
 
 	public function addressesupdate($userId, $id){
