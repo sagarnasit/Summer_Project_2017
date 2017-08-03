@@ -23,7 +23,7 @@
 						<div class="col-sm-10">
 							<input type="text" class="form-control" id="addressDetails {{ $a }}" name="addressDetails {{ $a }}" value="{{ $user->address }}, {{ $user->city }}, {{ $user->state }}, {{ $user->pincode }}">
 							<br>
-							<a href="">
+							<a href="/addressesupdate/{{ $user->user_id }}/{{ $user->id }}">
 								<button class="btn btn-default pull-right">Edit</button>
 							</a>
 						</div>

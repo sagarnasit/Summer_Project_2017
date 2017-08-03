@@ -29,7 +29,6 @@ class YourAccountController extends Controller
 	}
 
 	public function addresses(){
-		// return Auth::user();
 		$users = User::find(Auth::user()->id)->addresses;
 		return view('Boot.addresses', compact('users'));
 	}
@@ -38,12 +37,27 @@ class YourAccountController extends Controller
 		// dd(request()->all());
 		$this->validate(request(),[
 			'user_id' => 'required',
-			'pincode' => 'required',
+			'pincode' => 'required|numeric|digits:6',
 			'address' => 'required',
 			'city' => 'required',
 			'state' => 'required'
 			]);
 		Address::create(request(['user_id','pincode','address','city','state']));
 		return redirect('/your-account');
+	}
+
+	public function addressesupdate($userId, $id){
+
+		$this->validate(request(),[
+			'user_id' => 'required',
+			'pincode' => 'required|numeric|digits:6',
+			'address' => 'required',
+			'city' => 'required',
+			'state' => 'required'
+			]);
+
+		Address::where('user_id',$userId)->where('id',$id)->update(request(['name','email','password']));
+		return $addresses;
+		return view('', compact('users'));
 	}
 }

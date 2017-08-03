@@ -7,15 +7,22 @@ use App\Subscriber;
 
 class SubscribersController extends Controller
 {
-	public function store(){
+	public function store(Request $request){
 		//dd(request()->all());
 		$this->validate(request(),[
 			'email' => 'required|email'
 			]);
-		Subscriber::create(request(['email']));
-		// $sub= new Subscriber;
-		// $sub->email= request('subscribers');
-		// $sub->save();
-		return redirect('/');
+		$email=Subscriber::where('email',request('email'))->first();
+		if(isset($email)){
+			\Session::flash('message.level', 'danger');
+			\Session::flash('message.content','Subscription already exists in the subscription database !!!');
+			return back();
+		}
+		else{
+			Subscriber::create(request(['email']));
+			\Session::flash('message.level', 'success');
+			\Session::flash('message.content','Thank You: Your Subscription Has Been Successfully Added !!!');
+			return back();
+		}
 	}
 }

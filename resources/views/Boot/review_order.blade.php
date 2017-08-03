@@ -26,21 +26,6 @@
           <td class="col-md-2 text-center">{{$cartItem->qty}}</td>
           <td class="col-md-2 text-center">Rs. {{$cartItem->price}}</td>
         </tr>
-<<<<<<< HEAD
-      </tbody>
-    </table>
-  <div class="payment-options">
-    <span>
-       <input type="radio" name="pay" value="COD" checked="checked">COD
-       <input type="submit" name="" value="COD">
-     </span>
-    <span>
-      <input type="radio" name="pay" value="gateway">GATEWAY
-      <input type="submit" name="" value="GATEWAY">
-    </span>
-    <span><input type="submit" name="" value="Continue"></span>
-  </div>
-=======
         @endforeach
       </table>
     </div>
@@ -65,7 +50,6 @@
     <div class="row">
       <h4>Shipping Address</h4>
     </div>
->>>>>>> 3a6ee18143101f38a7e50901bacfccd18c299e77
   </div>
 </section>
 @stop
