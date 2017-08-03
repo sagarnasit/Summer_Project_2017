@@ -86,8 +86,9 @@
                             <div class="cart-shipping-calculate">
                                 <div class="col-lg-4 col-md-4 col-sm-4"></div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <a href="/product" ></a>
+                                    <a href="/product" >
                                     <button  type="button" class="btn btn-default color-scheme-1 btn-lg btn-block text-uppercase">Continue Shopping</button>
+                                    </a>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                 </div>

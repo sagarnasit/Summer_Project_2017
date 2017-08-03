@@ -1,6 +1,6 @@
 @extends('Boot.master')
 @section('title')
-<title>User Profile</title>
+<title>Edit your address</title>
 @stop
 @section('body')
 <section>
@@ -9,7 +9,7 @@
 			<div class="col-md-12 text-center margin-bottom-40">
 				<div class="page-header">
 					<h1 class="text-uppercase">
-						Login & Security
+						Edit your address
 					</h1>
 					<hr>
 				</div>
@@ -22,46 +22,39 @@
 				@include ('Boot.layouts.errors')
 			</div>
 			<div>
-				<form class="form-horizontal" method="POST" action="/login-security-form">
+				<form class="form-horizontal" method="POST" action="/addresses-form">
 					{{ csrf_field() }}
 					<ul class="list-unstyled">
+						<input type="hidden" name="user_id" id="user_id" value="{{ Auth::user()->id }}">
 						<li>
 							<div class="form-group">
-								<label for="name" class="col-sm-2 control-label">Name : </label>
+								<label for="pincode" class="col-sm-2 control-label">pincode : </label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control color-scheme-3" name="name" id="name" value="{{ Auth::user()->name }}">
+									<input type="number" class="form-control color-scheme-3" name="pincode" id="pincode" required="">
 								</div>
 							</div>
 						</li>
 						<li>
 							<div class="form-group">
-								<label for="email" class="col-sm-2 control-label">E - mail : </label>
+								<label for="address" class="col-sm-2 control-label">Street Address : </label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control color-scheme-3" name="email" id="email" value="{{ Auth::user()->email }}">
+									<input type="text" class="form-control color-scheme-3" name="address" id="address" required="">
 								</div>
 							</div>
 						</li>
 						<li>
 							<div class="form-group">
-								<label for="userOpassword" class="col-sm-2 control-label">Old Password : </label>
+								<label for="city" class="col-sm-2 control-label">City : </label>
 								<div class="col-sm-10">
-									<input type="password" class="form-control color-scheme-3" name="userOpassword" id="userOpassword" placeholder="******">
+									<input type="text" class="form-control color-scheme-3" name="city" id="city" required="">
 								</div>
 							</div>
 						</li>
 						<li>
 							<div class="form-group">
-								<label for="password" class="col-sm-2 control-label">New Password : </label>
+								<label for="state" class="col-sm-2 control-label">State : </label>
 								<div class="col-sm-10">
-									<input type="password" class="form-control color-scheme-3" name="password" id="password" placeholder="******">
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="form-group">
-								<label for="password_confirmation" class="col-sm-2 control-label">Password Confirmation : </label>
-								<div class="col-sm-10">
-									<input type="password" class="form-control color-scheme-3" name="password_confirmation" id="password_confirmation" placeholder="******">
+									<input type="text" class="form-control color-scheme-3" name="state" id="state" required="">
 								</div>
 							</div>
 						</li>

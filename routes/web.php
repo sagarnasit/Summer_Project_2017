@@ -186,39 +186,52 @@ Route::get('/getAjaxSize', function () {
 });
 */
 
-//footer Subscribe Form
+//Subscriber Form in footer
 Route::post('/subscribers','SubscribersController@store');
 
-//footer About Us
+//About Us Static Page in footer
 Route::get('/about-us',function(){return view('Boot.static_pages.about-us');});
 
-//footer Contact Us
+//Contact Us Static Page in footer
 Route::get('/contact-us',function(){return view('Boot.static_pages.contact-us');});
 
-//footer Privacy Policy
+//Privacy Policy Static Page in footer
 Route::get('/privacy-policy',function(){return view('Boot.static_pages.privacy-policy');});
 
-//footer Return Policy
+//Return Policy Static Page in footer
 Route::get('/return-policy',function(){return view('Boot.static_pages.return-policy');});
 
-//footer Shipping Policy
+//Shipping Policy Static Page in footer
 Route::get('/shipping-policy',function(){return view('Boot.static_pages.shipping-policy');});
 
-//footer Terms of Use
+//Terms of Use Static Page in footer
 Route::get('/terms-and-condition',function(){return view('Boot.static_pages.terms-and-condition');});
 
+//Map in footer 
 Route::get('/map',function(){return view('Boot.store');});
 
+//Review Order
 Route::get('/review','ReviewsController@cart')->middleware('auth');
 
 // User Account Manupulation Link
 Route::get('/your-account',function(){return view ('Boot.your-account');})->middleware('auth');
 
 //User Login and Security Link
-Route::get('/login-security','Auth\AddressController@index')->middleware('auth');
+Route::get('/login-security',function(){return view ('Boot.login-security');})->middleware('auth');
 
-// //User Account Manupulation Link
-// Route::get('/your-account','Auth\AddressController@index')->middleware('auth');
+//User Login and Security Update Form Link
+Route::post('/login-security-form','Auth\YourAccountController@loginsecurity')->middleware('auth');
+
+//User Addresses Manupulation Link
+Route::get('/addresses','Auth\YourAccountController@addresses')->middleware('auth');
+
+//User Addresses Add Link
+Route::get('/addressesadd',function(){return view ('Boot.addressesadd');})->middleware('auth');
+
+//User Addresses Add Form Link
+Route::post('/addressesadd-form','Auth\YourAccountController@addressesadd')->middleware('auth');
+
+//User Addresses Update Form Link
 
 // //User Account Manupulation Link
 // Route::get('/your-account','Auth\AddressController@index')->middleware('auth');

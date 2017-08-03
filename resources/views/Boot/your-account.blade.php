@@ -14,10 +14,12 @@
 			</div>
 		</div>
 		<div class="row">
-			<table class="table">
+			<table class="table borderles">
 				<tr>
 					<td>
-						<img class="img-responsive pull-left margin-right-15" height="150px" width="150px" src="assets/images/shopping-bag-3.png">
+						<a href="#">
+							<img class="img-responsive pull-left margin-right-15" height="150px" width="150px" src="assets/images/shopping-basket.png">
+						</a>
 					</td>
 					<td>
 						<div class="comments-content padding-top-5">
@@ -26,7 +28,9 @@
 						</div>
 					</td>
 					<td>
-						<img class="img-responsive pull-left margin-right-15" height="150px" width="150px" src="assets/images/security.png">
+						<a href="login-security">
+							<img class="img-responsive pull-left margin-right-15" height="150px" width="150px" src="assets/images/security.png">
+						</a>
 					</td>
 					<td>
 						<div class="comments-content padding-top-5">
@@ -35,7 +39,9 @@
 						</div>
 					</td>
 					<td>
-						<img class="img-responsive pull-left margin-right-15" height="150px" width="150px" src="assets/images/trolley.png">
+						<a href="addresses">
+						<img class="img-responsive pull-left margin-right-15" height="150px" width="150px" src="assets/images/list.png">
+						</a>
 					</td>
 					<td>
 						<div class="comments-content padding-top-5">
