@@ -109,20 +109,21 @@
                     </div>
                 </div>
                 <div class="product-widget">
+                    @foreach($recentProduct as $product)
                     <div class="col-md-6 col-sm-6 col-xs-6 margin-bottom-100 paira-animation" data-paira-animation="fadeInUp" data-paira-animation-delay="0.3s">
-                        @foreach($products as $product)
+
                         <div class="paira-product product position">
                             <div class="block-image position">
                                 <a href="#">
                                     <div class="background-overlay"></div>
-                                    <img src="{{url('images',$product->productdetails[0]->images->image)}}" alt="themetidy-paira-framework-foot-responsive-html-template-product-1" class="paira-product-image img-responsive"></a>
+                                    <img src="{{url('images',$product->productdetails[0]->images->image)}}" alt="themetidy-paira-framework-foot-responsive-html-template-product-1" class="paira-product-image img-responsive photo">
                             </div>
                             <div class="product-price">
-                                <span class="money">$120.00</span>
+                                <span class="money">Rs. {{$product->productdetails[0]->price}}</span>
                             </div>
                             <div class="product-new font-italic color-scheme-3"><span>New</span></div>
                             <div class="product-sale font-italic color-scheme-3"><span>Sale</span></div>
-                            <h4 class="color-scheme-3"> Converse Technical Shoe</h4>
+                            <h4 class="color-scheme-3"> {{$product->productdetails[0]->product->product_name}}</h4>
                             <div class="product-hover text-uppercase">
                                 <div class="paira-rating-con product-rating padding-bottom-40 color-scheme-3">
                                     <i class="fa fa-star"></i>
@@ -133,7 +134,7 @@
                                 </div>
                                 <div class="paira-product-cart-con product-button text-center">
                                     <ul class="list-inline">
-                                        <li class=""><a href="#" class=" text-uppercase color-scheme-3"><i class="fa fa-shopping-cart fa-2x margin-right-5"></i> Add to cart</a></li>
+                                        <li class=""> <a href="{{route('cart-additem',$product->productdetails[0]->product_id)}}" class=" text-uppercase color-scheme-3"><i class="fa fa-shopping-cart fa-2x margin-right-5"></i> Add to cart</a></li>
                                         <li><a href="#" class="paira-quick-view quick-view color-scheme-3"><i class="fa fa-eye fa-2x"></i></a></li>
                                         <li><a href="#" class="color-scheme-3"><i class="fa fa-heart-o fa-2x"></i></a></li>
                                         <li><a href="#" class="color-scheme-3"><i class="fa fa-retweet fa-2x"></i></a></li>
@@ -141,40 +142,10 @@
                                 </div>
                             </div>
                         </div>
-                            @endforeach
+
                     </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6 margin-bottom-100 paira-animation" data-paira-animation="fadeInUp" data-paira-animation-delay="0.3s">
-                        <div class="paira-product product position">
-                            <div class="block-image position">
-                                <a href="#">
-                                    <div class="background-overlay"></div>
-                                    <img src="assets/images/product/themetidy-paira-framework-boot-responsive-html-template-product-4.jpg" alt="themetidy-paira-framework-foot-responsive-html-template-product-1" class="paira-product-image img-responsive"></a>
-                            </div>
-                            <div class="product-price">
-                                <span class="money">$120.00</span>
-                            </div>
-                            <div class="product-new font-italic color-scheme-3"><span>New</span></div>
-                            <div class="product-sale font-italic color-scheme-3"><span>Sale</span></div>
-                            <h4 class="color-scheme-3"> Converse Technical Shoe</h4>
-                            <div class="product-hover text-uppercase">
-                                <div class="paira-rating-con product-rating padding-bottom-40 color-scheme-3">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <div class="paira-product-cart-con product-button text-center">
-                                    <ul class="list-inline">
-                                        <li class=""><a href="#" class=" text-uppercase color-scheme-3"><i class="fa fa-shopping-cart fa-2x margin-right-5"></i> Add to cart</a></li>
-                                        <li><a href="#" class="paira-quick-view quick-view color-scheme-3"><i class="fa fa-eye fa-2x"></i></a></li>
-                                        <li><a href="#" class="color-scheme-3"><i class="fa fa-heart-o fa-2x"></i></a></li>
-                                        <li><a href="#" class="color-scheme-3"><i class="fa fa-retweet fa-2x"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
         </div>
