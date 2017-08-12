@@ -57,8 +57,8 @@ class YourAccountController extends Controller
 			'state' => 'required'
 			]);
 		Address::create(request(['user_id','pincode','address','city','state']));
-		\Session::flash('message.level', 'success');
-		\Session::flash('message.content','Address added Successfully !!!');
+		\Session::flash('address.level', 'success');
+		\Session::flash('address.content','Address added Successfully !!!');
 		return back();
 	}
 

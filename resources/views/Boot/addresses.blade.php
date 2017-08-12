@@ -14,6 +14,15 @@
 			</div>
 		</div>
 		<div class="row">
+			<div class="col-lg-2 col-md-2 col-sm-2">
+			</div>
+			<div class="col-lg-10 col-md-10 col-sm-10">
+				@if (Session::has('address.level'))
+				<div class="alert alert-{{ session('address.level') }}">
+					{{ Session::get('address.content') }}
+				</div>
+				@endif
+			</div>
 			<div>
 				<form class="form-horizontal">
 					<?php $a = 1;?>
@@ -32,11 +41,11 @@
 					<?php $a++;?>
 					@endforeach
 				</form>
-				<div class="form-group col-lg-8 col-md-8 col-sm-8">
-					<a href="addressesadd">
-						<button  class="btn btn-success text-uppercase padding-left-45 font-bold padding-right-45 pull-right margin-left-15 btn-lg">Add Address</button>
-					</a>
-				</div>
+			</div>
+			<div class="form-group col-lg-8 col-md-8 col-sm-8">
+				<a href="addressesadd">
+					<button  class="btn btn-success text-uppercase padding-left-45 font-bold padding-right-45 pull-right margin-left-15 btn-lg">Add Address</button>
+				</a>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4">
 				<a href="/your-account">

@@ -14,14 +14,14 @@ class SubscribersController extends Controller
 			]);
 		$email=Subscriber::where('email',request('email'))->first();
 		if(isset($email)){
-			\Session::flash('message.level', 'danger');
-			\Session::flash('message.content','Subscriber already exists in the subscription database !!!');
+			\Session::flash('subscriber.level', 'danger');
+			\Session::flash('subscriber.content','Subscriber already exists in the subscription database !!!');
 			return back();
 		}
 		else{
 			Subscriber::create(request(['email']));
-			\Session::flash('message.level', 'success');
-			\Session::flash('message.content','Thank You: Your Subscription Has Been Successfully Added !!!');
+			\Session::flash('subscriber.level', 'success');
+			\Session::flash('subscriber.content','Thank You: Your Subscription Has Been Successfully Added !!!');
 			return back();
 		}
 	}

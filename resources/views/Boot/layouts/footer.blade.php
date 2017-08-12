@@ -17,9 +17,9 @@
                               </div>
                         </form>
                   </div>
-                  @if (Session::has('message.level'))
-                  <div class="alert alert-{{ session('message.level') }}">
-                        {{ Session::get('message.content') }}
+                  @if (Session::has('subscriber.level'))
+                  <div class="alert alert-{{ session('subscriber.level') }}">
+                        {{ Session::get('subscriber.content') }}
                   </div>
                   @endif
             </div>
