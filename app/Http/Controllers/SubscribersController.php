@@ -15,7 +15,7 @@ class SubscribersController extends Controller
 		$email=Subscriber::where('email',request('email'))->first();
 		if(isset($email)){
 			\Session::flash('message.level', 'danger');
-			\Session::flash('message.content','Subscription already exists in the subscription database !!!');
+			\Session::flash('message.content','Subscriber already exists in the subscription database !!!');
 			return back();
 		}
 		else{

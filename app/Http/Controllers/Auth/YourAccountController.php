@@ -11,21 +11,35 @@ use Auth;
 
 class YourAccountController extends Controller
 {
-	public function loginsecurity(){
+	public function loginsecurity(Request $request){
 
-		$users = User::find(Auth::user()->id)->id;
+		$users = Auth::user();
 
 		$this->validate(request(),[
 			'name' => 'required',
 			'email' => 'required|email',
+			'oldPassword' => 'required',
 			'password' => 'required|confirmed'
 			]);
 
-		User::where('id',$users)->update(request(['name','email','password']));
-		 // =>  Hash::make('password')
-		// create(request(['name','email','password']))
+		$currentPassword = $request->input('oldPassword');
 
-		return redirect('/your-account');
+		if (Hash::check($currentPassword, $users->password)){
+
+			$request->user()->fill([
+				'name' => $request->name,
+				'email' => $request->email,
+				'password' => Hash::make($request->password)
+				])->save();
+			\Session::flash('loginsecurity.level', 'success');
+			\Session::flash('loginsecurity.content','Profile Updated !!!');
+			return back();
+		}
+		else{
+			\Session::flash('loginsecurity.level', 'danger');
+			\Session::flash('loginsecurity.content','Invalid old password !!!');
+			return back();
+		}
 	}
 
 	public function addresses(){
@@ -48,18 +62,24 @@ class YourAccountController extends Controller
 		return back();
 	}
 
-	public function addressesupdate($userId, $id){
+	public function addressesupdate(){
 
-		$this->validate(request(),[
-			'user_id' => 'required',
-			'pincode' => 'required|numeric|digits:6',
-			'address' => 'required',
-			'city' => 'required',
-			'state' => 'required'
-			]);
+		// dd(request()->all());
 
-		Address::where('user_id',$userId)->where('id',$id)->update(request(['name','email','password']));
-		return $addresses;
-		return view('', compact('users'));
+		$address = Address::find(1)->get();
+
+		return $address;
+
+		// $this->validate(request(),[
+		// 	'user_id' => 'required',
+		// 	'pincode' => 'required|numeric|digits:6',
+		// 	'address' => 'required',
+		// 	'city' => 'required',
+		// 	'state' => 'required'
+		// 	]);
+
+		// Address::where('user_id',$userId)->where('id',$id)->update(request(['name','email','password']));
+		// return $addresses;
+		// return view('Boot.addressesedit', compact('users'));
 	}
 }

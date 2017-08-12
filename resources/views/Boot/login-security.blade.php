@@ -20,6 +20,11 @@
 			</div>
 			<div class="col-lg-10 col-md-10 col-sm-10">
 				@include ('Boot.layouts.errors')
+				@if (Session::has('loginsecurity.level'))
+				<div class="alert alert-{{ session('loginsecurity.level') }}">
+					{{ Session::get('loginsecurity.content') }}
+				</div>
+				@endif
 			</div>
 			<div>
 				<form class="form-horizontal" method="POST" action="/login-security-form">
@@ -43,42 +48,41 @@
 						</li>
 						<li>
 							<div class="form-group">
-								<label for="userOpassword" class="col-sm-2 control-label">Old Password : </label>
+								<label for="oldPassword" class="col-sm-2 control-label">Old Password : </label>
 								<div class="col-sm-10">
-									<input type="password" class="form-control color-scheme-3" name="userOpassword" id="userOpassword" placeholder="******">
+									<input type="password" class="form-control color-scheme-3" name="oldPassword" id="oldPassword" placeholder="******">
 								</div>
-							</div>
-						</li>
-						<li>
-							<div class="form-group">
-								<label for="password" class="col-sm-2 control-label">New Password : </label>
-								<div class="col-sm-10">
-									<input type="password" class="form-control color-scheme-3" name="password" id="password" placeholder="******">
+							</li>
+							<li>
+								<div class="form-group">
+									<label for="password" class="col-sm-2 control-label">New Password : </label>
+									<div class="col-sm-10">
+										<input type="password" class="form-control color-scheme-3" name="password" id="password" placeholder="******">
+									</div>
 								</div>
-							</div>
-						</li>
-						<li>
-							<div class="form-group">
-								<label for="password_confirmation" class="col-sm-2 control-label">Password Confirmation : </label>
-								<div class="col-sm-10">
-									<input type="password" class="form-control color-scheme-3" name="password_confirmation" id="password_confirmation" placeholder="******">
+							</li>
+							<li>
+								<div class="form-group">
+									<label for="password_confirmation" class="col-sm-2 control-label">Password Confirmation : </label>
+									<div class="col-sm-10">
+										<input type="password" class="form-control color-scheme-3" name="password_confirmation" id="password_confirmation" placeholder="******">
+									</div>
 								</div>
-							</div>
-						</li>
-						<li>
-							<div class="form-group col-lg-8 col-md-8 col-sm-8">
-								<button  class="btn btn-success text-uppercase padding-left-45 font-bold padding-right-45 pull-right margin-right-15 btn-lg">Done</button>
-							</div>
-						</li>
-					</form>
+							</li>
+							<li>
+								<div class="form-group col-lg-8 col-md-8 col-sm-8">
+									<button  class="btn btn-success text-uppercase padding-left-45 font-bold padding-right-45 pull-right margin-right-15 btn-lg">Done</button>
+								</div>
+							</li>
+						</form>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<a href="/your-account">
+							<button  type="button" class="btn btn-default color-scheme-1 btn-lg btn-block text-uppercase pull-right">Do Nothing</button>
+						</a>
+					</div>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4">
-					<a href="/your-account">
-						<button  type="button" class="btn btn-default color-scheme-1 btn-lg btn-block text-uppercase pull-right">Do Nothing</button>
-					</a>
-				</div>
+				<br>
 			</div>
-			<br>
-		</div>
-	</section>
-	@stop
+		</section>
+		@stop
