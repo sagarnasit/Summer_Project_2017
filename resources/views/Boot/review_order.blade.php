@@ -32,7 +32,7 @@
     <div class="col-lg-12 col-md-12 col-sm-12 margin-bottom-40">
       <figure class="margin-bottom-30">
         <figcaption>
-          <h4 class="panel-heading font-bold">Sub Total ({{Cart::count()}} items)</h4>
+          <h4 class="panel-heading font-bold">Cart subtotal ({{Cart::count()}} items)</h4>
         </figcaption>
         <div class="cart-sub-total">
           <div class="col-lg-4 col-md-4 col-sm-4">
@@ -44,12 +44,25 @@
         </div>
       </figure>
     </div>
-    <div class="">
-      <hr class="myHr">
-    </div>
     <div class="row">
-      <h4>Shipping Address</h4>
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <h2>
+          Deliver to : 
+        </h2>
+        <h4>
+          {{Auth::user()->name}}
+        </h4>
+        <h5>
+          {{ $user->address }}, {{ $user->city }}, {{ $user->state }}, {{ $user->pincode }}
+        </h5>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <a href="#" class="btn btn-success btn-lg btn-block text-uppercase margin-top-50">Continue
+        </a>
+      </div>
     </div>
+    <br>
+    <br>
   </div>
 </section>
 @stop

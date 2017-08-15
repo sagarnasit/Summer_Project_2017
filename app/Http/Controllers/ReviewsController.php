@@ -15,11 +15,10 @@ class ReviewsController extends Controller
 {
 	public function cart()
 	{
-
 		$cartItems = Cart::content();
-		$users = User::find(Auth::user()->id)->addresses->first();
+		$user = User::find(Auth::user()->id)->addresses->first();
         //$quantity=ProductDetail::where('product_id',$)->value('quantity');
         // return $cartItems;
-		return view('Boot.review_order', compact('cartItems','users'));
+		return view('Boot.review_order', compact('cartItems','user'));
 	}
 }

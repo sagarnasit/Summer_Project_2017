@@ -30,12 +30,12 @@
 				<form class="form-horizontal" method="POST" action="/addresses-update-form">
 					{{ csrf_field() }}
 					<ul class="list-unstyled">
-						<input type="hidden" name="id" id="user_id" value="{{ $id->id }}">
+						<input type="hidden" name="id" id="user_id" value="{{ $address->id }}">
 						<li>
 							<div class="form-group">
 								<label for="pincode" class="col-sm-2 control-label">Pincode : </label>
 								<div class="col-sm-10">
-									<input type="number" class="form-control color-scheme-3" name="pincode" id="pincode" value="{{ $id->pincode }}" required="">
+									<input type="number" class="form-control color-scheme-3" name="pincode" id="pincode" value="{{ $address->pincode }}" required="">
 								</div>
 							</div>
 						</li>
@@ -43,7 +43,7 @@
 							<div class="form-group">
 								<label for="address" class="col-sm-2 control-label">Street Address : </label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control color-scheme-3" name="address" id="address" value="{{ $id->address }}" required="">
+									<input type="text" class="form-control color-scheme-3" name="address" id="address" value="{{ $address->address }}" required="">
 								</div>
 							</div>
 						</li>
@@ -51,7 +51,7 @@
 							<div class="form-group">
 								<label for="city" class="col-sm-2 control-label">City : </label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control color-scheme-3" name="city" id="city" value="{{ $id->city }}" required="">
+									<input type="text" class="form-control color-scheme-3" name="city" id="city" value="{{ $address->city }}" required="">
 								</div>
 							</div>
 						</li>
@@ -59,7 +59,7 @@
 							<div class="form-group">
 								<label for="state" class="col-sm-2 control-label">State : </label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control color-scheme-3" name="state" id="state" value="{{ $id->state }}" required="">
+									<input type="text" class="form-control color-scheme-3" name="state" id="state" value="{{ $address->state }}" required="">
 								</div>
 							</div>
 						</li>
