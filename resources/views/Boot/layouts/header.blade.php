@@ -39,7 +39,14 @@
 
                   @else
                         <div class="pull-right user-account">
-                              <ul class="list-inline">
+                            <ul class="list-inline">
+                            <li class="btn-group">
+                                <a type="button" href="#" class="dropdown-toggle font-bold" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="selected text-uppercase" data-id="flag-USD"><span class="usd-fl">My account</span></span>
+                                    <span class="fa fa-angle-down margin-left-5"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-left margin-clear" role="menu">
+                                    <li><a href="/your-account" data-toggle="modal" data-target="#paira-login" class="font-bold">My Profile</a></li>
                                     <li class="btn-group">
                                           <a type="button" href="/logout" class="dropdown-toggle font-bold"onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();" >
@@ -52,7 +59,11 @@
 
 
                                     </li>
-                              </ul>
+                                </ul>
+                            </li>
+                        </ul>
+
+                            
                         </div>
                   @endif
 
