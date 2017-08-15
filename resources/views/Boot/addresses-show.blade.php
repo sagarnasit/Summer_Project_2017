@@ -4,7 +4,6 @@
 @stop
 @section('body')
 <section>
-<h1>lala</h1>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center margin-bottom-40">
@@ -33,10 +32,17 @@
 						<div class="col-sm-10">
 							<input type="text" class="form-control" id="addressDetails {{ $a }}" name="addressDetails {{ $a }}" value="{{ $user->address }}, {{ $user->city }}, {{ $user->state }}, {{ $user->pincode }}">
 							<br>
-							{{$user->id}}
-							<?php $address = $user->id;?>
-							<a href="/addressesupdate/{$address}/ " class="btn btn-default pull-right">Editt
-							</a>
+							<div class="col-lg-10 col-md-10 col-sm-10"></div>
+							<div class="col-lg-1 col-md-1 col-sm-1">
+								<a href="/addresses-edit/{{$user->id}}" class="btn btn-default pull-right">
+									Edit
+								</a>
+							</div>
+							<div class="col-lg-1 col-md-1 col-sm-1">
+								<a href="/addresses-delete/{{$user->id}}" class="btn btn-default pull-right">
+									Delete
+								</a>
+							</div>
 						</div>
 					</div>
 					<?php $a++;?>
@@ -44,13 +50,13 @@
 				</form>
 			</div>
 			<div class="form-group col-lg-8 col-md-8 col-sm-8">
-				<a href="addressesadd">
-					<button  class="btn btn-success text-uppercase padding-left-45 font-bold padding-right-45 pull-right margin-left-15 btn-lg">Add Address</button>
+				<a href="addresses-add" class="btn btn-success text-uppercase padding-left-45 font-bold padding-right-45 pull-right margin-left-15 btn-lg">
+					Add Address
 				</a>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4">
-				<a href="/your-account">
-					<button  type="button" class="btn btn-default color-scheme-1 btn-lg btn-block text-uppercase pull-right">Do Nothing</button>
+				<a href="/your-account" class="btn btn-default color-scheme-1 btn-lg btn-block text-uppercase pull-right">
+					Do Nothing
 				</a>
 			</div>
 		</div>

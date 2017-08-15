@@ -1,6 +1,6 @@
 @extends('Boot.master')
 @section('title')
-<title>Add a new address</title>
+<title>Edit your address</title>
 @stop
 @section('body')
 <section>
@@ -9,7 +9,7 @@
 			<div class="col-md-12 text-center margin-bottom-40">
 				<div class="page-header">
 					<h1 class="text-uppercase">
-						Add a new address
+						Edit your address
 					</h1>
 					<hr>
 				</div>
@@ -20,17 +20,22 @@
 			</div>
 			<div class="col-lg-10 col-md-10 col-sm-10">
 				@include ('Boot.layouts.errors')
+				@if (Session::has('address.level'))
+				<div class="alert alert-{{ session('address.level') }}">
+					{{ Session::get('address.content') }}
+				</div>
+				@endif
 			</div>
 			<div>
-				<form class="form-horizontal" method="POST" action="/addressesadd-form">
+				<form class="form-horizontal" method="POST" action="/addresses-update-form">
 					{{ csrf_field() }}
 					<ul class="list-unstyled">
-						<input type="hidden" name="user_id" id="user_id" value="{{ Auth::user()->id }}">
+						<input type="hidden" name="id" id="user_id" value="{{ $id->id }}">
 						<li>
 							<div class="form-group">
-								<label for="pincode" class="col-sm-2 control-label">pincode : </label>
+								<label for="pincode" class="col-sm-2 control-label">Pincode : </label>
 								<div class="col-sm-10">
-									<input type="number" class="form-control color-scheme-3" name="pincode" id="pincode" required="">
+									<input type="number" class="form-control color-scheme-3" name="pincode" id="pincode" value="{{ $id->pincode }}" required="">
 								</div>
 							</div>
 						</li>
@@ -38,7 +43,7 @@
 							<div class="form-group">
 								<label for="address" class="col-sm-2 control-label">Street Address : </label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control color-scheme-3" name="address" id="address" required="">
+									<input type="text" class="form-control color-scheme-3" name="address" id="address" value="{{ $id->address }}" required="">
 								</div>
 							</div>
 						</li>
@@ -46,7 +51,7 @@
 							<div class="form-group">
 								<label for="city" class="col-sm-2 control-label">City : </label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control color-scheme-3" name="city" id="city" required="">
+									<input type="text" class="form-control color-scheme-3" name="city" id="city" value="{{ $id->city }}" required="">
 								</div>
 							</div>
 						</li>
@@ -54,7 +59,7 @@
 							<div class="form-group">
 								<label for="state" class="col-sm-2 control-label">State : </label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control color-scheme-3" name="state" id="state" required="">
+									<input type="text" class="form-control color-scheme-3" name="state" id="state" value="{{ $id->state }}" required="">
 								</div>
 							</div>
 						</li>
@@ -66,8 +71,8 @@
 					</form>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4">
-					<a href="/your-account">
-						<button  type="button" class="btn btn-default color-scheme-1 btn-lg btn-block text-uppercase pull-right">Do Nothing</button>
+					<a href="/addresses" class="btn btn-default color-scheme-1 btn-lg btn-block text-uppercase pull-right">
+						Do Nothing
 					</a>
 				</div>
 			</div>

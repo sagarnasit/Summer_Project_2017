@@ -44,7 +44,7 @@ class YourAccountController extends Controller
 
 	public function addresses(){
 		$users = User::find(Auth::user()->id)->addresses;
-		return view('Boot.addresses', compact('users'));
+		return view('Boot.addresses-show', compact('users'));
 	}
 
 	public function addressesadd(){
@@ -62,23 +62,45 @@ class YourAccountController extends Controller
 		return back();
 	}
 
-	public function addressesupdate(Address $addressesupdate){
+	public function addressesupdate(Address $address){
 
+		return view('Boot.addresses-edit',compact('address'));
+	}
+
+	public function addressesdelete(Address $address){
+
+		$affectedRows = Address::destroy($address->id);
+		if ($affectedRows == 1){
+			\Session::flash('address.level', 'success');
+			\Session::flash('address.content','Address deleted Successfully !!!');
+			return back();
+		}
+		else{
+			\Session::flash('address.level', 'danger');
+			\Session::flash('address.content','Unable to delete Address !!!');
+			return back();
+		}
+	}
+
+	public function addressesupdateadd(Request $request){
 		// dd(request()->all());
+		$this->validate(request(),[
+			'id' => 'required',
+			'pincode' => 'required|numeric|digits:6',
+			'address' => 'required',
+			'city' => 'required',
+			'state' => 'required'
+			]);
 
+		$user = Address::find($request->id);
+		$user->pincode = $request->pincode;
+		$user->address = $request->address;
+		$user->city = $request->city;
+		$user->state = $request->state;
+		$user->save();
 
-		return $address;
-
-		// $this->validate(request(),[
-		// 	'user_id' => 'required',
-		// 	'pincode' => 'required|numeric|digits:6',
-		// 	'address' => 'required',
-		// 	'city' => 'required',
-		// 	'state' => 'required'
-		// 	]);
-
-		// Address::where('user_id',$userId)->where('id',$id)->update(request(['name','email','password']));
-		// return $addresses;
-		// return view('Boot.addressesedit', compact('users'));
+		\Session::flash('address.level', 'success');
+		\Session::flash('address.content','Address updated Successfully !!!');
+		return back();
 	}
 }

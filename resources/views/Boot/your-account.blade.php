@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<table class="table borderles">
+			<table class="table">
 				<tr>
 					<td>
 						<a href="#">

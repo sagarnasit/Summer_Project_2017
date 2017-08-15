@@ -34,7 +34,7 @@
 							<div class="form-group">
 								<label for="name" class="col-sm-2 control-label">Name : </label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control color-scheme-3" name="name" id="name" value="{{ Auth::user()->name }}">
+									<input type="text" class="form-control color-scheme-3" name="name" id="name" value="{{ Auth::user()->name }}" required="">
 								</div>
 							</div>
 						</li>
@@ -42,7 +42,7 @@
 							<div class="form-group">
 								<label for="email" class="col-sm-2 control-label">E - mail : </label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control color-scheme-3" name="email" id="email" value="{{ Auth::user()->email }}">
+									<input type="text" class="form-control color-scheme-3" name="email" id="email" value="{{ Auth::user()->email }}" required="">
 								</div>
 							</div>
 						</li>
@@ -50,14 +50,14 @@
 							<div class="form-group">
 								<label for="oldPassword" class="col-sm-2 control-label">Old Password : </label>
 								<div class="col-sm-10">
-									<input type="password" class="form-control color-scheme-3" name="oldPassword" id="oldPassword" placeholder="******">
+									<input type="password" class="form-control color-scheme-3" name="oldPassword" id="oldPassword" placeholder="******" required="">
 								</div>
 							</li>
 							<li>
 								<div class="form-group">
 									<label for="password" class="col-sm-2 control-label">New Password : </label>
 									<div class="col-sm-10">
-										<input type="password" class="form-control color-scheme-3" name="password" id="password" placeholder="******">
+										<input type="password" class="form-control color-scheme-3" name="password" id="password" placeholder="******" required="">
 									</div>
 								</div>
 							</li>
@@ -65,7 +65,7 @@
 								<div class="form-group">
 									<label for="password_confirmation" class="col-sm-2 control-label">Password Confirmation : </label>
 									<div class="col-sm-10">
-										<input type="password" class="form-control color-scheme-3" name="password_confirmation" id="password_confirmation" placeholder="******">
+										<input type="password" class="form-control color-scheme-3" name="password_confirmation" id="password_confirmation" placeholder="******" required="">
 									</div>
 								</div>
 							</li>
@@ -77,8 +77,8 @@
 						</form>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-4">
-						<a href="/your-account">
-							<button  type="button" class="btn btn-default color-scheme-1 btn-lg btn-block text-uppercase pull-right">Do Nothing</button>
+						<a href="/your-account" class="btn btn-default color-scheme-1 btn-lg btn-block text-uppercase pull-right">
+						Do Nothing
 						</a>
 					</div>
 				</div>

@@ -1,6 +1,6 @@
 @extends('Boot.master')
 @section('title')
-<title>Edit your address</title>
+<title>Add a new address</title>
 @stop
 @section('body')
 <section>
@@ -9,7 +9,7 @@
 			<div class="col-md-12 text-center margin-bottom-40">
 				<div class="page-header">
 					<h1 class="text-uppercase">
-						Edit your address
+						Add a new address
 					</h1>
 					<hr>
 				</div>
@@ -20,15 +20,20 @@
 			</div>
 			<div class="col-lg-10 col-md-10 col-sm-10">
 				@include ('Boot.layouts.errors')
+				@if (Session::has('address.level'))
+				<div class="alert alert-{{ session('address.level') }}">
+					{{ Session::get('address.content') }}
+				</div>
+				@endif
 			</div>
 			<div>
-				<form class="form-horizontal" method="POST" action="/addresses-form">
+				<form class="form-horizontal" method="POST" action="/addresses-add-form">
 					{{ csrf_field() }}
 					<ul class="list-unstyled">
 						<input type="hidden" name="user_id" id="user_id" value="{{ Auth::user()->id }}">
 						<li>
 							<div class="form-group">
-								<label for="pincode" class="col-sm-2 control-label">pincode : </label>
+								<label for="pincode" class="col-sm-2 control-label">Pincode : </label>
 								<div class="col-sm-10">
 									<input type="number" class="form-control color-scheme-3" name="pincode" id="pincode" required="">
 								</div>
@@ -66,8 +71,8 @@
 					</form>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4">
-					<a href="/your-account">
-						<button  type="button" class="btn btn-default color-scheme-1 btn-lg btn-block text-uppercase pull-right">Do Nothing</button>
+					<a href="/addresses" class="btn btn-default color-scheme-1 btn-lg btn-block text-uppercase pull-right">
+						Do Nothing
 					</a>
 				</div>
 			</div>

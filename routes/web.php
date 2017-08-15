@@ -226,13 +226,16 @@ Route::post('/login-security-form','Auth\YourAccountController@loginsecurity')->
 Route::get('/addresses','Auth\YourAccountController@addresses')->middleware('auth');
 
 //User Addresses Add Link
-Route::get('/addressesadd',function(){return view ('Boot.addressesadd');})->middleware('auth');
+Route::get('/addresses-add',function(){return view ('Boot.addresses-add');})->middleware('auth');
 
 //User Addresses Add Form Link
-Route::post('/addressesadd-form','Auth\YourAccountController@addressesadd')->middleware('auth');
+Route::post('/addresses-add-form','Auth\YourAccountController@addressesadd')->middleware('auth');
 
-//User Addresses Update Form Link
-Route::get('/addressesupdate/{address}','Auth\YourAccountController@addressesupdate')->middleware('auth');
+//User Addresses Update Link
+Route::get('/addresses-edit/{address}','Auth\YourAccountController@addressesupdate')->middleware('auth');
 
-// //User Account Manupulation Link
-// Route::get('/your-account','Auth\AddressController@index')->middleware('auth');
+//User Addresses Delete Link
+Route::get('/addresses-delete/{address}','Auth\YourAccountController@addressesdelete')->middleware('auth');
+
+//User Account Update Form Link
+Route::post('/addresses-update-form','Auth\YourAccountController@addressesupdateadd')->middleware('auth');
