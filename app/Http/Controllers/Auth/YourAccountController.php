@@ -62,11 +62,10 @@ class YourAccountController extends Controller
 		return back();
 	}
 
-	public function addressesupdate(){
+	public function addressesupdate(Address $addressesupdate){
 
 		// dd(request()->all());
 
-		$address = Address::find(1)->get();
 
 		return $address;
 

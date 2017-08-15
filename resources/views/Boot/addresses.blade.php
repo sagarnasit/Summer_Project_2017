@@ -4,6 +4,7 @@
 @stop
 @section('body')
 <section>
+<h1>lala</h1>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center margin-bottom-40">
@@ -33,8 +34,8 @@
 							<input type="text" class="form-control" id="addressDetails {{ $a }}" name="addressDetails {{ $a }}" value="{{ $user->address }}, {{ $user->city }}, {{ $user->state }}, {{ $user->pincode }}">
 							<br>
 							{{$user->id}}
-							<a href="/addressesupdate">
-								<button class="btn btn-default pull-right">Edit</button>
+							<?php $address = $user->id;?>
+							<a href="/addressesupdate/{$address}/ " class="btn btn-default pull-right">Editt
 							</a>
 						</div>
 					</div>

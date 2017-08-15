@@ -232,7 +232,7 @@ Route::get('/addressesadd',function(){return view ('Boot.addressesadd');})->midd
 Route::post('/addressesadd-form','Auth\YourAccountController@addressesadd')->middleware('auth');
 
 //User Addresses Update Form Link
-Route::get('/addressesupdate','Auth\YourAccountController@addressesupdate')->middleware('auth');
+Route::get('/addressesupdate/{address}','Auth\YourAccountController@addressesupdate')->middleware('auth');
 
 // //User Account Manupulation Link
 // Route::get('/your-account','Auth\AddressController@index')->middleware('auth');
