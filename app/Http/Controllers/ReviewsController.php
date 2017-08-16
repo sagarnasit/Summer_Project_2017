@@ -16,7 +16,9 @@ class ReviewsController extends Controller
 	public function cart()
 	{
 		$cartItems = Cart::content();
+		// dd($cartItems);
 		$user = User::find(Auth::user()->id)->addresses->first();
+		
         //$quantity=ProductDetail::where('product_id',$)->value('quantity');
         // return $cartItems;
 		return view('Boot.review_order', compact('cartItems','user'));

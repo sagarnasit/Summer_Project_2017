@@ -49,6 +49,7 @@ class DispalyProductController extends Controller
         $s=$request->input('s');
 
         $product= ProductMaster::latest()->where('product_name','like', '%' .$s. '%')->paginate(4);
+        // dd($product);
         return view('Boot.searchProducts',compact('product','s'));
     }
 

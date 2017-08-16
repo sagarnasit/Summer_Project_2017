@@ -18,21 +18,25 @@
 
                         <h3>Total {{$product->total()}} Products founds</h3><br>
                         @foreach($product as $p)
+                            @foreach($p->productdetails as $pp)
                             <ul class="list-unstyled">
                                 <li>
+                                    <div class="col-md-offset-4 ">
+                                        <p>{{ $pp->product->product_name}}</p>
+                                    </div>
                                     <div class="col-md-4 paira-animation" data-paira-animation="fadeInLeft" data-paira-animation-delay="0.5s">
-                                        <img class="img-responsive" src="{{--{{url('images',$p->images->image)}}--}}" alt="">
+                                        <img class="img-responsive" src="{{ url('images',$pp->images->image) }}" alt="">
                                     </div>
                                     <div class="col-md-8 margin-top-20">
-                                        <a href="{{route('simple-product',$p->product_id)}}">  <h4 class="margin-top-20 margin-bottom-20"><span class="money font-size-16 color-scheme-3"> {{ $p->product_name}}</span></h4></a>
-                                        <h4  class="margin-bottom-20"><span class="money font-bold">Rs. {{--{{$p->productdetails->price}}--}}</span></h4>
-                                        <a href="{{route('cart-additem',$p->product_id)}}"  class="btn btn-default font-color-black ">Add TO Cart</a>
+                                        <a href="{{route('simple-product',$pp->product_id)}}">  <h4 class="margin-top-20 margin-bottom-20"><span class="money font-size-16 color-scheme-3"> {{ $pp->product_name}}</span></h4></a>
+                                        <h4  class="margin-bottom-20"><span class="money font-bold">Rs. {{ $pp->price }}</span></h4>
+                                        <a href="{{route('cart-additem',$pp->product_id)}}"  class="btn btn-default font-color-black ">Add TO Cart</a>
 
                                     </div>
                                 </li>
 
                             </ul>
-
+                            @endforeach
                         @endforeach
 
                     </div>

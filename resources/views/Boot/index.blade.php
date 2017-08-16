@@ -68,7 +68,7 @@
                                 </a>
                             </div>
                             <div class="product-price">
-                                <del><span class="money font-color-orange margin-right-10">Rs. {{$product->mrp}}</span></del>
+                                <del><span class="money font-color-orange margin-right-10">Rs. {{$product->productdetails[0]->mrp}}</span></del>
                                 <span class="money">Rs. {{$product->productdetails[0]->price}}</span>
                             </div>
                             {{--<div class="product-new font-italic color-scheme-3"><span>New</span></div>
@@ -119,25 +119,19 @@
                                     <img src="{{url('images',$product->productdetails[0]->images->image)}}" alt="themetidy-paira-framework-foot-responsive-html-template-product-1" class="paira-product-image img-responsive photo">
                             </div>
                             <div class="product-price">
+                                <del><span class="money font-color-orange margin-right-10">Rs. {{$product->productdetails[0]->mrp}}</span></del>
                                 <span class="money">Rs. {{$product->productdetails[0]->price}}</span>
                             </div>
-                            <div class="product-new font-italic color-scheme-3"><span>New</span></div>
-                            <div class="product-sale font-italic color-scheme-3"><span>Sale</span></div>
+                
                             <h4 class="color-scheme-3"> {{$product->productdetails[0]->product->product_name}}</h4>
                             <div class="product-hover text-uppercase">
                                 <div class="paira-rating-con product-rating padding-bottom-40 color-scheme-3">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
+
                                 </div>
                                 <div class="paira-product-cart-con product-button text-center">
                                     <ul class="list-inline">
                                         <li class=""> <a href="{{route('cart-additem',$product->productdetails[0]->product_id)}}" class=" text-uppercase color-scheme-3"><i class="fa fa-shopping-cart fa-2x margin-right-5"></i> Add to cart</a></li>
-                                        <li><a href="#" class="paira-quick-view quick-view color-scheme-3"><i class="fa fa-eye fa-2x"></i></a></li>
-                                        <li><a href="#" class="color-scheme-3"><i class="fa fa-heart-o fa-2x"></i></a></li>
-                                        <li><a href="#" class="color-scheme-3"><i class="fa fa-retweet fa-2x"></i></a></li>
+
                                     </ul>
                                 </div>
                             </div>

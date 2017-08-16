@@ -16,12 +16,18 @@
     <div class="row">
       <table class="table   table-bordered='0'">
         <tr bgcolor="#000000">
+            <th></th>
           <th class="col-md-8 text-center"><h4><font color="#ffffff">Item Details</font></h4></th>
           <th class="col-md-2 text-center"><h4><font color="#ffffff">Quantity</font></h4></th>
           <th class="col-md-2 text-center"><h4><font color="#ffffff">Total</font></h4></th>
         </tr>
         @foreach($cartItems as $cartItem)
         <tr>
+            <td>
+                <div class="">
+                    <img src="images/{{ $cartItem->image }}" width="150px" />
+                </div>
+            </td>
           <td class="col-md-8 text-center">{{ $cartItem->name}}</td>
           <td class="col-md-2 text-center">{{$cartItem->qty}}</td>
           <td class="col-md-2 text-center">Rs. {{$cartItem->price}}</td>
@@ -29,6 +35,7 @@
         @endforeach
       </table>
     </div>
+
     <div class="col-lg-12 col-md-12 col-sm-12 margin-bottom-40">
       <figure class="margin-bottom-30">
         <figcaption>
@@ -47,13 +54,13 @@
     <div class="row">
       <div class="col-lg-8 col-md-8 col-sm-8">
         <h2>
-          Deliver to : 
+          Deliver to :
         </h2>
         <h4>
           {{Auth::user()->name}}
         </h4>
         <h5>
-          {{ $user->address }}, {{ $user->city }}, {{ $user->state }}, {{ $user->pincode }}
+          {{  $user->address }}, {{ $user->city }}, {{ $user->state }}, {{ $user->pincode }}
         </h5>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4">

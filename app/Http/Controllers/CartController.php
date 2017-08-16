@@ -32,7 +32,8 @@ class CartController extends Controller
 
         $product_name=ProductMaster::where('product_id',$id)->value('product_name');
         $image=ProductImage::where('product_id',$id)->value('image');
-        Cart::add(['id'=>$id,'name'=>$product_name,'qty' => 1,'price'=>$product->price,'image'=>$product->images->image]);
+        Cart::add(['id'=>$id,'name'=>$product_name,'qty' => 1,'price'=>$product->price,'image'=>$image]);
+        //dd(Cart::content());
         return back();
     }
 
