@@ -105,6 +105,8 @@ Route::get('/about',function(){return view('Boot.about');});
         Route::get('/addSize','Seller\SizeController@index')->name('add-size');
         Route::post('/storeSize','Seller\SizeController@store');
 
+        Route::get('/subs', 'Seller\ListController@subs');
+        Route::get('/users', 'Seller\ListController@users');
 
       });
     });
@@ -207,7 +209,7 @@ Route::get('/shipping-policy',function(){return view('Boot.static_pages.shipping
 //Terms of Use Static Page in footer
 Route::get('/terms-and-condition',function(){return view('Boot.static_pages.terms-and-condition');});
 
-//Map in footer 
+//Map in footer
 Route::get('/map',function(){return view('Boot.store');});
 
 //Review Order
